@@ -1,0 +1,715 @@
+state,district,taluk,latitude,longitude,streetlights,population_density,patrol_frequency,base_crime_rate
+Delhi,New Delhi,New Delhi Central,28.64907,77.1355,0.94,0.79,0.73,0.58
+Delhi,New Delhi,New Delhi West,28.61637,77.2362,0.75,0.4,0.46,0.49
+Delhi,New Delhi,New Delhi East,28.49277,77.08342,0.79,0.48,0.44,0.79
+Delhi,North Delhi,North Delhi Central,28.44027,77.09028,0.84,0.79,0.7,0.7
+Delhi,North Delhi,North Delhi West,28.52943,77.0856,0.78,0.42,0.38,0.75
+Delhi,North Delhi,North Delhi East,28.53134,77.18156,0.72,0.43,0.54,0.65
+Delhi,South Delhi,South Delhi Central,28.73967,77.21427,0.92,0.85,0.65,0.58
+Delhi,South Delhi,South Delhi West,28.71654,77.25191,0.72,0.45,0.42,0.69
+Delhi,South Delhi,South Delhi East,28.62259,77.26029,0.81,0.47,0.48,0.67
+Delhi,East Delhi,East Delhi Central,28.73518,77.33283,0.83,0.83,0.75,0.55
+Delhi,East Delhi,East Delhi West,28.57681,77.30641,0.76,0.39,0.45,0.59
+Delhi,East Delhi,East Delhi East,28.58197,77.10428,0.7,0.41,0.43,0.67
+Delhi,West Delhi,West Delhi Central,28.74889,77.18774,0.8,0.81,0.67,0.7
+Delhi,West Delhi,West Delhi West,28.67128,77.21474,0.86,0.44,0.51,0.67
+Delhi,West Delhi,West Delhi East,28.70809,77.02031,0.8,0.35,0.52,0.61
+Delhi,Central Delhi,Central Delhi Central,28.72182,77.34323,0.83,0.83,0.75,0.55
+Delhi,Central Delhi,Central Delhi West,28.56345,77.31681,0.73,0.47,0.47,0.85
+Delhi,Central Delhi,Central Delhi East,28.56861,77.11469,0.76,0.37,0.32,0.74
+Delhi,South West Delhi,South West Delhi Central,28.72593,77.21872,0.8,0.81,0.67,0.7
+Delhi,South West Delhi,South West Delhi West,28.64832,77.24572,0.7,0.41,0.38,0.6
+Delhi,South West Delhi,South West Delhi East,28.68513,77.05129,0.66,0.48,0.5,0.76
+Delhi,North West Delhi,North West Delhi Central,28.62662,77.27735,0.9,0.82,0.74,0.77
+Delhi,North West Delhi,North West Delhi West,28.61844,77.26372,0.81,0.43,0.47,0.55
+Delhi,North West Delhi,North West Delhi East,28.67658,77.26284,0.71,0.31,0.49,0.57
+Delhi,Shahdara,Shahdara Central,28.48341,77.19196,0.9,0.75,0.69,0.57
+Delhi,Shahdara,Shahdara West,28.50198,77.28155,0.69,0.37,0.47,0.72
+Delhi,Shahdara,Shahdara East,28.44076,77.15934,0.74,0.51,0.49,0.61
+Uttar Pradesh,Lucknow,Lucknow Central,26.78832,80.93618,0.65,0.9,0.72,0.57
+Uttar Pradesh,Lucknow,Lucknow West,26.91008,80.90326,0.47,0.38,0.5,0.47
+Uttar Pradesh,Lucknow,Lucknow East,26.78934,80.8596,0.45,0.45,0.48,0.62
+Uttar Pradesh,Kanpur,Kanpur Central,26.67533,80.99139,0.58,0.84,0.68,0.58
+Uttar Pradesh,Kanpur,Kanpur West,26.74217,81.04064,0.57,0.43,0.47,0.65
+Uttar Pradesh,Kanpur,Kanpur East,26.68018,80.97539,0.59,0.32,0.41,0.57
+Uttar Pradesh,Gautam Buddha Nagar (Noida),Gautam Buddha Nagar (Noida) Central,26.48202,81.00135,0.61,0.75,0.77,0.57
+Uttar Pradesh,Gautam Buddha Nagar (Noida),Gautam Buddha Nagar (Noida) West,26.48909,81.02944,0.54,0.37,0.47,0.66
+Uttar Pradesh,Gautam Buddha Nagar (Noida),Gautam Buddha Nagar (Noida) East,26.5057,80.92213,0.58,0.5,0.36,0.67
+Uttar Pradesh,Varanasi,Varanasi Central,26.85712,81.06009,0.71,0.79,0.69,0.67
+Uttar Pradesh,Varanasi,Varanasi West,26.82083,81.03857,0.47,0.37,0.45,0.47
+Uttar Pradesh,Varanasi,Varanasi East,26.80633,81.0167,0.53,0.49,0.53,0.68
+Uttar Pradesh,Agra,Agra Central,26.80234,81.22946,0.6,0.88,0.78,0.35
+Uttar Pradesh,Agra,Agra West,26.80411,81.19118,0.57,0.56,0.4,0.71
+Uttar Pradesh,Agra,Agra East,26.79299,81.18933,0.55,0.36,0.48,0.71
+Uttar Pradesh,Prayagraj (Allahabad),Prayagraj (Allahabad) Central,26.48869,81.31507,0.7,0.81,0.71,0.51
+Uttar Pradesh,Prayagraj (Allahabad),Prayagraj (Allahabad) West,26.42617,81.37073,0.52,0.44,0.56,0.57
+Uttar Pradesh,Prayagraj (Allahabad),Prayagraj (Allahabad) East,26.84239,81.2913,0.52,0.35,0.45,0.68
+Uttar Pradesh,Meerut,Meerut Central,26.68157,80.80388,0.68,0.8,0.69,0.53
+Uttar Pradesh,Meerut,Meerut West,26.78637,80.8197,0.45,0.38,0.43,0.52
+Uttar Pradesh,Meerut,Meerut East,26.56335,80.82597,0.49,0.4,0.41,0.43
+Uttar Pradesh,Ghaziabad,Ghaziabad Central,26.89344,80.87734,0.58,0.88,0.63,0.59
+Uttar Pradesh,Ghaziabad,Ghaziabad West,26.90081,81.1429,0.55,0.37,0.51,0.56
+Uttar Pradesh,Ghaziabad,Ghaziabad East,26.86655,80.98737,0.58,0.36,0.46,0.57
+Uttar Pradesh,Bareilly,Bareilly Central,26.93609,81.11617,0.66,0.76,0.62,0.51
+Uttar Pradesh,Bareilly,Bareilly West,26.82647,81.01495,0.46,0.43,0.44,0.59
+Uttar Pradesh,Bareilly,Bareilly East,26.7361,81.03565,0.51,0.38,0.4,0.64
+Uttar Pradesh,Gorakhpur,Gorakhpur Central,26.95795,81.15497,0.7,0.82,0.66,0.56
+Uttar Pradesh,Gorakhpur,Gorakhpur West,26.91491,81.08808,0.48,0.38,0.43,0.53
+Uttar Pradesh,Gorakhpur,Gorakhpur East,26.8757,81.13451,0.55,0.51,0.4,0.54
+Uttar Pradesh,Aligarh,Aligarh Central,26.96849,80.80215,0.71,0.77,0.66,0.57
+Uttar Pradesh,Aligarh,Aligarh West,26.75159,80.74385,0.45,0.37,0.36,0.48
+Uttar Pradesh,Aligarh,Aligarh East,26.94019,80.80726,0.58,0.41,0.48,0.42
+Uttar Pradesh,Mathura,Mathura Central,26.92319,80.61134,0.64,0.85,0.65,0.53
+Uttar Pradesh,Mathura,Mathura West,26.97476,80.5652,0.43,0.39,0.47,0.59
+Uttar Pradesh,Mathura,Mathura East,27.21314,80.59901,0.51,0.44,0.44,0.65
+Punjab,Amritsar,Amritsar Central,30.35023,76.8034,0.78,0.79,0.69,0.39
+Punjab,Amritsar,Amritsar West,30.38804,76.8186,0.54,0.33,0.39,0.27
+Punjab,Amritsar,Amritsar East,30.50799,76.75144,0.53,0.41,0.47,0.24
+Punjab,Ludhiana,Ludhiana Central,30.87953,76.65528,0.64,0.68,0.7,0.4
+Punjab,Ludhiana,Ludhiana West,30.86401,76.9308,0.62,0.41,0.41,0.32
+Punjab,Ludhiana,Ludhiana East,30.77297,76.74368,0.58,0.35,0.42,0.31
+Punjab,Jalandhar,Jalandhar Central,30.65824,76.74537,0.78,0.82,0.71,0.27
+Punjab,Jalandhar,Jalandhar West,30.68172,76.81623,0.62,0.35,0.36,0.3
+Punjab,Jalandhar,Jalandhar East,30.67003,76.6332,0.59,0.31,0.48,0.46
+Punjab,Patiala,Patiala Central,30.5286,77.04289,0.71,0.81,0.72,0.34
+Punjab,Patiala,Patiala West,30.83016,76.73976,0.69,0.4,0.55,0.57
+Punjab,Patiala,Patiala East,30.70225,76.97925,0.7,0.39,0.51,0.42
+Punjab,Bathinda,Bathinda Central,31.06527,76.95965,0.73,0.86,0.74,0.27
+Punjab,Bathinda,Bathinda West,31.02751,77.03344,0.53,0.44,0.44,0.46
+Punjab,Bathinda,Bathinda East,31.06567,77.10283,0.56,0.47,0.43,0.39
+Punjab,Mohali,Mohali Central,30.38754,76.5399,0.71,0.75,0.67,0.39
+Punjab,Mohali,Mohali West,30.39248,76.50429,0.6,0.45,0.47,0.35
+Punjab,Mohali,Mohali East,30.42881,76.5366,0.63,0.36,0.48,0.27
+Punjab,Hoshiarpur,Hoshiarpur Central,30.79391,76.67265,0.7,0.86,0.68,0.32
+Punjab,Hoshiarpur,Hoshiarpur West,30.71998,76.77633,0.51,0.42,0.52,0.37
+Punjab,Hoshiarpur,Hoshiarpur East,30.87504,76.84,0.63,0.32,0.46,0.41
+Punjab,Pathankot,Pathankot Central,30.68181,76.89191,0.8,0.78,0.73,0.35
+Punjab,Pathankot,Pathankot West,30.63031,76.97653,0.62,0.47,0.51,0.45
+Punjab,Pathankot,Pathankot East,30.58856,76.7229,0.66,0.44,0.43,0.47
+Haryana,Gurugram,Gurugram Central,30.35023,76.8034,0.76,0.79,0.69,0.53
+Haryana,Gurugram,Gurugram West,30.38804,76.8186,0.59,0.22,0.4,0.52
+Haryana,Gurugram,Gurugram East,30.50799,76.75144,0.58,0.33,0.5,0.53
+Haryana,Faridabad,Faridabad Central,30.87953,76.65528,0.62,0.68,0.7,0.54
+Haryana,Faridabad,Faridabad West,30.86401,76.9308,0.58,0.36,0.47,0.63
+Haryana,Faridabad,Faridabad East,30.77297,76.74368,0.55,0.38,0.44,0.41
+Haryana,Panipat,Panipat Central,30.65824,76.74537,0.76,0.82,0.71,0.41
+Haryana,Panipat,Panipat West,30.68172,76.81623,0.58,0.38,0.47,0.49
+Haryana,Panipat,Panipat East,30.67003,76.6332,0.64,0.39,0.46,0.44
+Haryana,Ambala,Ambala Central,30.5286,77.04289,0.69,0.81,0.72,0.48
+Haryana,Ambala,Ambala West,30.83016,76.73976,0.59,0.39,0.47,0.51
+Haryana,Ambala,Ambala East,30.70225,76.97925,0.53,0.42,0.58,0.48
+Haryana,Panchkula,Panchkula Central,31.06527,76.95965,0.71,0.86,0.74,0.41
+Haryana,Panchkula,Panchkula West,31.02751,77.03344,0.64,0.52,0.48,0.35
+Haryana,Panchkula,Panchkula East,31.06567,77.10283,0.56,0.35,0.39,0.54
+Haryana,Rohtak,Rohtak Central,30.38754,76.5399,0.69,0.75,0.67,0.53
+Haryana,Rohtak,Rohtak West,30.39248,76.50429,0.58,0.41,0.47,0.56
+Haryana,Rohtak,Rohtak East,30.42881,76.5366,0.53,0.45,0.5,0.52
+Haryana,Karnal,Karnal Central,30.79391,76.67265,0.68,0.86,0.68,0.46
+Haryana,Karnal,Karnal West,30.71998,76.77633,0.6,0.47,0.5,0.45
+Haryana,Karnal,Karnal East,30.87504,76.84,0.6,0.42,0.38,0.72
+Haryana,Sonipat,Sonipat Central,30.68181,76.89191,0.78,0.78,0.73,0.49
+Haryana,Sonipat,Sonipat West,30.63031,76.97653,0.59,0.34,0.51,0.62
+Haryana,Sonipat,Sonipat East,30.58856,76.7229,0.58,0.37,0.53,0.59
+Himachal Pradesh,Shimla,Shimla Central,31.08921,77.01664,0.59,0.73,0.7,0.44
+Himachal Pradesh,Shimla,Shimla West,31.23007,76.99038,0.47,0.37,0.49,0.28
+Himachal Pradesh,Shimla,Shimla East,31.11739,76.93308,0.42,0.48,0.45,0.25
+Himachal Pradesh,Kangra,Kangra Central,31.09465,77.22512,0.59,0.75,0.71,0.26
+Himachal Pradesh,Kangra,Kangra West,31.02954,77.203,0.5,0.5,0.5,0.29
+Himachal Pradesh,Kangra,Kangra East,31.12007,77.13542,0.48,0.42,0.49,0.32
+Himachal Pradesh,Mandi,Mandi Central,31.34923,77.00492,0.63,0.74,0.6,0.36
+Himachal Pradesh,Mandi,Mandi West,31.42844,77.03692,0.42,0.42,0.42,0.15
+Himachal Pradesh,Mandi,Mandi East,31.45289,77.04784,0.42,0.38,0.34,0.24
+Himachal Pradesh,Solan,Solan Central,31.15447,76.91794,0.62,0.78,0.7,0.27
+Himachal Pradesh,Solan,Solan West,31.03256,76.9074,0.43,0.39,0.48,0.25
+Himachal Pradesh,Solan,Solan East,30.92085,77.03134,0.42,0.42,0.49,0.27
+Himachal Pradesh,Kullu,Kullu Central,31.04667,77.08003,0.59,0.73,0.7,0.44
+Himachal Pradesh,Kullu,Kullu West,31.18752,77.05377,0.49,0.35,0.49,0.2
+Himachal Pradesh,Kullu,Kullu East,31.07484,76.99647,0.52,0.42,0.5,0.32
+Himachal Pradesh,Chamba,Chamba Central,31.30307,76.96036,0.59,0.86,0.65,0.29
+Himachal Pradesh,Chamba,Chamba West,31.37188,77.02418,0.46,0.43,0.52,0.32
+Himachal Pradesh,Chamba,Chamba East,31.3886,77.05419,0.57,0.42,0.47,0.38
+Himachal Pradesh,Hamirpur,Hamirpur Central,31.11214,76.92002,0.59,0.81,0.73,0.25
+Himachal Pradesh,Hamirpur,Hamirpur West,31.2901,76.98073,0.46,0.37,0.43,0.25
+Himachal Pradesh,Hamirpur,Hamirpur East,31.31449,76.89237,0.44,0.39,0.41,0.26
+Himachal Pradesh,Una,Una Central,30.97593,76.84833,0.62,0.75,0.73,0.4
+Himachal Pradesh,Una,Una West,31.11255,76.9098,0.45,0.42,0.44,0.29
+Himachal Pradesh,Una,Una East,30.83243,76.85678,0.4,0.38,0.45,0.28
+Uttarakhand,Dehradun,Dehradun Central,30.49538,77.98725,0.65,0.72,0.6,0.34
+Uttarakhand,Dehradun,Dehradun West,30.42638,77.99292,0.39,0.51,0.45,0.29
+Uttarakhand,Dehradun,Dehradun East,30.42825,77.95593,0.48,0.44,0.49,0.33
+Uttarakhand,Haridwar,Haridwar Central,30.50842,77.83008,0.58,0.82,0.66,0.36
+Uttarakhand,Haridwar,Haridwar West,30.49405,78.02976,0.41,0.44,0.42,0.37
+Uttarakhand,Haridwar,Haridwar East,30.59031,77.87745,0.44,0.42,0.49,0.38
+Uttarakhand,Nainital,Nainital Central,30.25931,78.05782,0.69,0.77,0.76,0.28
+Uttarakhand,Nainital,Nainital West,30.24713,78.07512,0.45,0.44,0.46,0.26
+Uttarakhand,Nainital,Nainital East,30.48631,77.94506,0.5,0.29,0.57,0.36
+Uttarakhand,Udham Singh Nagar,Udham Singh Nagar Central,30.30598,77.86557,0.69,0.85,0.75,0.32
+Uttarakhand,Udham Singh Nagar,Udham Singh Nagar West,30.39222,77.94444,0.51,0.38,0.39,0.36
+Uttarakhand,Udham Singh Nagar,Udham Singh Nagar East,30.47979,77.83834,0.5,0.45,0.45,0.27
+Uttarakhand,Rishikesh,Rishikesh Central,30.07526,78.10095,0.57,0.84,0.7,0.48
+Uttarakhand,Rishikesh,Rishikesh West,30.28351,78.06851,0.48,0.35,0.44,0.38
+Uttarakhand,Rishikesh,Rishikesh East,30.12891,78.10882,0.43,0.48,0.38,0.23
+Uttarakhand,Pithoragarh,Pithoragarh Central,30.51639,78.35578,0.57,0.83,0.71,0.23
+Uttarakhand,Pithoragarh,Pithoragarh West,30.52364,78.25521,0.47,0.35,0.41,0.31
+Uttarakhand,Pithoragarh,Pithoragarh East,30.53245,78.30947,0.44,0.28,0.49,0.35
+Uttarakhand,Almora,Almora Central,30.28199,78.33406,0.69,0.85,0.75,0.32
+Uttarakhand,Almora,Almora West,30.36822,78.41294,0.49,0.35,0.43,0.31
+Uttarakhand,Almora,Almora East,30.4558,78.30683,0.4,0.35,0.48,0.41
+Jammu and Kashmir,Srinagar,Srinagar Central,34.04243,74.89124,0.53,0.73,0.76,0.47
+Jammu and Kashmir,Srinagar,Srinagar West,33.96754,74.77848,0.38,0.41,0.39,0.3
+Jammu and Kashmir,Srinagar,Srinagar East,33.95316,74.77214,0.31,0.38,0.52,0.47
+Jammu and Kashmir,Jammu,Jammu Central,33.83478,74.92397,0.5,0.83,0.69,0.49
+Jammu and Kashmir,Jammu,Jammu West,33.76016,74.85586,0.46,0.39,0.5,0.68
+Jammu and Kashmir,Jammu,Jammu East,33.82493,74.68633,0.4,0.41,0.48,0.41
+Jammu and Kashmir,Anantnag,Anantnag Central,34.38383,74.60427,0.55,0.9,0.67,0.41
+Jammu and Kashmir,Anantnag,Anantnag West,34.26796,74.5332,0.39,0.42,0.49,0.28
+Jammu and Kashmir,Anantnag,Anantnag East,34.43982,74.64523,0.37,0.41,0.42,0.39
+Jammu and Kashmir,Baramulla,Baramulla Central,34.0111,74.70634,0.56,0.73,0.75,0.46
+Jammu and Kashmir,Baramulla,Baramulla West,34.03214,74.71741,0.32,0.41,0.37,0.35
+Jammu and Kashmir,Baramulla,Baramulla East,33.98873,74.86655,0.39,0.33,0.44,0.37
+Jammu and Kashmir,Kathua,Kathua Central,34.32858,75.12664,0.49,0.71,0.67,0.37
+Jammu and Kashmir,Kathua,Kathua West,34.39609,75.07726,0.43,0.42,0.44,0.55
+Jammu and Kashmir,Kathua,Kathua East,34.35176,75.13539,0.39,0.31,0.4,0.55
+Jammu and Kashmir,Udhampur,Udhampur Central,34.06355,74.57662,0.54,0.77,0.72,0.41
+Jammu and Kashmir,Udhampur,Udhampur West,34.07702,74.73479,0.33,0.39,0.39,0.44
+Jammu and Kashmir,Udhampur,Udhampur East,34.31127,74.71291,0.39,0.38,0.53,0.45
+Jammu and Kashmir,Pulwama,Pulwama Central,34.2856,74.73957,0.59,0.85,0.73,0.54
+Jammu and Kashmir,Pulwama,Pulwama West,34.30838,74.8211,0.34,0.41,0.47,0.47
+Jammu and Kashmir,Pulwama,Pulwama East,34.28722,74.73189,0.43,0.33,0.43,0.54
+Jammu and Kashmir,Kupwara,Kupwara Central,34.24905,74.70791,0.49,0.75,0.76,0.47
+Jammu and Kashmir,Kupwara,Kupwara West,34.14716,74.69365,0.31,0.39,0.58,0.39
+Jammu and Kashmir,Kupwara,Kupwara East,34.16612,74.60573,0.43,0.37,0.48,0.47
+Ladakh,Leh,Leh Central,34.11294,77.37568,0.44,0.77,0.72,0.11
+Ladakh,Leh,Leh West,34.1264,77.53385,0.24,0.35,0.48,0.06
+Ladakh,Leh,Leh East,34.36066,77.51197,0.38,0.45,0.48,0.05
+Ladakh,Kargil,Kargil Central,34.02538,77.91425,0.46,0.73,0.75,0.16
+Ladakh,Kargil,Kargil West,34.04642,77.92532,0.32,0.37,0.39,0.22
+Ladakh,Kargil,Kargil East,34.00301,78.07445,0.3,0.42,0.52,0.17
+Chandigarh,Chandigarh District,Chandigarh District Central,30.78838,76.87832,0.86,0.71,0.68,0.35
+Chandigarh,Chandigarh District,Chandigarh District West,30.77837,76.7435,0.75,0.37,0.43,0.38
+Chandigarh,Chandigarh District,Chandigarh District East,30.93913,76.86874,0.77,0.39,0.42,0.35
+Maharashtra,Mumbai City,Mumbai City Central,18.94637,72.91075,0.82,0.86,0.71,0.39
+Maharashtra,Mumbai City,Mumbai City West,19.26583,72.81831,0.7,0.43,0.43,0.51
+Maharashtra,Mumbai City,Mumbai City East,19.20614,72.98096,0.66,0.4,0.48,0.39
+Maharashtra,Mumbai Suburban,Mumbai Suburban Central,18.95184,73.17144,0.79,0.83,0.7,0.44
+Maharashtra,Mumbai Suburban,Mumbai Suburban West,18.92241,73.02078,0.8,0.36,0.44,0.5
+Maharashtra,Mumbai Suburban,Mumbai Suburban East,18.95224,73.24746,0.68,0.44,0.43,0.28
+Maharashtra,Pune,Pune Central,19.4588,72.77025,0.79,0.77,0.67,0.51
+Maharashtra,Pune,Pune West,19.30413,72.78219,0.65,0.44,0.49,0.55
+Maharashtra,Pune,Pune East,19.28785,72.76504,0.74,0.36,0.45,0.51
+Maharashtra,Thane,Thane Central,19.10797,73.02119,0.86,0.9,0.72,0.61
+Maharashtra,Thane,Thane West,19.09894,73.06919,0.6,0.4,0.46,0.48
+Maharashtra,Thane,Thane East,19.08058,73.05837,0.61,0.44,0.5,0.31
+Maharashtra,Nagpur,Nagpur Central,19.03169,72.77805,0.82,0.78,0.64,0.37
+Maharashtra,Nagpur,Nagpur West,18.96163,72.77542,0.63,0.36,0.38,0.42
+Maharashtra,Nagpur,Nagpur East,19.00758,72.78718,0.79,0.42,0.44,0.47
+Maharashtra,Nashik,Nashik Central,19.03873,72.6822,0.89,0.76,0.71,0.49
+Maharashtra,Nashik,Nashik West,19.0913,72.92061,0.71,0.34,0.44,0.4
+Maharashtra,Nashik,Nashik East,19.13843,72.75186,0.68,0.36,0.52,0.49
+Maharashtra,Aurangabad,Aurangabad Central,18.83783,73.29549,0.85,0.78,0.64,0.35
+Maharashtra,Aurangabad,Aurangabad West,18.77257,73.09028,0.73,0.34,0.47,0.45
+Maharashtra,Aurangabad,Aurangabad East,18.83511,73.39153,0.64,0.41,0.43,0.47
+Maharashtra,Solapur,Solapur Central,19.08438,72.83249,0.9,0.73,0.74,0.49
+Maharashtra,Solapur,Solapur West,18.97804,72.9143,0.72,0.39,0.48,0.37
+Maharashtra,Solapur,Solapur East,18.9359,72.86876,0.65,0.42,0.4,0.42
+Maharashtra,Amravati,Amravati Central,18.94396,73.10977,0.86,0.83,0.73,0.46
+Maharashtra,Amravati,Amravati West,18.86614,73.0227,0.72,0.3,0.4,0.38
+Maharashtra,Amravati,Amravati East,18.82167,72.97801,0.72,0.42,0.51,0.49
+Maharashtra,Kolhapur,Kolhapur Central,18.92056,72.57673,0.95,0.78,0.69,0.4
+Maharashtra,Kolhapur,Kolhapur West,18.9822,72.67849,0.62,0.47,0.49,0.51
+Maharashtra,Kolhapur,Kolhapur East,19.01579,72.82981,0.62,0.42,0.4,0.39
+Maharashtra,Navi Mumbai,Navi Mumbai Central,18.92602,72.70669,0.86,0.83,0.73,0.46
+Maharashtra,Navi Mumbai,Navi Mumbai West,18.8482,72.61962,0.7,0.42,0.41,0.65
+Maharashtra,Navi Mumbai,Navi Mumbai East,18.80373,72.57493,0.6,0.35,0.5,0.34
+Gujarat,Ahmedabad,Ahmedabad Central,23.18192,72.65702,0.79,0.81,0.78,0.32
+Gujarat,Ahmedabad,Ahmedabad West,23.0741,72.69665,0.67,0.36,0.38,0.2
+Gujarat,Ahmedabad,Ahmedabad East,23.07001,72.67482,0.53,0.38,0.4,0.32
+Gujarat,Surat,Surat Central,22.88378,72.68789,0.78,0.73,0.74,0.41
+Gujarat,Surat,Surat West,22.91169,72.56298,0.69,0.46,0.42,0.32
+Gujarat,Surat,Surat East,22.9527,72.70542,0.66,0.42,0.45,0.26
+Gujarat,Vadodara,Vadodara Central,23.16172,72.7092,0.79,0.81,0.78,0.32
+Gujarat,Vadodara,Vadodara West,23.0539,72.74882,0.56,0.42,0.46,0.38
+Gujarat,Vadodara,Vadodara East,23.04982,72.72699,0.58,0.38,0.38,0.34
+Gujarat,Rajkot,Rajkot Central,23.2851,72.70587,0.83,0.75,0.72,0.44
+Gujarat,Rajkot,Rajkot West,23.44283,72.69715,0.66,0.37,0.38,0.39
+Gujarat,Rajkot,Rajkot East,23.43186,72.76382,0.62,0.35,0.48,0.33
+Gujarat,Gandhinagar,Gandhinagar Central,23.3352,72.97823,0.74,0.8,0.66,0.41
+Gujarat,Gandhinagar,Gandhinagar West,23.5528,72.96224,0.69,0.35,0.43,0.46
+Gujarat,Gandhinagar,Gandhinagar East,23.31995,73.01329,0.67,0.33,0.46,0.44
+Gujarat,Bhavnagar,Bhavnagar Central,22.97094,72.8074,0.71,0.77,0.68,0.3
+Gujarat,Bhavnagar,Bhavnagar West,23.1894,72.75499,0.5,0.38,0.36,0.29
+Gujarat,Bhavnagar,Bhavnagar East,23.17622,72.70425,0.58,0.5,0.4,0.36
+Gujarat,Jamnagar,Jamnagar Central,23.20748,72.47372,0.71,0.67,0.63,0.17
+Gujarat,Jamnagar,Jamnagar West,23.34851,72.57395,0.58,0.49,0.42,0.45
+Gujarat,Jamnagar,Jamnagar East,23.16271,72.44154,0.7,0.45,0.44,0.24
+Gujarat,Anand,Anand Central,23.54719,72.58127,0.72,0.76,0.66,0.31
+Gujarat,Anand,Anand West,23.35195,72.58115,0.53,0.38,0.42,0.26
+Gujarat,Anand,Anand East,23.51109,72.64935,0.67,0.43,0.48,0.2
+Rajasthan,Jaipur,Jaipur Central,26.89525,75.66829,0.6,0.85,0.71,0.58
+Rajasthan,Jaipur,Jaipur West,26.75232,75.66107,0.5,0.42,0.45,0.59
+Rajasthan,Jaipur,Jaipur East,26.89619,75.73811,0.48,0.4,0.41,0.55
+Rajasthan,Jodhpur,Jodhpur Central,27.34626,75.5648,0.62,0.68,0.78,0.61
+Rajasthan,Jodhpur,Jodhpur West,27.35841,75.64276,0.44,0.33,0.52,0.61
+Rajasthan,Jodhpur,Jodhpur East,27.41267,75.53774,0.47,0.37,0.39,0.6
+Rajasthan,Udaipur,Udaipur Central,27.07861,76.0625,0.64,0.73,0.73,0.5
+Rajasthan,Udaipur,Udaipur West,26.92233,76.06638,0.56,0.42,0.38,0.49
+Rajasthan,Udaipur,Udaipur East,27.12155,75.96476,0.39,0.37,0.48,0.57
+Rajasthan,Kota,Kota Central,27.1436,75.81378,0.64,0.82,0.76,0.52
+Rajasthan,Kota,Kota West,27.11802,75.85844,0.48,0.35,0.51,0.62
+Rajasthan,Kota,Kota East,27.04398,75.77137,0.47,0.47,0.44,0.68
+Rajasthan,Ajmer,Ajmer Central,27.00056,75.76568,0.68,0.82,0.66,0.58
+Rajasthan,Ajmer,Ajmer West,26.95752,75.69879,0.44,0.39,0.39,0.62
+Rajasthan,Ajmer,Ajmer East,26.91831,75.74522,0.45,0.42,0.46,0.72
+Rajasthan,Bikaner,Bikaner Central,27.08183,75.61426,0.63,0.74,0.6,0.5
+Rajasthan,Bikaner,Bikaner West,27.04661,75.70876,0.52,0.42,0.52,0.57
+Rajasthan,Bikaner,Bikaner East,26.96606,75.69019,0.49,0.54,0.37,0.61
+Rajasthan,Alwar,Alwar Central,27.07658,75.90729,0.63,0.74,0.6,0.5
+Rajasthan,Alwar,Alwar West,27.04136,76.00179,0.51,0.31,0.41,0.52
+Rajasthan,Alwar,Alwar East,26.96081,75.98322,0.51,0.4,0.39,0.68
+Rajasthan,Sikar,Sikar Central,26.61011,75.71028,0.56,0.84,0.68,0.6
+Rajasthan,Sikar,Sikar West,26.67695,75.75953,0.51,0.4,0.45,0.57
+Rajasthan,Sikar,Sikar East,26.61496,75.69428,0.47,0.36,0.48,0.54
+Rajasthan,Bhilwara,Bhilwara Central,26.97674,75.70702,0.55,0.78,0.63,0.71
+Rajasthan,Bhilwara,Bhilwara West,26.94284,75.76832,0.43,0.33,0.37,0.57
+Rajasthan,Bhilwara,Bhilwara East,27.10852,75.7682,0.5,0.37,0.45,0.62
+Rajasthan,Jaisalmer,Jaisalmer Central,26.9631,75.90103,0.55,0.78,0.63,0.71
+Rajasthan,Jaisalmer,Jaisalmer West,26.9292,75.96234,0.49,0.38,0.5,0.66
+Rajasthan,Jaisalmer,Jaisalmer East,27.09489,75.96221,0.41,0.44,0.45,0.65
+Madhya Pradesh,Bhopal,Bhopal Central,23.02272,77.46999,0.54,0.77,0.68,0.51
+Madhya Pradesh,Bhopal,Bhopal West,23.24118,77.41758,0.4,0.42,0.33,0.52
+Madhya Pradesh,Bhopal,Bhopal East,23.228,77.36685,0.45,0.46,0.41,0.4
+Madhya Pradesh,Indore,Indore Central,23.12013,77.5926,0.53,0.79,0.73,0.53
+Madhya Pradesh,Indore,Indore West,22.94366,77.65983,0.47,0.36,0.43,0.44
+Madhya Pradesh,Indore,Indore East,22.86578,77.52347,0.44,0.33,0.52,0.58
+Madhya Pradesh,Jabalpur,Jabalpur Central,23.00252,77.52216,0.54,0.77,0.68,0.51
+Madhya Pradesh,Jabalpur,Jabalpur West,23.22098,77.46976,0.44,0.45,0.42,0.66
+Madhya Pradesh,Jabalpur,Jabalpur East,23.2078,77.41902,0.46,0.39,0.48,0.36
+Madhya Pradesh,Gwalior,Gwalior Central,23.29783,77.62671,0.63,0.71,0.72,0.72
+Madhya Pradesh,Gwalior,Gwalior West,23.34064,77.54257,0.39,0.44,0.38,0.67
+Madhya Pradesh,Gwalior,Gwalior East,23.33302,77.46304,0.47,0.34,0.47,0.44
+Madhya Pradesh,Ujjain,Ujjain Central,23.50292,77.7529,0.64,0.74,0.69,0.54
+Madhya Pradesh,Ujjain,Ujjain West,23.3534,77.60607,0.46,0.47,0.39,0.52
+Madhya Pradesh,Ujjain,Ujjain East,23.35261,77.62852,0.47,0.45,0.44,0.51
+Madhya Pradesh,Sagar,Sagar Central,23.14151,77.55127,0.46,0.85,0.67,0.52
+Madhya Pradesh,Sagar,Sagar West,23.06002,77.75515,0.43,0.38,0.51,0.52
+Madhya Pradesh,Sagar,Sagar East,23.03547,77.59365,0.48,0.3,0.46,0.64
+Madhya Pradesh,Rewa,Rewa Central,23.0794,77.24595,0.57,0.8,0.67,0.62
+Madhya Pradesh,Rewa,Rewa West,23.33043,77.27364,0.38,0.46,0.37,0.56
+Madhya Pradesh,Rewa,Rewa East,23.17589,77.41196,0.5,0.47,0.39,0.47
+Madhya Pradesh,Satna,Satna Central,23.43045,77.60739,0.59,0.87,0.67,0.43
+Madhya Pradesh,Satna,Satna West,23.35027,77.54824,0.46,0.44,0.42,0.55
+Madhya Pradesh,Satna,Satna East,23.3324,77.40058,0.37,0.42,0.38,0.7
+Chhattisgarh,Raipur,Raipur Central,21.22963,81.37162,0.54,0.75,0.74,0.39
+Chhattisgarh,Raipur,Raipur West,21.03436,81.34038,0.48,0.41,0.42,0.39
+Chhattisgarh,Raipur,Raipur East,21.06672,81.15015,0.36,0.31,0.39,0.29
+Chhattisgarh,Durg,Durg Central,21.26152,81.88101,0.55,0.75,0.73,0.42
+Chhattisgarh,Durg,Durg West,21.24421,81.92049,0.35,0.35,0.45,0.45
+Chhattisgarh,Durg,Durg East,21.08507,81.83427,0.43,0.35,0.52,0.47
+Chhattisgarh,Bilaspur,Bilaspur Central,21.56405,81.83121,0.59,0.71,0.64,0.59
+Chhattisgarh,Bilaspur,Bilaspur West,21.53584,81.65655,0.45,0.44,0.5,0.34
+Chhattisgarh,Bilaspur,Bilaspur East,21.5029,81.58127,0.5,0.49,0.55,0.47
+Chhattisgarh,Korba,Korba Central,21.30819,81.70409,0.5,0.86,0.71,0.59
+Chhattisgarh,Korba,Korba West,21.23314,81.69617,0.39,0.45,0.46,0.49
+Chhattisgarh,Korba,Korba East,21.22704,81.79802,0.47,0.36,0.49,0.38
+Chhattisgarh,Rajnandgaon,Rajnandgaon Central,21.24705,81.95404,0.63,0.8,0.69,0.47
+Chhattisgarh,Rajnandgaon,Rajnandgaon West,21.15687,82.1213,0.34,0.44,0.36,0.49
+Chhattisgarh,Rajnandgaon,Rajnandgaon East,21.10633,81.91616,0.46,0.47,0.46,0.57
+Chhattisgarh,Jagdalpur,Jagdalpur Central,21.46205,81.6669,0.53,0.83,0.75,0.35
+Chhattisgarh,Jagdalpur,Jagdalpur West,21.23659,81.575,0.43,0.41,0.4,0.57
+Chhattisgarh,Jagdalpur,Jagdalpur East,21.17892,81.65296,0.47,0.44,0.44,0.56
+Goa,North Goa,North Goa Central,15.51136,73.87108,0.74,0.76,0.71,0.29
+Goa,North Goa,North Goa West,15.44127,73.80475,0.77,0.41,0.37,0.28
+Goa,North Goa,North Goa East,15.42406,73.74419,0.64,0.37,0.47,0.32
+Goa,South Goa,South Goa Central,15.37248,73.77124,0.79,0.81,0.7,0.26
+Goa,South Goa,South Goa West,15.39334,73.81255,0.57,0.49,0.44,0.23
+Goa,South Goa,South Goa East,15.46648,73.71251,0.73,0.43,0.43,0.38
+Dadra and Nagar Haveli and Daman and Diu,Daman,Daman Central,20.26289,72.80263,0.69,0.75,0.76,0.3
+Dadra and Nagar Haveli and Daman and Diu,Daman,Daman West,20.24508,72.89301,0.6,0.4,0.47,0.36
+Dadra and Nagar Haveli and Daman and Diu,Daman,Daman East,20.31865,72.57803,0.54,0.4,0.5,0.26
+Dadra and Nagar Haveli and Daman and Diu,Diu,Diu Central,19.8918,72.90176,0.72,0.79,0.81,0.28
+Dadra and Nagar Haveli and Daman and Diu,Diu,Diu West,19.99692,72.99201,0.53,0.5,0.38,0.13
+Dadra and Nagar Haveli and Daman and Diu,Diu,Diu East,19.87653,72.9709,0.52,0.39,0.44,0.21
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,Dadra and Nagar Haveli Central,20.39408,72.79274,0.72,0.88,0.72,0.28
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,Dadra and Nagar Haveli West,20.39176,72.87493,0.51,0.31,0.41,0.23
+Dadra and Nagar Haveli and Daman and Diu,Dadra and Nagar Haveli,Dadra and Nagar Haveli East,20.37509,73.17391,0.57,0.41,0.46,0.24
+Karnataka,Bengaluru Urban,Bengaluru Urban Central,13.23205,77.37625,0.85,0.75,0.73,0.42
+Karnataka,Bengaluru Urban,Bengaluru Urban West,13.30575,77.37813,0.74,0.41,0.52,0.42
+Karnataka,Bengaluru Urban,Bengaluru Urban East,13.24353,77.43228,0.66,0.43,0.51,0.26
+Karnataka,Bengaluru Rural,Bengaluru Rural Central,12.928,77.62216,0.87,0.81,0.67,0.41
+Karnataka,Bengaluru Rural,Bengaluru Rural West,12.93617,77.61286,0.78,0.42,0.51,0.39
+Karnataka,Bengaluru Rural,Bengaluru Rural East,12.97291,77.79192,0.67,0.34,0.39,0.09
+Karnataka,Mysuru,Mysuru Central,12.91951,77.24941,0.73,0.78,0.68,0.33
+Karnataka,Mysuru,Mysuru West,12.89324,77.39481,0.64,0.4,0.35,0.56
+Karnataka,Mysuru,Mysuru East,12.96996,77.26402,0.6,0.34,0.44,0.42
+Karnataka,Dharwad (Hubli),Dharwad (Hubli) Central,12.92457,77.9727,0.83,0.77,0.79,0.34
+Karnataka,Dharwad (Hubli),Dharwad (Hubli) West,12.95006,77.99722,0.57,0.42,0.5,0.42
+Karnataka,Dharwad (Hubli),Dharwad (Hubli) East,12.86558,77.95263,0.66,0.44,0.42,0.43
+Karnataka,Mangaluru (Dakshina Kannada),Mangaluru (Dakshina Kannada) Central,12.80212,77.71053,0.94,0.82,0.68,0.34
+Karnataka,Mangaluru (Dakshina Kannada),Mangaluru (Dakshina Kannada) West,12.76875,77.67194,0.69,0.54,0.45,0.25
+Karnataka,Mangaluru (Dakshina Kannada),Mangaluru (Dakshina Kannada) East,12.71735,77.60732,0.7,0.32,0.43,0.36
+Karnataka,Belagavi,Belagavi Central,12.7706,77.58103,0.75,0.82,0.77,0.35
+Karnataka,Belagavi,Belagavi West,12.72179,77.65583,0.72,0.35,0.47,0.27
+Karnataka,Belagavi,Belagavi East,12.92409,77.62515,0.64,0.51,0.43,0.23
+Karnataka,Kalaburagi,Kalaburagi Central,12.7505,77.22929,0.87,0.77,0.69,0.46
+Karnataka,Kalaburagi,Kalaburagi West,12.97009,77.1296,0.67,0.27,0.48,0.35
+Karnataka,Kalaburagi,Kalaburagi East,13.01796,77.08083,0.67,0.41,0.5,0.34
+Karnataka,Udupi,Udupi Central,13.00406,77.56956,0.88,0.85,0.63,0.21
+Karnataka,Udupi,Udupi West,12.89676,77.92109,0.65,0.3,0.44,0.21
+Karnataka,Udupi,Udupi East,12.92601,77.83737,0.7,0.5,0.53,0.41
+Karnataka,Davangere,Davangere Central,12.97579,77.87466,0.81,0.86,0.79,0.33
+Karnataka,Davangere,Davangere West,12.98216,77.87192,0.64,0.42,0.49,0.26
+Karnataka,Davangere,Davangere East,12.87779,77.8361,0.66,0.42,0.45,0.31
+Karnataka,Tumakuru,Tumakuru Central,12.758,77.68266,0.85,0.76,0.69,0.35
+Karnataka,Tumakuru,Tumakuru West,12.87664,77.66482,0.76,0.39,0.47,0.35
+Karnataka,Tumakuru,Tumakuru East,12.87585,77.67035,0.65,0.39,0.4,0.37
+Telangana,Hyderabad,Hyderabad Central,17.28962,78.50694,0.86,0.76,0.73,0.59
+Telangana,Hyderabad,Hyderabad West,17.38306,78.42052,0.61,0.43,0.38,0.38
+Telangana,Hyderabad,Hyderabad East,17.2569,78.41333,0.66,0.39,0.46,0.47
+Telangana,Medchal-Malkajgiri,Medchal-Malkajgiri Central,17.27678,78.56993,0.76,0.81,0.79,0.48
+Telangana,Medchal-Malkajgiri,Medchal-Malkajgiri West,17.35701,78.69365,0.66,0.41,0.42,0.4
+Telangana,Medchal-Malkajgiri,Medchal-Malkajgiri East,17.47661,78.52187,0.73,0.41,0.51,0.43
+Telangana,Rangareddy,Rangareddy Central,17.22907,78.73443,0.78,0.85,0.79,0.37
+Telangana,Rangareddy,Rangareddy West,17.18039,78.68631,0.58,0.32,0.48,0.52
+Telangana,Rangareddy,Rangareddy East,17.24448,78.80943,0.7,0.42,0.48,0.55
+Telangana,Warangal,Warangal Central,17.56785,78.63353,0.79,0.81,0.72,0.56
+Telangana,Warangal,Warangal West,17.4486,78.73973,0.64,0.39,0.49,0.53
+Telangana,Warangal,Warangal East,17.57371,78.6112,0.65,0.42,0.42,0.49
+Telangana,Nizamabad,Nizamabad Central,17.30787,78.29024,0.75,0.79,0.74,0.53
+Telangana,Nizamabad,Nizamabad West,17.52981,78.39551,0.73,0.44,0.54,0.31
+Telangana,Nizamabad,Nizamabad East,17.27004,78.40272,0.63,0.34,0.41,0.55
+Telangana,Karimnagar,Karimnagar Central,17.48742,78.57388,0.81,0.76,0.68,0.54
+Telangana,Karimnagar,Karimnagar West,17.49262,78.65951,0.57,0.45,0.32,0.4
+Telangana,Karimnagar,Karimnagar East,17.64211,78.64225,0.66,0.34,0.55,0.53
+Telangana,Khammam,Khammam Central,17.30756,78.45741,0.89,0.81,0.72,0.39
+Telangana,Khammam,Khammam West,17.30343,78.33195,0.72,0.52,0.41,0.42
+Telangana,Khammam,Khammam East,17.33934,78.24676,0.62,0.35,0.44,0.58
+Andhra Pradesh,Visakhapatnam,Visakhapatnam Central,16.76159,80.09591,0.73,0.77,0.69,0.53
+Andhra Pradesh,Visakhapatnam,Visakhapatnam West,16.74019,80.18301,0.48,0.52,0.5,0.4
+Andhra Pradesh,Visakhapatnam,Visakhapatnam East,16.63429,80.04687,0.48,0.41,0.57,0.45
+Andhra Pradesh,Vijayawada (NTR),Vijayawada (NTR) Central,16.52178,80.21672,0.72,0.83,0.71,0.53
+Andhra Pradesh,Vijayawada (NTR),Vijayawada (NTR) West,16.55724,80.35627,0.57,0.42,0.42,0.45
+Andhra Pradesh,Vijayawada (NTR),Vijayawada (NTR) East,16.57514,80.3695,0.47,0.38,0.55,0.32
+Andhra Pradesh,Guntur,Guntur Central,16.38819,79.98421,0.64,0.74,0.77,0.5
+Andhra Pradesh,Guntur,Guntur West,16.47411,80.20095,0.49,0.41,0.38,0.37
+Andhra Pradesh,Guntur,Guntur East,16.40699,80.19762,0.43,0.37,0.42,0.54
+Andhra Pradesh,Nellore,Nellore Central,16.49548,80.45808,0.75,0.84,0.74,0.38
+Andhra Pradesh,Nellore,Nellore West,16.52387,80.64258,0.47,0.34,0.5,0.58
+Andhra Pradesh,Nellore,Nellore East,16.45202,80.67545,0.48,0.53,0.45,0.4
+Andhra Pradesh,Kurnool,Kurnool Central,16.60723,80.40193,0.59,0.83,0.77,0.4
+Andhra Pradesh,Kurnool,Kurnool West,16.4574,80.26275,0.53,0.37,0.57,0.29
+Andhra Pradesh,Kurnool,Kurnool East,16.38344,80.54357,0.51,0.39,0.46,0.48
+Andhra Pradesh,Tirupati,Tirupati Central,16.63603,80.36817,0.7,0.82,0.7,0.52
+Andhra Pradesh,Tirupati,Tirupati West,16.70127,80.29554,0.57,0.43,0.47,0.34
+Andhra Pradesh,Tirupati,Tirupati East,16.56885,80.36363,0.62,0.35,0.5,0.49
+Andhra Pradesh,Anantapur,Anantapur Central,16.57781,80.21694,0.76,0.85,0.68,0.46
+Andhra Pradesh,Anantapur,Anantapur West,16.64307,80.19601,0.56,0.43,0.48,0.33
+Andhra Pradesh,Anantapur,Anantapur East,16.72966,80.16471,0.52,0.38,0.39,0.53
+Andhra Pradesh,Kadapa,Kadapa Central,16.74342,80.42667,0.68,0.84,0.69,0.57
+Andhra Pradesh,Kadapa,Kadapa West,16.70113,80.412,0.5,0.39,0.31,0.66
+Andhra Pradesh,Kadapa,Kadapa East,16.74193,80.38839,0.61,0.41,0.47,0.57
+Andhra Pradesh,Kakinada,Kakinada Central,16.87575,80.4383,0.63,0.87,0.79,0.48
+Andhra Pradesh,Kakinada,Kakinada West,16.91249,80.49344,0.51,0.38,0.46,0.45
+Andhra Pradesh,Kakinada,Kakinada East,16.85568,80.49286,0.49,0.36,0.44,0.57
+Tamil Nadu,Chennai,Chennai Central,13.32304,79.99436,0.8,0.88,0.72,0.21
+Tamil Nadu,Chennai,Chennai West,13.34007,80.1513,0.66,0.4,0.36,0.33
+Tamil Nadu,Chennai,Chennai East,13.35355,79.97387,0.67,0.42,0.44,0.35
+Tamil Nadu,Coimbatore,Coimbatore Central,13.11276,80.09894,0.82,0.75,0.64,0.34
+Tamil Nadu,Coimbatore,Coimbatore West,13.02842,80.17312,0.7,0.39,0.44,0.35
+Tamil Nadu,Coimbatore,Coimbatore East,13.07177,80.13025,0.65,0.28,0.47,0.44
+Tamil Nadu,Madurai,Madurai Central,13.01095,80.40142,0.85,0.76,0.68,0.33
+Tamil Nadu,Madurai,Madurai West,13.05331,80.1048,0.66,0.44,0.52,0.26
+Tamil Nadu,Madurai,Madurai East,12.89994,80.39436,0.76,0.46,0.48,0.31
+Tamil Nadu,Tiruchirappalli,Tiruchirappalli Central,12.91461,80.00921,0.82,0.74,0.71,0.22
+Tamil Nadu,Tiruchirappalli,Tiruchirappalli West,12.95968,79.77772,0.69,0.39,0.49,0.44
+Tamil Nadu,Tiruchirappalli,Tiruchirappalli East,12.97332,79.8757,0.71,0.36,0.59,0.31
+Tamil Nadu,Salem,Salem Central,12.90908,80.6488,0.83,0.77,0.79,0.3
+Tamil Nadu,Salem,Salem West,12.93457,80.67332,0.59,0.53,0.43,0.34
+Tamil Nadu,Salem,Salem East,12.85009,80.62873,0.55,0.39,0.5,0.47
+Tamil Nadu,Tirunelveli,Tirunelveli Central,12.7604,80.41168,0.87,0.77,0.69,0.42
+Tamil Nadu,Tirunelveli,Tirunelveli West,12.97999,80.31199,0.73,0.42,0.44,0.38
+Tamil Nadu,Tirunelveli,Tirunelveli East,13.02786,80.26322,0.8,0.41,0.45,0.32
+Tamil Nadu,Vellore,Vellore Central,13.0027,80.23235,0.79,0.74,0.68,0.49
+Tamil Nadu,Vellore,Vellore West,12.89523,80.22139,0.68,0.41,0.47,0.41
+Tamil Nadu,Vellore,Vellore East,13.02746,80.14678,0.55,0.43,0.52,0.36
+Tamil Nadu,Kancheepuram,Kancheepuram Central,12.99788,79.8287,0.83,0.77,0.67,0.3
+Tamil Nadu,Kancheepuram,Kancheepuram West,12.96659,79.68243,0.69,0.37,0.51,0.19
+Tamil Nadu,Kancheepuram,Kancheepuram East,13.15078,79.81353,0.62,0.54,0.48,0.26
+Tamil Nadu,Thanjavur,Thanjavur Central,13.05305,80.32475,0.84,0.86,0.67,0.28
+Tamil Nadu,Thanjavur,Thanjavur West,12.93828,80.43313,0.66,0.43,0.48,0.31
+Tamil Nadu,Thanjavur,Thanjavur East,13.1014,80.39005,0.67,0.35,0.48,0.29
+Kerala,Thiruvananthapuram,Thiruvananthapuram Central,8.30561,77.66151,0.77,0.86,0.69,0.4
+Kerala,Thiruvananthapuram,Thiruvananthapuram West,8.34214,77.44396,0.58,0.42,0.5,0.31
+Kerala,Thiruvananthapuram,Thiruvananthapuram East,8.33591,77.65009,0.63,0.43,0.39,0.43
+Kerala,Ernakulam (Kochi),Ernakulam (Kochi) Central,8.53321,76.82069,0.79,0.82,0.74,0.31
+Kerala,Ernakulam (Kochi),Ernakulam (Kochi) West,8.52278,77.04684,0.55,0.35,0.42,0.26
+Kerala,Ernakulam (Kochi),Ernakulam (Kochi) East,8.4042,76.81658,0.63,0.4,0.39,0.43
+Kerala,Kozhikode,Kozhikode Central,8.66747,77.00999,0.7,0.89,0.69,0.4
+Kerala,Kozhikode,Kozhikode West,8.42585,76.9783,0.56,0.49,0.4,0.28
+Kerala,Kozhikode,Kozhikode East,8.56488,77.05772,0.59,0.38,0.52,0.27
+Kerala,Thrissur,Thrissur Central,8.6633,76.91866,0.69,0.8,0.79,0.5
+Kerala,Thrissur,Thrissur West,8.63244,76.91436,0.67,0.39,0.29,0.34
+Kerala,Thrissur,Thrissur East,8.40292,77.17441,0.66,0.41,0.39,0.35
+Kerala,Kollam,Kollam Central,8.66784,76.69301,0.77,0.82,0.71,0.47
+Kerala,Kollam,Kollam West,8.75046,76.8708,0.57,0.48,0.45,0.27
+Kerala,Kollam,Kollam East,8.6753,76.73588,0.63,0.42,0.41,0.26
+Kerala,Kannur,Kannur Central,8.51797,76.67194,0.72,0.79,0.62,0.4
+Kerala,Kannur,Kannur West,8.45075,76.57608,0.5,0.36,0.49,0.49
+Kerala,Kannur,Kannur East,8.54059,76.61529,0.62,0.44,0.44,0.38
+Kerala,Kottayam,Kottayam Central,8.54002,76.89208,0.85,0.77,0.73,0.4
+Kerala,Kottayam,Kottayam West,8.46992,76.70168,0.59,0.47,0.35,0.37
+Kerala,Kottayam,Kottayam East,8.4299,76.87239,0.65,0.45,0.37,0.33
+Kerala,Alappuzha,Alappuzha Central,8.66484,77.0427,0.81,0.69,0.61,0.3
+Kerala,Alappuzha,Alappuzha West,8.78051,77.02093,0.51,0.29,0.4,0.32
+Kerala,Alappuzha,Alappuzha East,8.90701,77.17078,0.63,0.46,0.53,0.47
+Kerala,Palakkad,Palakkad Central,8.80766,76.88793,0.69,0.73,0.72,0.36
+Kerala,Palakkad,Palakkad West,8.59772,76.96579,0.65,0.37,0.41,0.25
+Kerala,Palakkad,Palakkad East,8.66972,76.92234,0.61,0.49,0.45,0.37
+Kerala,Malappuram,Malappuram Central,8.5944,76.54088,0.72,0.8,0.7,0.23
+Kerala,Malappuram,Malappuram West,8.61157,76.62954,0.61,0.35,0.38,0.37
+Kerala,Malappuram,Malappuram East,8.38408,76.60783,0.62,0.47,0.54,0.33
+Puducherry,Puducherry,Puducherry Central,11.93207,79.58051,0.76,0.81,0.57,0.23
+Puducherry,Puducherry,Puducherry West,11.98346,79.74814,0.64,0.28,0.43,0.29
+Puducherry,Puducherry,Puducherry East,11.86171,79.76319,0.46,0.35,0.45,0.14
+Puducherry,Karaikal,Karaikal Central,11.8743,79.83367,0.8,0.8,0.73,0.19
+Puducherry,Karaikal,Karaikal West,12.02504,79.93941,0.73,0.37,0.51,0.34
+Puducherry,Karaikal,Karaikal East,11.92905,79.93084,0.61,0.4,0.44,0.38
+Puducherry,Mahe,Mahe Central,11.7988,79.71085,0.8,0.81,0.72,0.43
+Puducherry,Mahe,Mahe West,11.94015,79.78509,0.71,0.44,0.41,0.33
+Puducherry,Mahe,Mahe East,11.87364,79.71505,0.7,0.37,0.42,0.21
+Puducherry,Yanam,Yanam Central,11.92143,79.77088,0.8,0.84,0.67,0.32
+Puducherry,Yanam,Yanam West,12.03634,79.7636,0.55,0.43,0.52,0.32
+Puducherry,Yanam,Yanam East,11.76635,79.82408,0.63,0.51,0.42,0.22
+Lakshadweep,Lakshadweep District,Lakshadweep District Central,10.65347,72.66294,0.42,0.76,0.68,0.05
+Lakshadweep,Lakshadweep District,Lakshadweep District West,10.61483,72.62969,0.44,0.32,0.5,0.05
+Lakshadweep,Lakshadweep District,Lakshadweep District East,10.71612,72.51544,0.43,0.42,0.44,0.1
+Andaman and Nicobar Islands,South Andaman,South Andaman Central,11.72468,92.58096,0.72,0.74,0.69,0.24
+Andaman and Nicobar Islands,South Andaman,South Andaman West,11.7278,92.73812,0.41,0.39,0.39,0.2
+Andaman and Nicobar Islands,South Andaman,South Andaman East,11.62561,92.7009,0.57,0.43,0.48,0.13
+Andaman and Nicobar Islands,North and Middle Andaman,North and Middle Andaman Central,11.81797,92.683,0.63,0.85,0.59,0.28
+Andaman and Nicobar Islands,North and Middle Andaman,North and Middle Andaman West,11.80726,92.64263,0.42,0.42,0.43,0.37
+Andaman and Nicobar Islands,North and Middle Andaman,North and Middle Andaman East,11.75153,92.65862,0.5,0.33,0.5,0.13
+Andaman and Nicobar Islands,Nicobar,Nicobar Central,11.68821,92.80634,0.73,0.79,0.77,0.13
+Andaman and Nicobar Islands,Nicobar,Nicobar West,11.94047,92.84423,0.51,0.33,0.43,0.22
+Andaman and Nicobar Islands,Nicobar,Nicobar East,11.82614,92.75173,0.58,0.35,0.32,0.11
+West Bengal,Kolkata,Kolkata Central,22.59141,88.43665,0.57,0.79,0.72,0.42
+West Bengal,Kolkata,Kolkata West,22.73998,88.36016,0.56,0.39,0.47,0.53
+West Bengal,Kolkata,Kolkata East,22.61359,88.30932,0.55,0.4,0.46,0.6
+West Bengal,North 24 Parganas,North 24 Parganas Central,22.67179,88.20732,0.72,0.79,0.69,0.5
+West Bengal,North 24 Parganas,North 24 Parganas West,22.64961,88.17349,0.6,0.41,0.41,0.49
+West Bengal,North 24 Parganas,North 24 Parganas East,22.66803,88.13717,0.54,0.42,0.5,0.5
+West Bengal,South 24 Parganas,South 24 Parganas Central,22.71657,88.12634,0.74,0.82,0.63,0.62
+West Bengal,South 24 Parganas,South 24 Parganas West,22.81745,88.17649,0.51,0.47,0.5,0.46
+West Bengal,South 24 Parganas,South 24 Parganas East,22.81795,88.17826,0.57,0.43,0.45,0.45
+West Bengal,Howrah,Howrah Central,22.55904,88.04724,0.69,0.78,0.57,0.54
+West Bengal,Howrah,Howrah West,22.22744,88.10244,0.53,0.45,0.33,0.45
+West Bengal,Howrah,Howrah East,22.36393,88.15795,0.51,0.34,0.44,0.58
+West Bengal,Hooghly,Hooghly Central,22.58001,88.10684,0.78,0.79,0.63,0.66
+West Bengal,Hooghly,Hooghly West,22.69747,88.09467,0.6,0.42,0.43,0.56
+West Bengal,Hooghly,Hooghly East,22.66865,88.10248,0.64,0.41,0.58,0.51
+West Bengal,Darjeeling,Darjeeling Central,22.65172,88.2866,0.66,0.8,0.72,0.59
+West Bengal,Darjeeling,Darjeeling West,22.46378,88.11042,0.44,0.35,0.47,0.56
+West Bengal,Darjeeling,Darjeeling East,22.44741,88.34531,0.56,0.45,0.4,0.58
+West Bengal,Paschim Medinipur,Paschim Medinipur Central,22.22621,88.14491,0.76,0.72,0.6,0.56
+West Bengal,Paschim Medinipur,Paschim Medinipur West,22.26313,87.99591,0.59,0.42,0.42,0.59
+West Bengal,Paschim Medinipur,Paschim Medinipur East,22.29666,88.20027,0.57,0.48,0.48,0.64
+West Bengal,Purba Medinipur,Purba Medinipur Central,22.50935,88.69216,0.71,0.77,0.67,0.62
+West Bengal,Purba Medinipur,Purba Medinipur West,22.6739,88.54372,0.57,0.33,0.51,0.72
+West Bengal,Purba Medinipur,Purba Medinipur East,22.56755,88.4839,0.63,0.37,0.44,0.57
+West Bengal,Murshidabad,Murshidabad Central,22.47494,88.21614,0.64,0.78,0.77,0.54
+West Bengal,Murshidabad,Murshidabad West,22.67411,88.10854,0.53,0.41,0.39,0.56
+West Bengal,Murshidabad,Murshidabad East,22.71655,88.09177,0.51,0.4,0.48,0.61
+West Bengal,Asansol-Durgapur,Asansol-Durgapur Central,22.60025,87.99958,0.72,0.79,0.69,0.5
+West Bengal,Asansol-Durgapur,Asansol-Durgapur West,22.57807,87.96576,0.5,0.45,0.35,0.53
+West Bengal,Asansol-Durgapur,Asansol-Durgapur East,22.59648,87.92944,0.51,0.47,0.47,0.57
+Bihar,Patna,Patna Central,25.48468,85.28028,0.49,0.67,0.69,0.56
+Bihar,Patna,Patna West,25.32392,85.29632,0.37,0.48,0.6,0.59
+Bihar,Patna,Patna East,25.41617,85.28679,0.42,0.36,0.45,0.53
+Bihar,Gaya,Gaya Central,25.6207,84.92073,0.52,0.86,0.71,0.49
+Bihar,Gaya,Gaya West,25.67687,85.05776,0.41,0.47,0.38,0.5
+Bihar,Gaya,Gaya East,25.79977,85.10271,0.33,0.31,0.44,0.51
+Bihar,Muzaffarpur,Muzaffarpur Central,25.48879,85.4028,0.58,0.77,0.64,0.57
+Bihar,Muzaffarpur,Muzaffarpur West,25.49373,85.38672,0.37,0.33,0.5,0.59
+Bihar,Muzaffarpur,Muzaffarpur East,25.36577,85.56519,0.33,0.32,0.46,0.53
+Bihar,Bhagalpur,Bhagalpur Central,25.62533,85.00132,0.53,0.79,0.74,0.5
+Bihar,Bhagalpur,Bhagalpur West,25.61585,85.105,0.35,0.5,0.45,0.53
+Bihar,Bhagalpur,Bhagalpur East,25.57107,85.05434,0.44,0.32,0.45,0.46
+Bihar,Darbhanga,Darbhanga Central,25.35045,85.40117,0.57,0.74,0.69,0.7
+Bihar,Darbhanga,Darbhanga West,25.39512,85.34639,0.37,0.49,0.56,0.55
+Bihar,Darbhanga,Darbhanga East,25.5362,85.39103,0.34,0.33,0.44,0.54
+Bihar,Purnia,Purnia Central,25.71033,85.08156,0.54,0.82,0.7,0.53
+Bihar,Purnia,Purnia West,25.59377,85.16064,0.41,0.41,0.51,0.49
+Bihar,Purnia,Purnia East,25.71803,85.22049,0.34,0.4,0.41,0.6
+Bihar,Begusarai,Begusarai Central,25.43924,85.41222,0.61,0.74,0.72,0.48
+Bihar,Begusarai,Begusarai West,25.55138,85.29136,0.33,0.4,0.47,0.54
+Bihar,Begusarai,Begusarai East,25.38878,85.24553,0.4,0.41,0.48,0.46
+Bihar,Arrah,Arrah Central,26.05887,85.13568,0.46,0.81,0.76,0.55
+Bihar,Arrah,Arrah West,26.10879,85.20004,0.25,0.37,0.5,0.55
+Bihar,Arrah,Arrah East,26.16773,85.34864,0.43,0.34,0.47,0.58
+Bihar,Nalanda,Nalanda Central,25.69469,85.12336,0.53,0.8,0.68,0.43
+Bihar,Nalanda,Nalanda West,25.90415,85.12035,0.37,0.34,0.36,0.46
+Bihar,Nalanda,Nalanda East,25.8815,84.99437,0.37,0.34,0.46,0.7
+Jharkhand,Ranchi,Ranchi Central,23.2005,85.28115,0.46,0.79,0.71,0.42
+Jharkhand,Ranchi,Ranchi West,23.15099,85.16418,0.4,0.48,0.35,0.5
+Jharkhand,Ranchi,Ranchi East,23.20782,85.21733,0.45,0.41,0.43,0.43
+Jharkhand,East Singhbhum (Jamshedpur),East Singhbhum (Jamshedpur) Central,23.12889,85.88523,0.52,0.8,0.67,0.52
+Jharkhand,East Singhbhum (Jamshedpur),East Singhbhum (Jamshedpur) West,23.37991,85.91292,0.45,0.35,0.46,0.37
+Jharkhand,East Singhbhum (Jamshedpur),East Singhbhum (Jamshedpur) East,23.22537,86.05125,0.41,0.45,0.5,0.52
+Jharkhand,Dhanbad,Dhanbad Central,23.65257,85.34973,0.53,0.79,0.67,0.47
+Jharkhand,Dhanbad,Dhanbad West,23.69511,85.43792,0.5,0.34,0.51,0.44
+Jharkhand,Dhanbad,Dhanbad East,23.64669,85.28866,0.36,0.44,0.42,0.52
+Jharkhand,Bokaro,Bokaro Central,23.17195,85.01308,0.52,0.78,0.66,0.29
+Jharkhand,Bokaro,Bokaro West,23.19817,85.10203,0.43,0.41,0.54,0.56
+Jharkhand,Bokaro,Bokaro East,23.15434,85.07959,0.34,0.47,0.46,0.53
+Jharkhand,Hazaribagh,Hazaribagh Central,23.47627,85.40737,0.61,0.78,0.64,0.47
+Jharkhand,Hazaribagh,Hazaribagh West,23.32186,85.25669,0.44,0.46,0.46,0.46
+Jharkhand,Hazaribagh,Hazaribagh East,23.34732,85.25703,0.43,0.41,0.41,0.48
+Jharkhand,Deoghar,Deoghar Central,23.74184,85.33443,0.5,0.73,0.66,0.39
+Jharkhand,Deoghar,Deoghar West,23.84607,85.39688,0.42,0.45,0.49,0.47
+Jharkhand,Deoghar,Deoghar East,23.76131,85.4277,0.38,0.4,0.44,0.36
+Odisha,Khordha (Bhubaneswar),Khordha (Bhubaneswar) Central,20.33457,85.71245,0.66,0.81,0.73,0.51
+Odisha,Khordha (Bhubaneswar),Khordha (Bhubaneswar) West,20.26956,85.82144,0.48,0.36,0.49,0.5
+Odisha,Khordha (Bhubaneswar),Khordha (Bhubaneswar) East,20.18201,85.72053,0.47,0.39,0.48,0.44
+Odisha,Cuttack,Cuttack Central,20.50224,85.75679,0.64,0.77,0.64,0.44
+Odisha,Cuttack,Cuttack West,20.48784,85.70339,0.41,0.32,0.43,0.61
+Odisha,Cuttack,Cuttack East,20.42416,85.75785,0.41,0.39,0.52,0.38
+Odisha,Ganjam,Ganjam Central,20.3273,85.93075,0.58,0.79,0.68,0.36
+Odisha,Ganjam,Ganjam West,20.23859,86.01208,0.47,0.33,0.51,0.49
+Odisha,Ganjam,Ganjam East,20.51983,86.00559,0.47,0.46,0.41,0.56
+Odisha,Sundargarh (Rourkela),Sundargarh (Rourkela) Central,20.59541,85.99097,0.53,0.77,0.69,0.58
+Odisha,Sundargarh (Rourkela),Sundargarh (Rourkela) West,20.4595,86.09957,0.39,0.34,0.48,0.37
+Odisha,Sundargarh (Rourkela),Sundargarh (Rourkela) East,20.52095,85.91192,0.37,0.44,0.37,0.33
+Odisha,Sambalpur,Sambalpur Central,20.58683,85.86253,0.65,0.87,0.64,0.48
+Odisha,Sambalpur,Sambalpur West,20.48073,85.74631,0.43,0.41,0.45,0.41
+Odisha,Sambalpur,Sambalpur East,20.52839,85.76872,0.4,0.31,0.52,0.55
+Odisha,Puri,Puri Central,20.04245,85.91601,0.56,0.81,0.66,0.41
+Odisha,Puri,Puri West,20.11305,85.83856,0.42,0.37,0.4,0.47
+Odisha,Puri,Puri East,20.14021,85.82787,0.45,0.42,0.41,0.53
+Odisha,Balasore,Balasore Central,20.16746,85.69124,0.56,0.83,0.62,0.45
+Odisha,Balasore,Balasore West,20.09057,85.80827,0.54,0.35,0.39,0.52
+Odisha,Balasore,Balasore East,20.22693,85.71615,0.42,0.37,0.46,0.42
+Assam,Kamrup Metropolitan (Guwahati),Kamrup Metropolitan (Guwahati) Central,25.89426,91.89151,0.5,0.79,0.78,0.69
+Assam,Kamrup Metropolitan (Guwahati),Kamrup Metropolitan (Guwahati) West,26.00588,91.94588,0.45,0.4,0.46,0.57
+Assam,Kamrup Metropolitan (Guwahati),Kamrup Metropolitan (Guwahati) East,26.06498,92.01925,0.36,0.32,0.46,0.65
+Assam,Kamrup,Kamrup Central,26.10073,91.87765,0.45,0.8,0.62,0.65
+Assam,Kamrup,Kamrup West,26.14611,91.81216,0.39,0.35,0.49,0.66
+Assam,Kamrup,Kamrup East,26.08179,91.9449,0.36,0.45,0.54,0.61
+Assam,Dibrugarh,Dibrugarh Central,26.38774,91.40457,0.59,0.82,0.68,0.57
+Assam,Dibrugarh,Dibrugarh West,26.40287,91.41211,0.38,0.45,0.48,0.69
+Assam,Dibrugarh,Dibrugarh East,26.43872,91.49733,0.31,0.36,0.41,0.55
+Assam,Silchar (Cachar),Silchar (Cachar) Central,26.14037,91.94748,0.51,0.89,0.64,0.53
+Assam,Silchar (Cachar),Silchar (Cachar) West,26.12577,91.82181,0.4,0.36,0.54,0.54
+Assam,Silchar (Cachar),Silchar (Cachar) East,26.09864,91.90223,0.39,0.44,0.37,0.59
+Assam,Jorhat,Jorhat Central,25.95547,91.3602,0.49,0.91,0.75,0.6
+Assam,Jorhat,Jorhat West,26.18925,91.42429,0.36,0.43,0.42,0.59
+Assam,Jorhat,Jorhat East,26.18351,91.48061,0.37,0.44,0.45,0.64
+Assam,Nagaon,Nagaon Central,26.2339,91.73879,0.54,0.76,0.77,0.74
+Assam,Nagaon,Nagaon West,26.12776,91.65961,0.38,0.34,0.45,0.65
+Assam,Nagaon,Nagaon East,25.88355,91.61278,0.45,0.39,0.42,0.59
+Assam,Tezpur (Sonitpur),Tezpur (Sonitpur) Central,26.15207,91.79797,0.51,0.78,0.68,0.5
+Assam,Tezpur (Sonitpur),Tezpur (Sonitpur) West,26.09599,91.80595,0.46,0.29,0.5,0.63
+Assam,Tezpur (Sonitpur),Tezpur (Sonitpur) East,26.22314,91.70286,0.31,0.36,0.49,0.6
+Assam,Tinsukia,Tinsukia Central,26.18795,91.91837,0.5,0.75,0.65,0.58
+Assam,Tinsukia,Tinsukia West,26.12035,91.97635,0.3,0.45,0.39,0.51
+Assam,Tinsukia,Tinsukia East,26.16601,91.92475,0.32,0.39,0.43,0.68
+Sikkim,Gangtok,Gangtok Central,27.01067,88.84679,0.68,0.76,0.62,0.13
+Sikkim,Gangtok,Gangtok West,26.90105,88.74558,0.48,0.47,0.46,0.34
+Sikkim,Gangtok,Gangtok East,26.81068,88.76628,0.48,0.41,0.49,0.24
+Sikkim,Gyalshing,Gyalshing Central,27.31876,88.45096,0.7,0.72,0.68,0.1
+Sikkim,Gyalshing,Gyalshing West,27.49684,88.54718,0.49,0.46,0.59,0.05
+Sikkim,Gyalshing,Gyalshing East,27.26253,88.49184,0.51,0.38,0.46,0.25
+Sikkim,Namchi,Namchi Central,27.27613,88.81552,0.65,0.79,0.75,0.17
+Sikkim,Namchi,Namchi West,27.50249,88.64744,0.5,0.41,0.5,0.05
+Sikkim,Namchi,Namchi East,27.32702,88.72578,0.52,0.44,0.46,0.14
+Sikkim,Mangan,Mangan Central,27.21732,88.91128,0.62,0.84,0.58,0.18
+Sikkim,Mangan,Mangan West,27.22365,88.77904,0.57,0.48,0.43,0.26
+Sikkim,Mangan,Mangan East,27.24717,88.81228,0.49,0.41,0.48,0.21
+Arunachal Pradesh,Papum Pare (Itanagar),Papum Pare (Itanagar) Central,27.1735,93.58461,0.43,0.79,0.58,0.27
+Arunachal Pradesh,Papum Pare (Itanagar),Papum Pare (Itanagar) West,27.12653,93.63246,0.35,0.38,0.41,0.08
+Arunachal Pradesh,Papum Pare (Itanagar),Papum Pare (Itanagar) East,26.9167,93.6632,0.32,0.38,0.34,0.28
+Arunachal Pradesh,East Siang,East Siang Central,27.22038,93.80859,0.41,0.78,0.84,0.27
+Arunachal Pradesh,East Siang,East Siang West,27.24374,93.63625,0.26,0.43,0.48,0.28
+Arunachal Pradesh,East Siang,East Siang East,27.33764,93.80414,0.25,0.42,0.5,0.2
+Arunachal Pradesh,Tawang,Tawang Central,27.11907,93.22236,0.48,0.86,0.65,0.26
+Arunachal Pradesh,Tawang,Tawang West,27.10552,93.31979,0.36,0.42,0.5,0.42
+Arunachal Pradesh,Tawang,Tawang East,27.03615,93.28052,0.32,0.42,0.49,0.32
+Arunachal Pradesh,West Kameng,West Kameng Central,26.91803,93.57758,0.4,0.86,0.74,0.26
+Arunachal Pradesh,West Kameng,West Kameng West,26.80591,93.57631,0.3,0.3,0.51,0.12
+Arunachal Pradesh,West Kameng,West Kameng East,26.96596,93.68396,0.26,0.28,0.52,0.32
+Arunachal Pradesh,Changlang,Changlang Central,27.3088,93.70793,0.53,0.78,0.79,0.49
+Arunachal Pradesh,Changlang,Changlang West,27.4056,93.47793,0.38,0.35,0.42,0.24
+Arunachal Pradesh,Changlang,Changlang East,27.08449,93.61535,0.27,0.37,0.44,0.28
+Arunachal Pradesh,Lohit,Lohit Central,27.33729,93.97727,0.4,0.81,0.65,0.17
+Arunachal Pradesh,Lohit,Lohit West,27.17482,94.05783,0.18,0.35,0.45,0.35
+Arunachal Pradesh,Lohit,Lohit East,27.18954,93.86479,0.33,0.41,0.33,0.36
+Nagaland,Kohima,Kohima Central,25.67581,94.19863,0.4,0.68,0.69,0.11
+Nagaland,Kohima,Kohima West,25.66508,93.9905,0.27,0.43,0.38,0.16
+Nagaland,Kohima,Kohima East,25.63866,94.02736,0.31,0.37,0.47,0.22
+Nagaland,Dimapur,Dimapur Central,25.95767,94.46586,0.45,0.84,0.61,0.23
+Nagaland,Dimapur,Dimapur West,25.91991,94.25544,0.3,0.42,0.39,0.22
+Nagaland,Dimapur,Dimapur East,25.91268,94.4178,0.32,0.43,0.56,0.25
+Nagaland,Mokokchung,Mokokchung Central,25.56225,93.70015,0.44,0.8,0.67,0.16
+Nagaland,Mokokchung,Mokokchung West,25.77446,93.75687,0.33,0.37,0.41,0.11
+Nagaland,Mokokchung,Mokokchung East,25.78163,93.83405,0.27,0.48,0.46,0.27
+Nagaland,Wokha,Wokha Central,25.92236,94.06626,0.43,0.76,0.72,0.21
+Nagaland,Wokha,Wokha West,25.92178,93.90204,0.37,0.4,0.43,0.19
+Nagaland,Wokha,Wokha East,26.08161,94.00047,0.26,0.49,0.47,0.12
+Nagaland,Tuensang,Tuensang Central,25.6266,94.01789,0.3,0.83,0.62,0.37
+Nagaland,Tuensang,Tuensang West,25.76242,94.00455,0.24,0.38,0.46,0.19
+Nagaland,Tuensang,Tuensang East,25.73303,94.02125,0.32,0.34,0.36,0.33
+Manipur,Imphal West,Imphal West Central,25.28721,93.81378,0.44,0.82,0.72,0.36
+Manipur,Imphal West,Imphal West West,25.18038,93.67105,0.31,0.41,0.44,0.42
+Manipur,Imphal West,Imphal West East,25.12133,93.77952,0.24,0.41,0.53,0.28
+Manipur,Imphal East,Imphal East Central,24.79,93.94442,0.43,0.89,0.7,0.22
+Manipur,Imphal East,Imphal East West,24.89439,94.0331,0.31,0.35,0.47,0.43
+Manipur,Imphal East,Imphal East East,24.89708,94.15738,0.38,0.41,0.39,0.33
+Manipur,Thoubal,Thoubal Central,24.65636,94.02196,0.46,0.74,0.63,0.39
+Manipur,Thoubal,Thoubal West,24.73879,94.07735,0.33,0.42,0.42,0.33
+Manipur,Thoubal,Thoubal East,24.70221,93.9837,0.24,0.51,0.44,0.2
+Manipur,Churachandpur,Churachandpur Central,24.6209,93.65744,0.42,0.67,0.66,0.31
+Manipur,Churachandpur,Churachandpur West,24.56028,93.82895,0.26,0.38,0.45,0.44
+Manipur,Churachandpur,Churachandpur East,24.56026,93.90377,0.29,0.4,0.42,0.33
+Manipur,Ukhrul,Ukhrul Central,25.22603,93.86431,0.45,0.74,0.7,0.32
+Manipur,Ukhrul,Ukhrul West,25.17039,93.88324,0.33,0.34,0.47,0.34
+Manipur,Ukhrul,Ukhrul East,25.21641,93.87216,0.3,0.39,0.46,0.27
+Manipur,Senapati,Senapati Central,24.67253,94.09678,0.39,0.79,0.73,0.4
+Manipur,Senapati,Senapati West,24.60303,94.17526,0.25,0.38,0.37,0.46
+Manipur,Senapati,Senapati East,24.52734,94.06851,0.33,0.35,0.52,0.38
+Mizoram,Aizawl,Aizawl Central,23.64291,92.56021,0.48,0.75,0.7,0.29
+Mizoram,Aizawl,Aizawl West,23.5691,92.7123,0.44,0.41,0.48,0.17
+Mizoram,Aizawl,Aizawl East,23.78425,92.61962,0.4,0.43,0.47,0.14
+Mizoram,Lunglei,Lunglei Central,23.84887,92.93326,0.45,0.8,0.73,0.24
+Mizoram,Lunglei,Lunglei West,23.65336,92.76867,0.36,0.42,0.47,0.17
+Mizoram,Lunglei,Lunglei East,23.7308,92.95135,0.28,0.39,0.44,0.23
+Mizoram,Champhai,Champhai Central,24.027,92.77723,0.52,0.79,0.72,0.23
+Mizoram,Champhai,Champhai West,23.91606,92.76004,0.39,0.36,0.44,0.23
+Mizoram,Champhai,Champhai East,23.97103,92.76222,0.38,0.47,0.51,0.27
+Mizoram,Kolasib,Kolasib Central,24.00209,92.65296,0.52,0.86,0.7,0.17
+Mizoram,Kolasib,Kolasib West,24.09756,92.63134,0.4,0.32,0.43,0.27
+Mizoram,Kolasib,Kolasib East,24.11881,92.7506,0.35,0.28,0.45,0.13
+Mizoram,Serchhip,Serchhip Central,23.59695,92.74973,0.63,0.81,0.65,0.19
+Mizoram,Serchhip,Serchhip West,23.73925,92.57017,0.39,0.36,0.43,0.25
+Mizoram,Serchhip,Serchhip East,23.63676,92.57126,0.45,0.41,0.42,0.15
+Tripura,West Tripura (Agartala),West Tripura (Agartala) Central,23.8586,91.17725,0.49,0.8,0.73,0.4
+Tripura,West Tripura (Agartala),West Tripura (Agartala) West,23.66308,91.01266,0.39,0.41,0.45,0.33
+Tripura,West Tripura (Agartala),West Tripura (Agartala) East,23.74053,91.19534,0.5,0.37,0.53,0.37
+Tripura,South Tripura,South Tripura Central,23.80722,91.34587,0.6,0.81,0.73,0.45
+Tripura,South Tripura,South Tripura West,23.76248,91.27791,0.45,0.37,0.5,0.38
+Tripura,South Tripura,South Tripura East,23.82883,91.18912,0.41,0.32,0.39,0.4
+Tripura,North Tripura,North Tripura Central,24.15179,91.52061,0.62,0.77,0.77,0.28
+Tripura,North Tripura,North Tripura West,23.95928,91.38461,0.38,0.45,0.5,0.49
+Tripura,North Tripura,North Tripura East,24.05065,91.51638,0.44,0.41,0.5,0.36
+Tripura,Dhalai,Dhalai Central,24.24285,91.38842,0.49,0.77,0.68,0.46
+Tripura,Dhalai,Dhalai West,24.31749,91.43628,0.46,0.41,0.52,0.42
+Tripura,Dhalai,Dhalai East,24.04773,91.2073,0.32,0.39,0.45,0.31
+Meghalaya,East Khasi Hills (Shillong),East Khasi Hills (Shillong) Central,25.48525,91.97603,0.51,0.67,0.69,0.32
+Meghalaya,East Khasi Hills (Shillong),East Khasi Hills (Shillong) West,25.32448,91.99207,0.44,0.35,0.45,0.38
+Meghalaya,East Khasi Hills (Shillong),East Khasi Hills (Shillong) East,25.41674,91.98254,0.4,0.48,0.39,0.28
+Meghalaya,West Garo Hills (Tura),West Garo Hills (Tura) Central,25.54478,91.93536,0.51,0.78,0.71,0.36
+Meghalaya,West Garo Hills (Tura),West Garo Hills (Tura) West,25.59665,91.96987,0.44,0.3,0.33,0.38
+Meghalaya,West Garo Hills (Tura),West Garo Hills (Tura) East,25.56159,91.90101,0.46,0.41,0.51,0.38
+Meghalaya,West Jaintia Hills,West Jaintia Hills Central,25.61309,91.84756,0.5,0.82,0.67,0.25
+Meghalaya,West Jaintia Hills,West Jaintia Hills West,25.82306,91.96624,0.41,0.37,0.43,0.39
+Meghalaya,West Jaintia Hills,West Jaintia Hills East,25.63645,91.89757,0.49,0.4,0.46,0.42
+Meghalaya,Ri-Bhoi,Ri-Bhoi Central,25.57707,92.12111,0.49,0.8,0.84,0.21
+Meghalaya,Ri-Bhoi,Ri-Bhoi West,25.4207,92.1331,0.42,0.41,0.51,0.36
+Meghalaya,Ri-Bhoi,Ri-Bhoi East,25.5947,92.11975,0.36,0.3,0.48,0.39

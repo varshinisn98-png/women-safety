@@ -1,0 +1,2593 @@
+city,date,crime_index
+Delhi,2020-01-01,59.57
+Delhi,2020-02-01,60.06
+Delhi,2020-03-01,66.28
+Delhi,2020-04-01,39.56
+Delhi,2020-05-01,37.39
+Delhi,2020-06-01,37.12
+Delhi,2020-07-01,34.54
+Delhi,2020-08-01,59.7
+Delhi,2020-09-01,59.2
+Delhi,2020-10-01,57.32
+Delhi,2020-11-01,55.71
+Delhi,2020-12-01,57.08
+Delhi,2021-01-01,62.55
+Delhi,2021-02-01,62.68
+Delhi,2021-03-01,63.49
+Delhi,2021-04-01,48.74
+Delhi,2021-05-01,50.85
+Delhi,2021-06-01,62.93
+Delhi,2021-07-01,60.12
+Delhi,2021-08-01,59.55
+Delhi,2021-09-01,52.97
+Delhi,2021-10-01,54.9
+Delhi,2021-11-01,54.66
+Delhi,2021-12-01,55.21
+Delhi,2022-01-01,61.11
+Delhi,2022-02-01,60.81
+Delhi,2022-03-01,65.03
+Delhi,2022-04-01,65.62
+Delhi,2022-05-01,64.66
+Delhi,2022-06-01,60.21
+Delhi,2022-07-01,61.2
+Delhi,2022-08-01,53.15
+Delhi,2022-09-01,52.77
+Delhi,2022-10-01,54.44
+Delhi,2022-11-01,51.45
+Delhi,2022-12-01,53.78
+Delhi,2023-01-01,57.65
+Delhi,2023-02-01,59.88
+Delhi,2023-03-01,63.72
+Delhi,2023-04-01,59.13
+Delhi,2023-05-01,60.75
+Delhi,2023-06-01,62.11
+Delhi,2023-07-01,61.36
+Delhi,2023-08-01,53.83
+Delhi,2023-09-01,56.05
+Delhi,2023-10-01,54.5
+Delhi,2023-11-01,55.44
+Delhi,2023-12-01,59.13
+Delhi,2024-01-01,59.85
+Delhi,2024-02-01,61.73
+Delhi,2024-03-01,60.97
+Delhi,2024-04-01,61.9
+Delhi,2024-05-01,62.29
+Delhi,2024-06-01,62.71
+Delhi,2024-07-01,57.62
+Delhi,2024-08-01,54.42
+Delhi,2024-09-01,51.72
+Delhi,2024-10-01,54.51
+Delhi,2024-11-01,53.83
+Delhi,2024-12-01,50.86
+Delhi,2025-01-01,59.0
+Delhi,2025-02-01,58.9
+Delhi,2025-03-01,61.88
+Delhi,2025-04-01,61.17
+Delhi,2025-05-01,59.52
+Delhi,2025-06-01,59.99
+Delhi,2025-07-01,53.91
+Delhi,2025-08-01,58.93
+Delhi,2025-09-01,56.19
+Delhi,2025-10-01,55.4
+Delhi,2025-11-01,49.78
+Delhi,2025-12-01,56.17
+Uttar Pradesh,2020-01-01,56.59
+Uttar Pradesh,2020-02-01,55.79
+Uttar Pradesh,2020-03-01,58.24
+Uttar Pradesh,2020-04-01,32.59
+Uttar Pradesh,2020-05-01,31.86
+Uttar Pradesh,2020-06-01,33.55
+Uttar Pradesh,2020-07-01,28.72
+Uttar Pradesh,2020-08-01,52.63
+Uttar Pradesh,2020-09-01,50.38
+Uttar Pradesh,2020-10-01,46.51
+Uttar Pradesh,2020-11-01,51.76
+Uttar Pradesh,2020-12-01,50.87
+Uttar Pradesh,2021-01-01,55.5
+Uttar Pradesh,2021-02-01,59.72
+Uttar Pradesh,2021-03-01,58.54
+Uttar Pradesh,2021-04-01,46.85
+Uttar Pradesh,2021-05-01,43.25
+Uttar Pradesh,2021-06-01,57.83
+Uttar Pradesh,2021-07-01,52.79
+Uttar Pradesh,2021-08-01,52.21
+Uttar Pradesh,2021-09-01,50.96
+Uttar Pradesh,2021-10-01,50.74
+Uttar Pradesh,2021-11-01,50.93
+Uttar Pradesh,2021-12-01,50.2
+Uttar Pradesh,2022-01-01,54.74
+Uttar Pradesh,2022-02-01,60.2
+Uttar Pradesh,2022-03-01,57.28
+Uttar Pradesh,2022-04-01,60.86
+Uttar Pradesh,2022-05-01,55.59
+Uttar Pradesh,2022-06-01,57.79
+Uttar Pradesh,2022-07-01,51.28
+Uttar Pradesh,2022-08-01,50.53
+Uttar Pradesh,2022-09-01,48.72
+Uttar Pradesh,2022-10-01,49.02
+Uttar Pradesh,2022-11-01,50.21
+Uttar Pradesh,2022-12-01,53.82
+Uttar Pradesh,2023-01-01,56.91
+Uttar Pradesh,2023-02-01,58.87
+Uttar Pradesh,2023-03-01,58.59
+Uttar Pradesh,2023-04-01,58.23
+Uttar Pradesh,2023-05-01,55.31
+Uttar Pradesh,2023-06-01,58.17
+Uttar Pradesh,2023-07-01,54.52
+Uttar Pradesh,2023-08-01,49.68
+Uttar Pradesh,2023-09-01,48.93
+Uttar Pradesh,2023-10-01,48.21
+Uttar Pradesh,2023-11-01,49.65
+Uttar Pradesh,2023-12-01,48.12
+Uttar Pradesh,2024-01-01,55.05
+Uttar Pradesh,2024-02-01,54.02
+Uttar Pradesh,2024-03-01,57.46
+Uttar Pradesh,2024-04-01,60.19
+Uttar Pradesh,2024-05-01,58.32
+Uttar Pradesh,2024-06-01,57.48
+Uttar Pradesh,2024-07-01,52.94
+Uttar Pradesh,2024-08-01,50.77
+Uttar Pradesh,2024-09-01,50.36
+Uttar Pradesh,2024-10-01,49.05
+Uttar Pradesh,2024-11-01,46.3
+Uttar Pradesh,2024-12-01,49.16
+Uttar Pradesh,2025-01-01,51.52
+Uttar Pradesh,2025-02-01,55.26
+Uttar Pradesh,2025-03-01,57.81
+Uttar Pradesh,2025-04-01,57.38
+Uttar Pradesh,2025-05-01,58.3
+Uttar Pradesh,2025-06-01,60.21
+Uttar Pradesh,2025-07-01,54.29
+Uttar Pradesh,2025-08-01,52.28
+Uttar Pradesh,2025-09-01,48.87
+Uttar Pradesh,2025-10-01,47.93
+Uttar Pradesh,2025-11-01,50.59
+Uttar Pradesh,2025-12-01,51.81
+Punjab,2020-01-01,38.01
+Punjab,2020-02-01,41.05
+Punjab,2020-03-01,46.38
+Punjab,2020-04-01,22.18
+Punjab,2020-05-01,20.85
+Punjab,2020-06-01,18.16
+Punjab,2020-07-01,18.23
+Punjab,2020-08-01,38.68
+Punjab,2020-09-01,34.66
+Punjab,2020-10-01,38.01
+Punjab,2020-11-01,35.92
+Punjab,2020-12-01,38.52
+Punjab,2021-01-01,41.59
+Punjab,2021-02-01,44.84
+Punjab,2021-03-01,46.66
+Punjab,2021-04-01,33.96
+Punjab,2021-05-01,38.04
+Punjab,2021-06-01,44.92
+Punjab,2021-07-01,40.63
+Punjab,2021-08-01,40.85
+Punjab,2021-09-01,36.13
+Punjab,2021-10-01,41.95
+Punjab,2021-11-01,35.19
+Punjab,2021-12-01,38.35
+Punjab,2022-01-01,40.31
+Punjab,2022-02-01,47.38
+Punjab,2022-03-01,49.2
+Punjab,2022-04-01,44.66
+Punjab,2022-05-01,43.75
+Punjab,2022-06-01,46.34
+Punjab,2022-07-01,41.26
+Punjab,2022-08-01,40.49
+Punjab,2022-09-01,39.07
+Punjab,2022-10-01,37.68
+Punjab,2022-11-01,35.04
+Punjab,2022-12-01,41.13
+Punjab,2023-01-01,42.26
+Punjab,2023-02-01,43.88
+Punjab,2023-03-01,44.12
+Punjab,2023-04-01,48.15
+Punjab,2023-05-01,43.56
+Punjab,2023-06-01,42.45
+Punjab,2023-07-01,41.28
+Punjab,2023-08-01,38.39
+Punjab,2023-09-01,37.36
+Punjab,2023-10-01,39.56
+Punjab,2023-11-01,38.3
+Punjab,2023-12-01,45.24
+Punjab,2024-01-01,42.05
+Punjab,2024-02-01,40.56
+Punjab,2024-03-01,45.98
+Punjab,2024-04-01,47.69
+Punjab,2024-05-01,44.81
+Punjab,2024-06-01,43.42
+Punjab,2024-07-01,38.76
+Punjab,2024-08-01,38.16
+Punjab,2024-09-01,36.46
+Punjab,2024-10-01,36.4
+Punjab,2024-11-01,35.49
+Punjab,2024-12-01,39.41
+Punjab,2025-01-01,41.82
+Punjab,2025-02-01,42.93
+Punjab,2025-03-01,38.78
+Punjab,2025-04-01,46.5
+Punjab,2025-05-01,43.9
+Punjab,2025-06-01,45.59
+Punjab,2025-07-01,41.51
+Punjab,2025-08-01,34.57
+Punjab,2025-09-01,34.29
+Punjab,2025-10-01,38.51
+Punjab,2025-11-01,39.85
+Punjab,2025-12-01,39.38
+Haryana,2020-01-01,47.81
+Haryana,2020-02-01,50.85
+Haryana,2020-03-01,56.18
+Haryana,2020-04-01,31.98
+Haryana,2020-05-01,30.65
+Haryana,2020-06-01,27.96
+Haryana,2020-07-01,28.03
+Haryana,2020-08-01,48.48
+Haryana,2020-09-01,44.46
+Haryana,2020-10-01,47.81
+Haryana,2020-11-01,45.72
+Haryana,2020-12-01,48.32
+Haryana,2021-01-01,51.39
+Haryana,2021-02-01,54.64
+Haryana,2021-03-01,56.46
+Haryana,2021-04-01,43.76
+Haryana,2021-05-01,47.84
+Haryana,2021-06-01,54.72
+Haryana,2021-07-01,50.43
+Haryana,2021-08-01,50.65
+Haryana,2021-09-01,45.93
+Haryana,2021-10-01,51.75
+Haryana,2021-11-01,44.99
+Haryana,2021-12-01,48.15
+Haryana,2022-01-01,50.11
+Haryana,2022-02-01,57.18
+Haryana,2022-03-01,59.0
+Haryana,2022-04-01,54.46
+Haryana,2022-05-01,53.55
+Haryana,2022-06-01,56.14
+Haryana,2022-07-01,51.06
+Haryana,2022-08-01,50.29
+Haryana,2022-09-01,48.87
+Haryana,2022-10-01,47.48
+Haryana,2022-11-01,44.84
+Haryana,2022-12-01,50.93
+Haryana,2023-01-01,52.06
+Haryana,2023-02-01,53.68
+Haryana,2023-03-01,53.92
+Haryana,2023-04-01,57.95
+Haryana,2023-05-01,53.36
+Haryana,2023-06-01,52.25
+Haryana,2023-07-01,51.08
+Haryana,2023-08-01,48.19
+Haryana,2023-09-01,47.16
+Haryana,2023-10-01,49.36
+Haryana,2023-11-01,48.1
+Haryana,2023-12-01,55.04
+Haryana,2024-01-01,51.85
+Haryana,2024-02-01,50.36
+Haryana,2024-03-01,55.78
+Haryana,2024-04-01,57.49
+Haryana,2024-05-01,54.61
+Haryana,2024-06-01,53.22
+Haryana,2024-07-01,48.56
+Haryana,2024-08-01,47.96
+Haryana,2024-09-01,46.26
+Haryana,2024-10-01,46.2
+Haryana,2024-11-01,45.29
+Haryana,2024-12-01,49.21
+Haryana,2025-01-01,51.62
+Haryana,2025-02-01,52.73
+Haryana,2025-03-01,48.58
+Haryana,2025-04-01,56.3
+Haryana,2025-05-01,53.7
+Haryana,2025-06-01,55.39
+Haryana,2025-07-01,51.31
+Haryana,2025-08-01,44.37
+Haryana,2025-09-01,44.09
+Haryana,2025-10-01,48.31
+Haryana,2025-11-01,49.65
+Haryana,2025-12-01,49.18
+Himachal Pradesh,2020-01-01,37.89
+Himachal Pradesh,2020-02-01,36.26
+Himachal Pradesh,2020-03-01,36.21
+Himachal Pradesh,2020-04-01,14.3
+Himachal Pradesh,2020-05-01,10.92
+Himachal Pradesh,2020-06-01,13.82
+Himachal Pradesh,2020-07-01,12.2
+Himachal Pradesh,2020-08-01,31.54
+Himachal Pradesh,2020-09-01,30.7
+Himachal Pradesh,2020-10-01,26.82
+Himachal Pradesh,2020-11-01,28.32
+Himachal Pradesh,2020-12-01,32.97
+Himachal Pradesh,2021-01-01,35.38
+Himachal Pradesh,2021-02-01,36.42
+Himachal Pradesh,2021-03-01,38.25
+Himachal Pradesh,2021-04-01,26.47
+Himachal Pradesh,2021-05-01,26.7
+Himachal Pradesh,2021-06-01,34.64
+Himachal Pradesh,2021-07-01,35.21
+Himachal Pradesh,2021-08-01,29.22
+Himachal Pradesh,2021-09-01,31.38
+Himachal Pradesh,2021-10-01,29.13
+Himachal Pradesh,2021-11-01,31.42
+Himachal Pradesh,2021-12-01,30.25
+Himachal Pradesh,2022-01-01,35.6
+Himachal Pradesh,2022-02-01,35.16
+Himachal Pradesh,2022-03-01,35.45
+Himachal Pradesh,2022-04-01,39.62
+Himachal Pradesh,2022-05-01,40.39
+Himachal Pradesh,2022-06-01,37.96
+Himachal Pradesh,2022-07-01,33.17
+Himachal Pradesh,2022-08-01,28.5
+Himachal Pradesh,2022-09-01,28.82
+Himachal Pradesh,2022-10-01,30.12
+Himachal Pradesh,2022-11-01,30.74
+Himachal Pradesh,2022-12-01,30.6
+Himachal Pradesh,2023-01-01,34.79
+Himachal Pradesh,2023-02-01,36.19
+Himachal Pradesh,2023-03-01,42.46
+Himachal Pradesh,2023-04-01,36.37
+Himachal Pradesh,2023-05-01,41.43
+Himachal Pradesh,2023-06-01,36.14
+Himachal Pradesh,2023-07-01,33.56
+Himachal Pradesh,2023-08-01,29.65
+Himachal Pradesh,2023-09-01,30.07
+Himachal Pradesh,2023-10-01,29.39
+Himachal Pradesh,2023-11-01,31.65
+Himachal Pradesh,2023-12-01,33.5
+Himachal Pradesh,2024-01-01,32.96
+Himachal Pradesh,2024-02-01,38.98
+Himachal Pradesh,2024-03-01,39.25
+Himachal Pradesh,2024-04-01,40.0
+Himachal Pradesh,2024-05-01,38.37
+Himachal Pradesh,2024-06-01,37.22
+Himachal Pradesh,2024-07-01,35.69
+Himachal Pradesh,2024-08-01,32.32
+Himachal Pradesh,2024-09-01,29.34
+Himachal Pradesh,2024-10-01,25.92
+Himachal Pradesh,2024-11-01,32.5
+Himachal Pradesh,2024-12-01,33.19
+Himachal Pradesh,2025-01-01,34.67
+Himachal Pradesh,2025-02-01,35.47
+Himachal Pradesh,2025-03-01,35.34
+Himachal Pradesh,2025-04-01,37.74
+Himachal Pradesh,2025-05-01,35.09
+Himachal Pradesh,2025-06-01,37.46
+Himachal Pradesh,2025-07-01,35.57
+Himachal Pradesh,2025-08-01,35.52
+Himachal Pradesh,2025-09-01,29.53
+Himachal Pradesh,2025-10-01,28.83
+Himachal Pradesh,2025-11-01,31.32
+Himachal Pradesh,2025-12-01,33.78
+Uttarakhand,2020-01-01,40.31
+Uttarakhand,2020-02-01,38.56
+Uttarakhand,2020-03-01,44.84
+Uttarakhand,2020-04-01,22.01
+Uttarakhand,2020-05-01,16.39
+Uttarakhand,2020-06-01,16.68
+Uttarakhand,2020-07-01,12.02
+Uttarakhand,2020-08-01,35.5
+Uttarakhand,2020-09-01,39.07
+Uttarakhand,2020-10-01,36.9
+Uttarakhand,2020-11-01,39.51
+Uttarakhand,2020-12-01,38.72
+Uttarakhand,2021-01-01,40.78
+Uttarakhand,2021-02-01,41.46
+Uttarakhand,2021-03-01,42.79
+Uttarakhand,2021-04-01,33.33
+Uttarakhand,2021-05-01,32.26
+Uttarakhand,2021-06-01,41.43
+Uttarakhand,2021-07-01,36.39
+Uttarakhand,2021-08-01,38.11
+Uttarakhand,2021-09-01,36.22
+Uttarakhand,2021-10-01,39.62
+Uttarakhand,2021-11-01,32.45
+Uttarakhand,2021-12-01,35.95
+Uttarakhand,2022-01-01,39.27
+Uttarakhand,2022-02-01,41.16
+Uttarakhand,2022-03-01,45.63
+Uttarakhand,2022-04-01,46.01
+Uttarakhand,2022-05-01,46.52
+Uttarakhand,2022-06-01,45.45
+Uttarakhand,2022-07-01,39.72
+Uttarakhand,2022-08-01,39.97
+Uttarakhand,2022-09-01,37.79
+Uttarakhand,2022-10-01,34.24
+Uttarakhand,2022-11-01,37.2
+Uttarakhand,2022-12-01,37.56
+Uttarakhand,2023-01-01,42.23
+Uttarakhand,2023-02-01,42.6
+Uttarakhand,2023-03-01,46.86
+Uttarakhand,2023-04-01,43.83
+Uttarakhand,2023-05-01,43.84
+Uttarakhand,2023-06-01,42.69
+Uttarakhand,2023-07-01,42.53
+Uttarakhand,2023-08-01,40.94
+Uttarakhand,2023-09-01,39.52
+Uttarakhand,2023-10-01,37.48
+Uttarakhand,2023-11-01,34.85
+Uttarakhand,2023-12-01,39.16
+Uttarakhand,2024-01-01,42.06
+Uttarakhand,2024-02-01,43.05
+Uttarakhand,2024-03-01,43.07
+Uttarakhand,2024-04-01,46.39
+Uttarakhand,2024-05-01,44.96
+Uttarakhand,2024-06-01,44.15
+Uttarakhand,2024-07-01,42.89
+Uttarakhand,2024-08-01,40.99
+Uttarakhand,2024-09-01,39.61
+Uttarakhand,2024-10-01,38.91
+Uttarakhand,2024-11-01,35.49
+Uttarakhand,2024-12-01,41.66
+Uttarakhand,2025-01-01,42.99
+Uttarakhand,2025-02-01,43.7
+Uttarakhand,2025-03-01,45.79
+Uttarakhand,2025-04-01,47.32
+Uttarakhand,2025-05-01,47.62
+Uttarakhand,2025-06-01,44.94
+Uttarakhand,2025-07-01,41.78
+Uttarakhand,2025-08-01,41.38
+Uttarakhand,2025-09-01,37.22
+Uttarakhand,2025-10-01,35.92
+Uttarakhand,2025-11-01,37.27
+Uttarakhand,2025-12-01,40.94
+Jammu and Kashmir,2020-01-01,46.59
+Jammu and Kashmir,2020-02-01,49.91
+Jammu and Kashmir,2020-03-01,50.62
+Jammu and Kashmir,2020-04-01,22.14
+Jammu and Kashmir,2020-05-01,24.08
+Jammu and Kashmir,2020-06-01,21.44
+Jammu and Kashmir,2020-07-01,21.29
+Jammu and Kashmir,2020-08-01,41.8
+Jammu and Kashmir,2020-09-01,39.54
+Jammu and Kashmir,2020-10-01,41.26
+Jammu and Kashmir,2020-11-01,40.13
+Jammu and Kashmir,2020-12-01,43.83
+Jammu and Kashmir,2021-01-01,46.05
+Jammu and Kashmir,2021-02-01,48.74
+Jammu and Kashmir,2021-03-01,50.27
+Jammu and Kashmir,2021-04-01,38.79
+Jammu and Kashmir,2021-05-01,40.89
+Jammu and Kashmir,2021-06-01,49.6
+Jammu and Kashmir,2021-07-01,45.72
+Jammu and Kashmir,2021-08-01,42.67
+Jammu and Kashmir,2021-09-01,43.26
+Jammu and Kashmir,2021-10-01,41.37
+Jammu and Kashmir,2021-11-01,41.9
+Jammu and Kashmir,2021-12-01,42.66
+Jammu and Kashmir,2022-01-01,48.02
+Jammu and Kashmir,2022-02-01,48.97
+Jammu and Kashmir,2022-03-01,47.35
+Jammu and Kashmir,2022-04-01,53.1
+Jammu and Kashmir,2022-05-01,47.91
+Jammu and Kashmir,2022-06-01,48.53
+Jammu and Kashmir,2022-07-01,44.11
+Jammu and Kashmir,2022-08-01,43.04
+Jammu and Kashmir,2022-09-01,43.49
+Jammu and Kashmir,2022-10-01,40.55
+Jammu and Kashmir,2022-11-01,39.7
+Jammu and Kashmir,2022-12-01,46.15
+Jammu and Kashmir,2023-01-01,44.83
+Jammu and Kashmir,2023-02-01,48.82
+Jammu and Kashmir,2023-03-01,51.37
+Jammu and Kashmir,2023-04-01,45.43
+Jammu and Kashmir,2023-05-01,51.84
+Jammu and Kashmir,2023-06-01,50.64
+Jammu and Kashmir,2023-07-01,43.5
+Jammu and Kashmir,2023-08-01,43.9
+Jammu and Kashmir,2023-09-01,41.95
+Jammu and Kashmir,2023-10-01,36.69
+Jammu and Kashmir,2023-11-01,39.95
+Jammu and Kashmir,2023-12-01,43.96
+Jammu and Kashmir,2024-01-01,45.62
+Jammu and Kashmir,2024-02-01,53.12
+Jammu and Kashmir,2024-03-01,51.49
+Jammu and Kashmir,2024-04-01,49.99
+Jammu and Kashmir,2024-05-01,52.21
+Jammu and Kashmir,2024-06-01,49.83
+Jammu and Kashmir,2024-07-01,47.66
+Jammu and Kashmir,2024-08-01,46.5
+Jammu and Kashmir,2024-09-01,39.67
+Jammu and Kashmir,2024-10-01,39.22
+Jammu and Kashmir,2024-11-01,42.03
+Jammu and Kashmir,2024-12-01,42.19
+Jammu and Kashmir,2025-01-01,48.73
+Jammu and Kashmir,2025-02-01,47.45
+Jammu and Kashmir,2025-03-01,51.89
+Jammu and Kashmir,2025-04-01,47.86
+Jammu and Kashmir,2025-05-01,50.27
+Jammu and Kashmir,2025-06-01,50.04
+Jammu and Kashmir,2025-07-01,44.7
+Jammu and Kashmir,2025-08-01,45.86
+Jammu and Kashmir,2025-09-01,38.57
+Jammu and Kashmir,2025-10-01,38.28
+Jammu and Kashmir,2025-11-01,44.72
+Jammu and Kashmir,2025-12-01,42.21
+Ladakh,2020-01-01,25.84
+Ladakh,2020-02-01,28.6
+Ladakh,2020-03-01,29.48
+Ladakh,2020-04-01,7.73
+Ladakh,2020-05-01,5.0
+Ladakh,2020-06-01,5.0
+Ladakh,2020-07-01,5.0
+Ladakh,2020-08-01,22.11
+Ladakh,2020-09-01,18.93
+Ladakh,2020-10-01,20.82
+Ladakh,2020-11-01,24.18
+Ladakh,2020-12-01,21.26
+Ladakh,2021-01-01,26.46
+Ladakh,2021-02-01,27.38
+Ladakh,2021-03-01,31.6
+Ladakh,2021-04-01,19.74
+Ladakh,2021-05-01,19.17
+Ladakh,2021-06-01,25.6
+Ladakh,2021-07-01,22.99
+Ladakh,2021-08-01,22.36
+Ladakh,2021-09-01,22.74
+Ladakh,2021-10-01,20.25
+Ladakh,2021-11-01,18.62
+Ladakh,2021-12-01,23.68
+Ladakh,2022-01-01,27.36
+Ladakh,2022-02-01,27.16
+Ladakh,2022-03-01,27.69
+Ladakh,2022-04-01,27.88
+Ladakh,2022-05-01,30.73
+Ladakh,2022-06-01,27.37
+Ladakh,2022-07-01,23.37
+Ladakh,2022-08-01,25.62
+Ladakh,2022-09-01,21.84
+Ladakh,2022-10-01,22.89
+Ladakh,2022-11-01,19.06
+Ladakh,2022-12-01,27.14
+Ladakh,2023-01-01,25.27
+Ladakh,2023-02-01,28.19
+Ladakh,2023-03-01,24.67
+Ladakh,2023-04-01,28.67
+Ladakh,2023-05-01,25.22
+Ladakh,2023-06-01,30.75
+Ladakh,2023-07-01,24.53
+Ladakh,2023-08-01,22.62
+Ladakh,2023-09-01,22.86
+Ladakh,2023-10-01,20.62
+Ladakh,2023-11-01,19.08
+Ladakh,2023-12-01,21.01
+Ladakh,2024-01-01,21.36
+Ladakh,2024-02-01,25.68
+Ladakh,2024-03-01,30.16
+Ladakh,2024-04-01,29.51
+Ladakh,2024-05-01,29.94
+Ladakh,2024-06-01,25.14
+Ladakh,2024-07-01,24.35
+Ladakh,2024-08-01,18.93
+Ladakh,2024-09-01,17.45
+Ladakh,2024-10-01,21.49
+Ladakh,2024-11-01,20.2
+Ladakh,2024-12-01,18.36
+Ladakh,2025-01-01,24.66
+Ladakh,2025-02-01,27.01
+Ladakh,2025-03-01,29.46
+Ladakh,2025-04-01,31.95
+Ladakh,2025-05-01,30.15
+Ladakh,2025-06-01,23.31
+Ladakh,2025-07-01,26.79
+Ladakh,2025-08-01,19.14
+Ladakh,2025-09-01,20.19
+Ladakh,2025-10-01,16.23
+Ladakh,2025-11-01,18.92
+Ladakh,2025-12-01,22.31
+Chandigarh,2020-01-01,33.81
+Chandigarh,2020-02-01,36.85
+Chandigarh,2020-03-01,42.18
+Chandigarh,2020-04-01,17.98
+Chandigarh,2020-05-01,16.65
+Chandigarh,2020-06-01,13.96
+Chandigarh,2020-07-01,14.03
+Chandigarh,2020-08-01,34.48
+Chandigarh,2020-09-01,30.46
+Chandigarh,2020-10-01,33.81
+Chandigarh,2020-11-01,31.72
+Chandigarh,2020-12-01,34.32
+Chandigarh,2021-01-01,37.39
+Chandigarh,2021-02-01,40.64
+Chandigarh,2021-03-01,42.46
+Chandigarh,2021-04-01,29.76
+Chandigarh,2021-05-01,33.84
+Chandigarh,2021-06-01,40.72
+Chandigarh,2021-07-01,36.43
+Chandigarh,2021-08-01,36.65
+Chandigarh,2021-09-01,31.93
+Chandigarh,2021-10-01,37.75
+Chandigarh,2021-11-01,30.99
+Chandigarh,2021-12-01,34.15
+Chandigarh,2022-01-01,36.11
+Chandigarh,2022-02-01,43.18
+Chandigarh,2022-03-01,45.0
+Chandigarh,2022-04-01,40.46
+Chandigarh,2022-05-01,39.55
+Chandigarh,2022-06-01,42.14
+Chandigarh,2022-07-01,37.06
+Chandigarh,2022-08-01,36.29
+Chandigarh,2022-09-01,34.87
+Chandigarh,2022-10-01,33.48
+Chandigarh,2022-11-01,30.84
+Chandigarh,2022-12-01,36.93
+Chandigarh,2023-01-01,38.06
+Chandigarh,2023-02-01,39.68
+Chandigarh,2023-03-01,39.92
+Chandigarh,2023-04-01,43.95
+Chandigarh,2023-05-01,39.36
+Chandigarh,2023-06-01,38.25
+Chandigarh,2023-07-01,37.08
+Chandigarh,2023-08-01,34.19
+Chandigarh,2023-09-01,33.16
+Chandigarh,2023-10-01,35.36
+Chandigarh,2023-11-01,34.1
+Chandigarh,2023-12-01,41.04
+Chandigarh,2024-01-01,37.85
+Chandigarh,2024-02-01,36.36
+Chandigarh,2024-03-01,41.78
+Chandigarh,2024-04-01,43.49
+Chandigarh,2024-05-01,40.61
+Chandigarh,2024-06-01,39.22
+Chandigarh,2024-07-01,34.56
+Chandigarh,2024-08-01,33.96
+Chandigarh,2024-09-01,32.26
+Chandigarh,2024-10-01,32.2
+Chandigarh,2024-11-01,31.29
+Chandigarh,2024-12-01,35.21
+Chandigarh,2025-01-01,37.62
+Chandigarh,2025-02-01,38.73
+Chandigarh,2025-03-01,34.58
+Chandigarh,2025-04-01,42.3
+Chandigarh,2025-05-01,39.7
+Chandigarh,2025-06-01,41.39
+Chandigarh,2025-07-01,37.31
+Chandigarh,2025-08-01,30.37
+Chandigarh,2025-09-01,30.09
+Chandigarh,2025-10-01,34.31
+Chandigarh,2025-11-01,35.65
+Chandigarh,2025-12-01,35.18
+Maharashtra,2020-01-01,50.16
+Maharashtra,2020-02-01,52.17
+Maharashtra,2020-03-01,53.19
+Maharashtra,2020-04-01,28.28
+Maharashtra,2020-05-01,26.67
+Maharashtra,2020-06-01,27.58
+Maharashtra,2020-07-01,22.5
+Maharashtra,2020-08-01,46.58
+Maharashtra,2020-09-01,43.07
+Maharashtra,2020-10-01,43.93
+Maharashtra,2020-11-01,45.79
+Maharashtra,2020-12-01,42.95
+Maharashtra,2021-01-01,48.5
+Maharashtra,2021-02-01,50.51
+Maharashtra,2021-03-01,52.85
+Maharashtra,2021-04-01,39.03
+Maharashtra,2021-05-01,41.02
+Maharashtra,2021-06-01,54.02
+Maharashtra,2021-07-01,49.4
+Maharashtra,2021-08-01,45.39
+Maharashtra,2021-09-01,42.76
+Maharashtra,2021-10-01,40.76
+Maharashtra,2021-11-01,43.23
+Maharashtra,2021-12-01,42.5
+Maharashtra,2022-01-01,48.77
+Maharashtra,2022-02-01,55.49
+Maharashtra,2022-03-01,50.32
+Maharashtra,2022-04-01,51.7
+Maharashtra,2022-05-01,56.81
+Maharashtra,2022-06-01,52.46
+Maharashtra,2022-07-01,49.19
+Maharashtra,2022-08-01,45.85
+Maharashtra,2022-09-01,43.44
+Maharashtra,2022-10-01,43.61
+Maharashtra,2022-11-01,47.73
+Maharashtra,2022-12-01,46.2
+Maharashtra,2023-01-01,47.29
+Maharashtra,2023-02-01,53.04
+Maharashtra,2023-03-01,54.94
+Maharashtra,2023-04-01,50.93
+Maharashtra,2023-05-01,49.7
+Maharashtra,2023-06-01,52.98
+Maharashtra,2023-07-01,49.42
+Maharashtra,2023-08-01,44.69
+Maharashtra,2023-09-01,43.43
+Maharashtra,2023-10-01,45.04
+Maharashtra,2023-11-01,44.18
+Maharashtra,2023-12-01,49.75
+Maharashtra,2024-01-01,47.79
+Maharashtra,2024-02-01,50.39
+Maharashtra,2024-03-01,54.8
+Maharashtra,2024-04-01,56.31
+Maharashtra,2024-05-01,52.68
+Maharashtra,2024-06-01,54.2
+Maharashtra,2024-07-01,50.1
+Maharashtra,2024-08-01,49.01
+Maharashtra,2024-09-01,43.02
+Maharashtra,2024-10-01,45.4
+Maharashtra,2024-11-01,45.84
+Maharashtra,2024-12-01,48.11
+Maharashtra,2025-01-01,49.73
+Maharashtra,2025-02-01,50.84
+Maharashtra,2025-03-01,53.08
+Maharashtra,2025-04-01,55.89
+Maharashtra,2025-05-01,53.14
+Maharashtra,2025-06-01,52.56
+Maharashtra,2025-07-01,47.78
+Maharashtra,2025-08-01,47.02
+Maharashtra,2025-09-01,50.32
+Maharashtra,2025-10-01,46.51
+Maharashtra,2025-11-01,46.97
+Maharashtra,2025-12-01,48.79
+Gujarat,2020-01-01,36.94
+Gujarat,2020-02-01,40.48
+Gujarat,2020-03-01,40.45
+Gujarat,2020-04-01,20.89
+Gujarat,2020-05-01,19.59
+Gujarat,2020-06-01,15.29
+Gujarat,2020-07-01,12.17
+Gujarat,2020-08-01,36.43
+Gujarat,2020-09-01,37.85
+Gujarat,2020-10-01,34.98
+Gujarat,2020-11-01,33.19
+Gujarat,2020-12-01,34.91
+Gujarat,2021-01-01,39.01
+Gujarat,2021-02-01,39.58
+Gujarat,2021-03-01,38.22
+Gujarat,2021-04-01,34.11
+Gujarat,2021-05-01,32.17
+Gujarat,2021-06-01,41.72
+Gujarat,2021-07-01,35.01
+Gujarat,2021-08-01,35.96
+Gujarat,2021-09-01,34.65
+Gujarat,2021-10-01,37.84
+Gujarat,2021-11-01,29.8
+Gujarat,2021-12-01,38.58
+Gujarat,2022-01-01,35.82
+Gujarat,2022-02-01,40.94
+Gujarat,2022-03-01,35.88
+Gujarat,2022-04-01,43.38
+Gujarat,2022-05-01,41.54
+Gujarat,2022-06-01,39.18
+Gujarat,2022-07-01,36.07
+Gujarat,2022-08-01,34.4
+Gujarat,2022-09-01,31.03
+Gujarat,2022-10-01,34.12
+Gujarat,2022-11-01,35.08
+Gujarat,2022-12-01,37.86
+Gujarat,2023-01-01,41.36
+Gujarat,2023-02-01,43.58
+Gujarat,2023-03-01,42.2
+Gujarat,2023-04-01,43.38
+Gujarat,2023-05-01,47.67
+Gujarat,2023-06-01,37.49
+Gujarat,2023-07-01,39.07
+Gujarat,2023-08-01,35.31
+Gujarat,2023-09-01,35.28
+Gujarat,2023-10-01,31.59
+Gujarat,2023-11-01,33.05
+Gujarat,2023-12-01,34.76
+Gujarat,2024-01-01,39.25
+Gujarat,2024-02-01,40.8
+Gujarat,2024-03-01,40.36
+Gujarat,2024-04-01,38.75
+Gujarat,2024-05-01,45.07
+Gujarat,2024-06-01,38.91
+Gujarat,2024-07-01,37.66
+Gujarat,2024-08-01,34.21
+Gujarat,2024-09-01,34.19
+Gujarat,2024-10-01,30.53
+Gujarat,2024-11-01,34.15
+Gujarat,2024-12-01,37.09
+Gujarat,2025-01-01,37.21
+Gujarat,2025-02-01,42.51
+Gujarat,2025-03-01,38.83
+Gujarat,2025-04-01,40.88
+Gujarat,2025-05-01,42.33
+Gujarat,2025-06-01,40.83
+Gujarat,2025-07-01,38.32
+Gujarat,2025-08-01,36.46
+Gujarat,2025-09-01,35.51
+Gujarat,2025-10-01,33.91
+Gujarat,2025-11-01,34.21
+Gujarat,2025-12-01,36.63
+Rajasthan,2020-01-01,56.91
+Rajasthan,2020-02-01,57.26
+Rajasthan,2020-03-01,63.31
+Rajasthan,2020-04-01,35.99
+Rajasthan,2020-05-01,36.85
+Rajasthan,2020-06-01,36.47
+Rajasthan,2020-07-01,32.31
+Rajasthan,2020-08-01,56.61
+Rajasthan,2020-09-01,51.7
+Rajasthan,2020-10-01,47.82
+Rajasthan,2020-11-01,51.14
+Rajasthan,2020-12-01,54.18
+Rajasthan,2021-01-01,55.05
+Rajasthan,2021-02-01,62.06
+Rajasthan,2021-03-01,62.04
+Rajasthan,2021-04-01,46.92
+Rajasthan,2021-05-01,48.41
+Rajasthan,2021-06-01,60.75
+Rajasthan,2021-07-01,58.59
+Rajasthan,2021-08-01,53.47
+Rajasthan,2021-09-01,50.28
+Rajasthan,2021-10-01,53.91
+Rajasthan,2021-11-01,53.4
+Rajasthan,2021-12-01,52.47
+Rajasthan,2022-01-01,58.36
+Rajasthan,2022-02-01,55.49
+Rajasthan,2022-03-01,59.01
+Rajasthan,2022-04-01,62.58
+Rajasthan,2022-05-01,60.61
+Rajasthan,2022-06-01,59.85
+Rajasthan,2022-07-01,56.61
+Rajasthan,2022-08-01,56.68
+Rajasthan,2022-09-01,54.42
+Rajasthan,2022-10-01,52.65
+Rajasthan,2022-11-01,51.61
+Rajasthan,2022-12-01,52.04
+Rajasthan,2023-01-01,57.19
+Rajasthan,2023-02-01,58.72
+Rajasthan,2023-03-01,62.29
+Rajasthan,2023-04-01,60.22
+Rajasthan,2023-05-01,57.41
+Rajasthan,2023-06-01,60.47
+Rajasthan,2023-07-01,59.36
+Rajasthan,2023-08-01,54.99
+Rajasthan,2023-09-01,51.38
+Rajasthan,2023-10-01,50.13
+Rajasthan,2023-11-01,50.76
+Rajasthan,2023-12-01,51.83
+Rajasthan,2024-01-01,51.81
+Rajasthan,2024-02-01,55.76
+Rajasthan,2024-03-01,55.2
+Rajasthan,2024-04-01,59.01
+Rajasthan,2024-05-01,59.86
+Rajasthan,2024-06-01,62.75
+Rajasthan,2024-07-01,54.79
+Rajasthan,2024-08-01,51.23
+Rajasthan,2024-09-01,52.25
+Rajasthan,2024-10-01,49.86
+Rajasthan,2024-11-01,50.71
+Rajasthan,2024-12-01,53.88
+Rajasthan,2025-01-01,55.01
+Rajasthan,2025-02-01,56.8
+Rajasthan,2025-03-01,59.74
+Rajasthan,2025-04-01,60.65
+Rajasthan,2025-05-01,59.76
+Rajasthan,2025-06-01,60.32
+Rajasthan,2025-07-01,56.12
+Rajasthan,2025-08-01,49.97
+Rajasthan,2025-09-01,50.16
+Rajasthan,2025-10-01,49.76
+Rajasthan,2025-11-01,52.58
+Rajasthan,2025-12-01,55.54
+Madhya Pradesh,2020-01-01,51.64
+Madhya Pradesh,2020-02-01,55.18
+Madhya Pradesh,2020-03-01,55.15
+Madhya Pradesh,2020-04-01,35.59
+Madhya Pradesh,2020-05-01,34.29
+Madhya Pradesh,2020-06-01,29.99
+Madhya Pradesh,2020-07-01,26.87
+Madhya Pradesh,2020-08-01,51.13
+Madhya Pradesh,2020-09-01,52.55
+Madhya Pradesh,2020-10-01,49.68
+Madhya Pradesh,2020-11-01,47.89
+Madhya Pradesh,2020-12-01,49.61
+Madhya Pradesh,2021-01-01,53.71
+Madhya Pradesh,2021-02-01,54.28
+Madhya Pradesh,2021-03-01,52.92
+Madhya Pradesh,2021-04-01,48.81
+Madhya Pradesh,2021-05-01,46.87
+Madhya Pradesh,2021-06-01,56.42
+Madhya Pradesh,2021-07-01,49.71
+Madhya Pradesh,2021-08-01,50.66
+Madhya Pradesh,2021-09-01,49.35
+Madhya Pradesh,2021-10-01,52.54
+Madhya Pradesh,2021-11-01,44.5
+Madhya Pradesh,2021-12-01,53.28
+Madhya Pradesh,2022-01-01,50.52
+Madhya Pradesh,2022-02-01,55.64
+Madhya Pradesh,2022-03-01,50.58
+Madhya Pradesh,2022-04-01,58.08
+Madhya Pradesh,2022-05-01,56.24
+Madhya Pradesh,2022-06-01,53.88
+Madhya Pradesh,2022-07-01,50.77
+Madhya Pradesh,2022-08-01,49.1
+Madhya Pradesh,2022-09-01,45.73
+Madhya Pradesh,2022-10-01,48.82
+Madhya Pradesh,2022-11-01,49.78
+Madhya Pradesh,2022-12-01,52.56
+Madhya Pradesh,2023-01-01,56.06
+Madhya Pradesh,2023-02-01,58.28
+Madhya Pradesh,2023-03-01,56.9
+Madhya Pradesh,2023-04-01,58.08
+Madhya Pradesh,2023-05-01,62.37
+Madhya Pradesh,2023-06-01,52.19
+Madhya Pradesh,2023-07-01,53.77
+Madhya Pradesh,2023-08-01,50.01
+Madhya Pradesh,2023-09-01,49.98
+Madhya Pradesh,2023-10-01,46.29
+Madhya Pradesh,2023-11-01,47.75
+Madhya Pradesh,2023-12-01,49.46
+Madhya Pradesh,2024-01-01,53.95
+Madhya Pradesh,2024-02-01,55.5
+Madhya Pradesh,2024-03-01,55.06
+Madhya Pradesh,2024-04-01,53.45
+Madhya Pradesh,2024-05-01,59.77
+Madhya Pradesh,2024-06-01,53.61
+Madhya Pradesh,2024-07-01,52.36
+Madhya Pradesh,2024-08-01,48.91
+Madhya Pradesh,2024-09-01,48.89
+Madhya Pradesh,2024-10-01,45.23
+Madhya Pradesh,2024-11-01,48.85
+Madhya Pradesh,2024-12-01,51.79
+Madhya Pradesh,2025-01-01,51.91
+Madhya Pradesh,2025-02-01,57.21
+Madhya Pradesh,2025-03-01,53.53
+Madhya Pradesh,2025-04-01,55.58
+Madhya Pradesh,2025-05-01,57.03
+Madhya Pradesh,2025-06-01,55.53
+Madhya Pradesh,2025-07-01,53.02
+Madhya Pradesh,2025-08-01,51.16
+Madhya Pradesh,2025-09-01,50.21
+Madhya Pradesh,2025-10-01,48.61
+Madhya Pradesh,2025-11-01,48.91
+Madhya Pradesh,2025-12-01,51.33
+Chhattisgarh,2020-01-01,44.24
+Chhattisgarh,2020-02-01,47.42
+Chhattisgarh,2020-03-01,47.5
+Chhattisgarh,2020-04-01,24.34
+Chhattisgarh,2020-05-01,25.81
+Chhattisgarh,2020-06-01,25.37
+Chhattisgarh,2020-07-01,20.19
+Chhattisgarh,2020-08-01,44.1
+Chhattisgarh,2020-09-01,42.54
+Chhattisgarh,2020-10-01,39.05
+Chhattisgarh,2020-11-01,44.19
+Chhattisgarh,2020-12-01,44.82
+Chhattisgarh,2021-01-01,46.82
+Chhattisgarh,2021-02-01,48.26
+Chhattisgarh,2021-03-01,49.78
+Chhattisgarh,2021-04-01,39.74
+Chhattisgarh,2021-05-01,40.19
+Chhattisgarh,2021-06-01,43.88
+Chhattisgarh,2021-07-01,48.3
+Chhattisgarh,2021-08-01,43.99
+Chhattisgarh,2021-09-01,43.02
+Chhattisgarh,2021-10-01,41.62
+Chhattisgarh,2021-11-01,38.57
+Chhattisgarh,2021-12-01,41.7
+Chhattisgarh,2022-01-01,42.76
+Chhattisgarh,2022-02-01,51.81
+Chhattisgarh,2022-03-01,47.61
+Chhattisgarh,2022-04-01,48.77
+Chhattisgarh,2022-05-01,49.55
+Chhattisgarh,2022-06-01,49.19
+Chhattisgarh,2022-07-01,45.81
+Chhattisgarh,2022-08-01,41.04
+Chhattisgarh,2022-09-01,41.28
+Chhattisgarh,2022-10-01,39.8
+Chhattisgarh,2022-11-01,45.02
+Chhattisgarh,2022-12-01,44.79
+Chhattisgarh,2023-01-01,43.17
+Chhattisgarh,2023-02-01,47.88
+Chhattisgarh,2023-03-01,52.73
+Chhattisgarh,2023-04-01,47.54
+Chhattisgarh,2023-05-01,50.25
+Chhattisgarh,2023-06-01,47.41
+Chhattisgarh,2023-07-01,46.31
+Chhattisgarh,2023-08-01,43.74
+Chhattisgarh,2023-09-01,38.96
+Chhattisgarh,2023-10-01,36.94
+Chhattisgarh,2023-11-01,42.05
+Chhattisgarh,2023-12-01,44.07
+Chhattisgarh,2024-01-01,46.8
+Chhattisgarh,2024-02-01,46.36
+Chhattisgarh,2024-03-01,46.8
+Chhattisgarh,2024-04-01,51.24
+Chhattisgarh,2024-05-01,51.24
+Chhattisgarh,2024-06-01,47.44
+Chhattisgarh,2024-07-01,44.11
+Chhattisgarh,2024-08-01,42.97
+Chhattisgarh,2024-09-01,38.09
+Chhattisgarh,2024-10-01,38.46
+Chhattisgarh,2024-11-01,41.94
+Chhattisgarh,2024-12-01,40.78
+Chhattisgarh,2025-01-01,44.73
+Chhattisgarh,2025-02-01,48.52
+Chhattisgarh,2025-03-01,46.32
+Chhattisgarh,2025-04-01,47.49
+Chhattisgarh,2025-05-01,50.56
+Chhattisgarh,2025-06-01,46.71
+Chhattisgarh,2025-07-01,44.13
+Chhattisgarh,2025-08-01,41.63
+Chhattisgarh,2025-09-01,40.31
+Chhattisgarh,2025-10-01,39.47
+Chhattisgarh,2025-11-01,38.81
+Chhattisgarh,2025-12-01,43.76
+Goa,2020-01-01,37.51
+Goa,2020-02-01,39.16
+Goa,2020-03-01,40.03
+Goa,2020-04-01,16.27
+Goa,2020-05-01,16.14
+Goa,2020-06-01,12.76
+Goa,2020-07-01,7.59
+Goa,2020-08-01,32.77
+Goa,2020-09-01,29.74
+Goa,2020-10-01,32.14
+Goa,2020-11-01,34.25
+Goa,2020-12-01,32.9
+Goa,2021-01-01,35.19
+Goa,2021-02-01,37.82
+Goa,2021-03-01,37.82
+Goa,2021-04-01,26.93
+Goa,2021-05-01,29.48
+Goa,2021-06-01,39.5
+Goa,2021-07-01,35.21
+Goa,2021-08-01,30.28
+Goa,2021-09-01,28.85
+Goa,2021-10-01,27.23
+Goa,2021-11-01,30.71
+Goa,2021-12-01,31.72
+Goa,2022-01-01,36.57
+Goa,2022-02-01,39.23
+Goa,2022-03-01,38.03
+Goa,2022-04-01,41.22
+Goa,2022-05-01,42.6
+Goa,2022-06-01,38.36
+Goa,2022-07-01,35.41
+Goa,2022-08-01,31.33
+Goa,2022-09-01,27.4
+Goa,2022-10-01,30.91
+Goa,2022-11-01,32.62
+Goa,2022-12-01,34.33
+Goa,2023-01-01,31.6
+Goa,2023-02-01,37.21
+Goa,2023-03-01,39.01
+Goa,2023-04-01,42.57
+Goa,2023-05-01,36.21
+Goa,2023-06-01,40.02
+Goa,2023-07-01,32.95
+Goa,2023-08-01,30.91
+Goa,2023-09-01,32.11
+Goa,2023-10-01,28.99
+Goa,2023-11-01,32.9
+Goa,2023-12-01,30.76
+Goa,2024-01-01,31.89
+Goa,2024-02-01,36.58
+Goa,2024-03-01,41.7
+Goa,2024-04-01,42.92
+Goa,2024-05-01,40.51
+Goa,2024-06-01,37.13
+Goa,2024-07-01,36.93
+Goa,2024-08-01,31.71
+Goa,2024-09-01,31.96
+Goa,2024-10-01,32.72
+Goa,2024-11-01,29.5
+Goa,2024-12-01,31.5
+Goa,2025-01-01,32.81
+Goa,2025-02-01,37.86
+Goa,2025-03-01,38.51
+Goa,2025-04-01,39.32
+Goa,2025-05-01,40.39
+Goa,2025-06-01,37.67
+Goa,2025-07-01,31.62
+Goa,2025-08-01,34.14
+Goa,2025-09-01,28.65
+Goa,2025-10-01,30.5
+Goa,2025-11-01,31.06
+Goa,2025-12-01,32.45
+Dadra and Nagar Haveli and Daman and Diu,2020-01-01,31.37
+Dadra and Nagar Haveli and Daman and Diu,2020-02-01,31.67
+Dadra and Nagar Haveli and Daman and Diu,2020-03-01,36.89
+Dadra and Nagar Haveli and Daman and Diu,2020-04-01,12.15
+Dadra and Nagar Haveli and Daman and Diu,2020-05-01,12.22
+Dadra and Nagar Haveli and Daman and Diu,2020-06-01,6.94
+Dadra and Nagar Haveli and Daman and Diu,2020-07-01,6.77
+Dadra and Nagar Haveli and Daman and Diu,2020-08-01,30.33
+Dadra and Nagar Haveli and Daman and Diu,2020-09-01,29.19
+Dadra and Nagar Haveli and Daman and Diu,2020-10-01,29.84
+Dadra and Nagar Haveli and Daman and Diu,2020-11-01,28.74
+Dadra and Nagar Haveli and Daman and Diu,2020-12-01,30.47
+Dadra and Nagar Haveli and Daman and Diu,2021-01-01,34.92
+Dadra and Nagar Haveli and Daman and Diu,2021-02-01,31.59
+Dadra and Nagar Haveli and Daman and Diu,2021-03-01,41.65
+Dadra and Nagar Haveli and Daman and Diu,2021-04-01,25.9
+Dadra and Nagar Haveli and Daman and Diu,2021-05-01,28.91
+Dadra and Nagar Haveli and Daman and Diu,2021-06-01,35.74
+Dadra and Nagar Haveli and Daman and Diu,2021-07-01,32.72
+Dadra and Nagar Haveli and Daman and Diu,2021-08-01,32.11
+Dadra and Nagar Haveli and Daman and Diu,2021-09-01,27.36
+Dadra and Nagar Haveli and Daman and Diu,2021-10-01,27.15
+Dadra and Nagar Haveli and Daman and Diu,2021-11-01,28.96
+Dadra and Nagar Haveli and Daman and Diu,2021-12-01,29.06
+Dadra and Nagar Haveli and Daman and Diu,2022-01-01,32.87
+Dadra and Nagar Haveli and Daman and Diu,2022-02-01,36.6
+Dadra and Nagar Haveli and Daman and Diu,2022-03-01,36.64
+Dadra and Nagar Haveli and Daman and Diu,2022-04-01,39.5
+Dadra and Nagar Haveli and Daman and Diu,2022-05-01,34.27
+Dadra and Nagar Haveli and Daman and Diu,2022-06-01,35.05
+Dadra and Nagar Haveli and Daman and Diu,2022-07-01,32.12
+Dadra and Nagar Haveli and Daman and Diu,2022-08-01,30.95
+Dadra and Nagar Haveli and Daman and Diu,2022-09-01,30.79
+Dadra and Nagar Haveli and Daman and Diu,2022-10-01,28.16
+Dadra and Nagar Haveli and Daman and Diu,2022-11-01,33.04
+Dadra and Nagar Haveli and Daman and Diu,2022-12-01,30.19
+Dadra and Nagar Haveli and Daman and Diu,2023-01-01,31.17
+Dadra and Nagar Haveli and Daman and Diu,2023-02-01,35.58
+Dadra and Nagar Haveli and Daman and Diu,2023-03-01,40.28
+Dadra and Nagar Haveli and Daman and Diu,2023-04-01,35.48
+Dadra and Nagar Haveli and Daman and Diu,2023-05-01,37.35
+Dadra and Nagar Haveli and Daman and Diu,2023-06-01,37.7
+Dadra and Nagar Haveli and Daman and Diu,2023-07-01,34.56
+Dadra and Nagar Haveli and Daman and Diu,2023-08-01,34.05
+Dadra and Nagar Haveli and Daman and Diu,2023-09-01,28.49
+Dadra and Nagar Haveli and Daman and Diu,2023-10-01,29.19
+Dadra and Nagar Haveli and Daman and Diu,2023-11-01,30.01
+Dadra and Nagar Haveli and Daman and Diu,2023-12-01,32.72
+Dadra and Nagar Haveli and Daman and Diu,2024-01-01,31.89
+Dadra and Nagar Haveli and Daman and Diu,2024-02-01,37.29
+Dadra and Nagar Haveli and Daman and Diu,2024-03-01,39.51
+Dadra and Nagar Haveli and Daman and Diu,2024-04-01,43.53
+Dadra and Nagar Haveli and Daman and Diu,2024-05-01,35.3
+Dadra and Nagar Haveli and Daman and Diu,2024-06-01,32.73
+Dadra and Nagar Haveli and Daman and Diu,2024-07-01,35.86
+Dadra and Nagar Haveli and Daman and Diu,2024-08-01,28.53
+Dadra and Nagar Haveli and Daman and Diu,2024-09-01,28.6
+Dadra and Nagar Haveli and Daman and Diu,2024-10-01,26.53
+Dadra and Nagar Haveli and Daman and Diu,2024-11-01,29.41
+Dadra and Nagar Haveli and Daman and Diu,2024-12-01,31.7
+Dadra and Nagar Haveli and Daman and Diu,2025-01-01,35.55
+Dadra and Nagar Haveli and Daman and Diu,2025-02-01,38.08
+Dadra and Nagar Haveli and Daman and Diu,2025-03-01,41.34
+Dadra and Nagar Haveli and Daman and Diu,2025-04-01,40.38
+Dadra and Nagar Haveli and Daman and Diu,2025-05-01,39.25
+Dadra and Nagar Haveli and Daman and Diu,2025-06-01,37.5
+Dadra and Nagar Haveli and Daman and Diu,2025-07-01,34.34
+Dadra and Nagar Haveli and Daman and Diu,2025-08-01,34.4
+Dadra and Nagar Haveli and Daman and Diu,2025-09-01,30.57
+Dadra and Nagar Haveli and Daman and Diu,2025-10-01,27.97
+Dadra and Nagar Haveli and Daman and Diu,2025-11-01,34.68
+Dadra and Nagar Haveli and Daman and Diu,2025-12-01,34.36
+Karnataka,2020-01-01,41.56
+Karnataka,2020-02-01,39.73
+Karnataka,2020-03-01,46.57
+Karnataka,2020-04-01,20.34
+Karnataka,2020-05-01,16.69
+Karnataka,2020-06-01,16.99
+Karnataka,2020-07-01,15.76
+Karnataka,2020-08-01,37.46
+Karnataka,2020-09-01,38.15
+Karnataka,2020-10-01,34.22
+Karnataka,2020-11-01,31.62
+Karnataka,2020-12-01,36.58
+Karnataka,2021-01-01,38.88
+Karnataka,2021-02-01,46.93
+Karnataka,2021-03-01,44.75
+Karnataka,2021-04-01,30.96
+Karnataka,2021-05-01,32.6
+Karnataka,2021-06-01,43.22
+Karnataka,2021-07-01,39.1
+Karnataka,2021-08-01,35.0
+Karnataka,2021-09-01,35.47
+Karnataka,2021-10-01,36.33
+Karnataka,2021-11-01,37.38
+Karnataka,2021-12-01,37.85
+Karnataka,2022-01-01,43.77
+Karnataka,2022-02-01,44.5
+Karnataka,2022-03-01,43.75
+Karnataka,2022-04-01,43.55
+Karnataka,2022-05-01,44.86
+Karnataka,2022-06-01,43.01
+Karnataka,2022-07-01,40.0
+Karnataka,2022-08-01,37.71
+Karnataka,2022-09-01,34.08
+Karnataka,2022-10-01,37.97
+Karnataka,2022-11-01,33.42
+Karnataka,2022-12-01,37.99
+Karnataka,2023-01-01,43.5
+Karnataka,2023-02-01,43.31
+Karnataka,2023-03-01,45.07
+Karnataka,2023-04-01,43.66
+Karnataka,2023-05-01,42.23
+Karnataka,2023-06-01,42.39
+Karnataka,2023-07-01,38.17
+Karnataka,2023-08-01,37.0
+Karnataka,2023-09-01,38.6
+Karnataka,2023-10-01,36.76
+Karnataka,2023-11-01,39.35
+Karnataka,2023-12-01,37.51
+Karnataka,2024-01-01,36.47
+Karnataka,2024-02-01,41.42
+Karnataka,2024-03-01,44.8
+Karnataka,2024-04-01,48.06
+Karnataka,2024-05-01,42.79
+Karnataka,2024-06-01,45.22
+Karnataka,2024-07-01,41.64
+Karnataka,2024-08-01,42.7
+Karnataka,2024-09-01,35.43
+Karnataka,2024-10-01,35.18
+Karnataka,2024-11-01,32.92
+Karnataka,2024-12-01,38.49
+Karnataka,2025-01-01,41.43
+Karnataka,2025-02-01,43.56
+Karnataka,2025-03-01,45.78
+Karnataka,2025-04-01,44.74
+Karnataka,2025-05-01,42.74
+Karnataka,2025-06-01,43.5
+Karnataka,2025-07-01,43.06
+Karnataka,2025-08-01,39.66
+Karnataka,2025-09-01,37.9
+Karnataka,2025-10-01,38.73
+Karnataka,2025-11-01,37.97
+Karnataka,2025-12-01,37.01
+Telangana,2020-01-01,48.99
+Telangana,2020-02-01,54.75
+Telangana,2020-03-01,56.45
+Telangana,2020-04-01,31.27
+Telangana,2020-05-01,26.83
+Telangana,2020-06-01,28.78
+Telangana,2020-07-01,22.19
+Telangana,2020-08-01,46.23
+Telangana,2020-09-01,38.36
+Telangana,2020-10-01,42.44
+Telangana,2020-11-01,42.78
+Telangana,2020-12-01,42.55
+Telangana,2021-01-01,49.29
+Telangana,2021-02-01,52.58
+Telangana,2021-03-01,54.54
+Telangana,2021-04-01,42.32
+Telangana,2021-05-01,40.82
+Telangana,2021-06-01,51.94
+Telangana,2021-07-01,50.28
+Telangana,2021-08-01,43.44
+Telangana,2021-09-01,49.82
+Telangana,2021-10-01,45.69
+Telangana,2021-11-01,39.75
+Telangana,2021-12-01,45.39
+Telangana,2022-01-01,47.19
+Telangana,2022-02-01,51.81
+Telangana,2022-03-01,49.84
+Telangana,2022-04-01,48.13
+Telangana,2022-05-01,52.29
+Telangana,2022-06-01,49.76
+Telangana,2022-07-01,48.22
+Telangana,2022-08-01,45.24
+Telangana,2022-09-01,43.81
+Telangana,2022-10-01,40.76
+Telangana,2022-11-01,44.43
+Telangana,2022-12-01,44.11
+Telangana,2023-01-01,46.17
+Telangana,2023-02-01,48.2
+Telangana,2023-03-01,52.09
+Telangana,2023-04-01,54.27
+Telangana,2023-05-01,48.31
+Telangana,2023-06-01,47.6
+Telangana,2023-07-01,45.83
+Telangana,2023-08-01,44.52
+Telangana,2023-09-01,41.66
+Telangana,2023-10-01,40.77
+Telangana,2023-11-01,41.34
+Telangana,2023-12-01,41.21
+Telangana,2024-01-01,48.36
+Telangana,2024-02-01,49.82
+Telangana,2024-03-01,51.99
+Telangana,2024-04-01,52.72
+Telangana,2024-05-01,48.33
+Telangana,2024-06-01,51.02
+Telangana,2024-07-01,43.54
+Telangana,2024-08-01,45.06
+Telangana,2024-09-01,40.92
+Telangana,2024-10-01,42.11
+Telangana,2024-11-01,43.99
+Telangana,2024-12-01,43.93
+Telangana,2025-01-01,43.61
+Telangana,2025-02-01,46.08
+Telangana,2025-03-01,49.11
+Telangana,2025-04-01,49.78
+Telangana,2025-05-01,53.54
+Telangana,2025-06-01,48.31
+Telangana,2025-07-01,48.17
+Telangana,2025-08-01,40.16
+Telangana,2025-09-01,40.42
+Telangana,2025-10-01,41.05
+Telangana,2025-11-01,40.27
+Telangana,2025-12-01,42.06
+Andhra Pradesh,2020-01-01,48.74
+Andhra Pradesh,2020-02-01,50.19
+Andhra Pradesh,2020-03-01,50.67
+Andhra Pradesh,2020-04-01,28.32
+Andhra Pradesh,2020-05-01,28.48
+Andhra Pradesh,2020-06-01,23.7
+Andhra Pradesh,2020-07-01,21.13
+Andhra Pradesh,2020-08-01,43.88
+Andhra Pradesh,2020-09-01,45.91
+Andhra Pradesh,2020-10-01,44.59
+Andhra Pradesh,2020-11-01,44.4
+Andhra Pradesh,2020-12-01,43.18
+Andhra Pradesh,2021-01-01,49.06
+Andhra Pradesh,2021-02-01,48.75
+Andhra Pradesh,2021-03-01,53.72
+Andhra Pradesh,2021-04-01,43.65
+Andhra Pradesh,2021-05-01,37.88
+Andhra Pradesh,2021-06-01,47.08
+Andhra Pradesh,2021-07-01,47.61
+Andhra Pradesh,2021-08-01,44.9
+Andhra Pradesh,2021-09-01,47.05
+Andhra Pradesh,2021-10-01,40.87
+Andhra Pradesh,2021-11-01,40.86
+Andhra Pradesh,2021-12-01,42.35
+Andhra Pradesh,2022-01-01,49.56
+Andhra Pradesh,2022-02-01,51.18
+Andhra Pradesh,2022-03-01,50.64
+Andhra Pradesh,2022-04-01,51.63
+Andhra Pradesh,2022-05-01,53.55
+Andhra Pradesh,2022-06-01,50.96
+Andhra Pradesh,2022-07-01,52.42
+Andhra Pradesh,2022-08-01,48.16
+Andhra Pradesh,2022-09-01,41.35
+Andhra Pradesh,2022-10-01,40.97
+Andhra Pradesh,2022-11-01,46.4
+Andhra Pradesh,2022-12-01,49.4
+Andhra Pradesh,2023-01-01,48.64
+Andhra Pradesh,2023-02-01,50.1
+Andhra Pradesh,2023-03-01,53.06
+Andhra Pradesh,2023-04-01,50.13
+Andhra Pradesh,2023-05-01,50.4
+Andhra Pradesh,2023-06-01,52.38
+Andhra Pradesh,2023-07-01,48.83
+Andhra Pradesh,2023-08-01,46.99
+Andhra Pradesh,2023-09-01,46.04
+Andhra Pradesh,2023-10-01,42.56
+Andhra Pradesh,2023-11-01,43.06
+Andhra Pradesh,2023-12-01,47.83
+Andhra Pradesh,2024-01-01,53.15
+Andhra Pradesh,2024-02-01,53.45
+Andhra Pradesh,2024-03-01,52.9
+Andhra Pradesh,2024-04-01,54.92
+Andhra Pradesh,2024-05-01,53.96
+Andhra Pradesh,2024-06-01,51.36
+Andhra Pradesh,2024-07-01,45.82
+Andhra Pradesh,2024-08-01,49.17
+Andhra Pradesh,2024-09-01,47.27
+Andhra Pradesh,2024-10-01,45.21
+Andhra Pradesh,2024-11-01,44.02
+Andhra Pradesh,2024-12-01,46.46
+Andhra Pradesh,2025-01-01,50.29
+Andhra Pradesh,2025-02-01,52.12
+Andhra Pradesh,2025-03-01,55.62
+Andhra Pradesh,2025-04-01,54.69
+Andhra Pradesh,2025-05-01,57.73
+Andhra Pradesh,2025-06-01,53.51
+Andhra Pradesh,2025-07-01,50.44
+Andhra Pradesh,2025-08-01,46.86
+Andhra Pradesh,2025-09-01,45.16
+Andhra Pradesh,2025-10-01,47.24
+Andhra Pradesh,2025-11-01,50.09
+Andhra Pradesh,2025-12-01,45.78
+Tamil Nadu,2020-01-01,38.48
+Tamil Nadu,2020-02-01,36.15
+Tamil Nadu,2020-03-01,41.61
+Tamil Nadu,2020-04-01,15.13
+Tamil Nadu,2020-05-01,16.17
+Tamil Nadu,2020-06-01,16.1
+Tamil Nadu,2020-07-01,13.67
+Tamil Nadu,2020-08-01,36.4
+Tamil Nadu,2020-09-01,32.94
+Tamil Nadu,2020-10-01,30.81
+Tamil Nadu,2020-11-01,30.38
+Tamil Nadu,2020-12-01,33.16
+Tamil Nadu,2021-01-01,37.68
+Tamil Nadu,2021-02-01,39.74
+Tamil Nadu,2021-03-01,45.22
+Tamil Nadu,2021-04-01,27.84
+Tamil Nadu,2021-05-01,27.93
+Tamil Nadu,2021-06-01,39.68
+Tamil Nadu,2021-07-01,36.62
+Tamil Nadu,2021-08-01,32.62
+Tamil Nadu,2021-09-01,32.63
+Tamil Nadu,2021-10-01,32.03
+Tamil Nadu,2021-11-01,30.48
+Tamil Nadu,2021-12-01,35.51
+Tamil Nadu,2022-01-01,38.94
+Tamil Nadu,2022-02-01,38.75
+Tamil Nadu,2022-03-01,40.82
+Tamil Nadu,2022-04-01,39.33
+Tamil Nadu,2022-05-01,42.84
+Tamil Nadu,2022-06-01,37.74
+Tamil Nadu,2022-07-01,35.88
+Tamil Nadu,2022-08-01,35.86
+Tamil Nadu,2022-09-01,33.64
+Tamil Nadu,2022-10-01,29.82
+Tamil Nadu,2022-11-01,31.29
+Tamil Nadu,2022-12-01,33.06
+Tamil Nadu,2023-01-01,36.42
+Tamil Nadu,2023-02-01,39.34
+Tamil Nadu,2023-03-01,43.36
+Tamil Nadu,2023-04-01,37.94
+Tamil Nadu,2023-05-01,40.96
+Tamil Nadu,2023-06-01,36.66
+Tamil Nadu,2023-07-01,36.36
+Tamil Nadu,2023-08-01,31.94
+Tamil Nadu,2023-09-01,30.92
+Tamil Nadu,2023-10-01,33.54
+Tamil Nadu,2023-11-01,30.53
+Tamil Nadu,2023-12-01,31.79
+Tamil Nadu,2024-01-01,36.36
+Tamil Nadu,2024-02-01,35.8
+Tamil Nadu,2024-03-01,40.13
+Tamil Nadu,2024-04-01,37.93
+Tamil Nadu,2024-05-01,42.98
+Tamil Nadu,2024-06-01,38.27
+Tamil Nadu,2024-07-01,36.96
+Tamil Nadu,2024-08-01,32.05
+Tamil Nadu,2024-09-01,31.79
+Tamil Nadu,2024-10-01,34.08
+Tamil Nadu,2024-11-01,33.15
+Tamil Nadu,2024-12-01,33.03
+Tamil Nadu,2025-01-01,36.32
+Tamil Nadu,2025-02-01,38.51
+Tamil Nadu,2025-03-01,40.28
+Tamil Nadu,2025-04-01,40.49
+Tamil Nadu,2025-05-01,36.85
+Tamil Nadu,2025-06-01,35.3
+Tamil Nadu,2025-07-01,34.32
+Tamil Nadu,2025-08-01,29.28
+Tamil Nadu,2025-09-01,29.03
+Tamil Nadu,2025-10-01,27.21
+Tamil Nadu,2025-11-01,33.15
+Tamil Nadu,2025-12-01,35.2
+Kerala,2020-01-01,35.0
+Kerala,2020-02-01,41.5
+Kerala,2020-03-01,40.62
+Kerala,2020-04-01,20.62
+Kerala,2020-05-01,13.66
+Kerala,2020-06-01,17.27
+Kerala,2020-07-01,16.72
+Kerala,2020-08-01,34.95
+Kerala,2020-09-01,35.9
+Kerala,2020-10-01,34.47
+Kerala,2020-11-01,33.77
+Kerala,2020-12-01,33.79
+Kerala,2021-01-01,38.65
+Kerala,2021-02-01,42.27
+Kerala,2021-03-01,42.12
+Kerala,2021-04-01,30.37
+Kerala,2021-05-01,27.56
+Kerala,2021-06-01,40.6
+Kerala,2021-07-01,39.25
+Kerala,2021-08-01,36.64
+Kerala,2021-09-01,36.79
+Kerala,2021-10-01,35.37
+Kerala,2021-11-01,37.35
+Kerala,2021-12-01,35.0
+Kerala,2022-01-01,34.84
+Kerala,2022-02-01,42.14
+Kerala,2022-03-01,44.14
+Kerala,2022-04-01,41.86
+Kerala,2022-05-01,44.05
+Kerala,2022-06-01,41.26
+Kerala,2022-07-01,38.2
+Kerala,2022-08-01,38.54
+Kerala,2022-09-01,32.85
+Kerala,2022-10-01,38.25
+Kerala,2022-11-01,32.68
+Kerala,2022-12-01,38.5
+Kerala,2023-01-01,37.6
+Kerala,2023-02-01,40.56
+Kerala,2023-03-01,44.26
+Kerala,2023-04-01,43.04
+Kerala,2023-05-01,43.75
+Kerala,2023-06-01,44.49
+Kerala,2023-07-01,40.5
+Kerala,2023-08-01,37.58
+Kerala,2023-09-01,37.83
+Kerala,2023-10-01,38.02
+Kerala,2023-11-01,37.6
+Kerala,2023-12-01,36.44
+Kerala,2024-01-01,42.23
+Kerala,2024-02-01,44.76
+Kerala,2024-03-01,48.32
+Kerala,2024-04-01,46.12
+Kerala,2024-05-01,45.51
+Kerala,2024-06-01,41.79
+Kerala,2024-07-01,40.87
+Kerala,2024-08-01,39.81
+Kerala,2024-09-01,35.3
+Kerala,2024-10-01,33.38
+Kerala,2024-11-01,37.4
+Kerala,2024-12-01,36.53
+Kerala,2025-01-01,35.98
+Kerala,2025-02-01,44.05
+Kerala,2025-03-01,44.94
+Kerala,2025-04-01,43.87
+Kerala,2025-05-01,45.3
+Kerala,2025-06-01,41.2
+Kerala,2025-07-01,43.22
+Kerala,2025-08-01,33.94
+Kerala,2025-09-01,36.72
+Kerala,2025-10-01,35.82
+Kerala,2025-11-01,35.85
+Kerala,2025-12-01,36.17
+Puducherry,2020-01-01,33.1
+Puducherry,2020-02-01,38.54
+Puducherry,2020-03-01,41.83
+Puducherry,2020-04-01,18.85
+Puducherry,2020-05-01,16.01
+Puducherry,2020-06-01,13.72
+Puducherry,2020-07-01,14.23
+Puducherry,2020-08-01,34.3
+Puducherry,2020-09-01,29.0
+Puducherry,2020-10-01,29.45
+Puducherry,2020-11-01,32.02
+Puducherry,2020-12-01,33.47
+Puducherry,2021-01-01,41.08
+Puducherry,2021-02-01,42.83
+Puducherry,2021-03-01,42.16
+Puducherry,2021-04-01,33.29
+Puducherry,2021-05-01,31.94
+Puducherry,2021-06-01,40.41
+Puducherry,2021-07-01,37.64
+Puducherry,2021-08-01,35.31
+Puducherry,2021-09-01,33.9
+Puducherry,2021-10-01,29.06
+Puducherry,2021-11-01,33.4
+Puducherry,2021-12-01,32.72
+Puducherry,2022-01-01,37.76
+Puducherry,2022-02-01,39.8
+Puducherry,2022-03-01,38.68
+Puducherry,2022-04-01,40.87
+Puducherry,2022-05-01,41.88
+Puducherry,2022-06-01,40.26
+Puducherry,2022-07-01,32.42
+Puducherry,2022-08-01,35.31
+Puducherry,2022-09-01,35.39
+Puducherry,2022-10-01,35.54
+Puducherry,2022-11-01,31.21
+Puducherry,2022-12-01,32.97
+Puducherry,2023-01-01,38.58
+Puducherry,2023-02-01,37.4
+Puducherry,2023-03-01,40.11
+Puducherry,2023-04-01,44.39
+Puducherry,2023-05-01,42.78
+Puducherry,2023-06-01,38.79
+Puducherry,2023-07-01,38.05
+Puducherry,2023-08-01,35.37
+Puducherry,2023-09-01,34.61
+Puducherry,2023-10-01,36.85
+Puducherry,2023-11-01,37.4
+Puducherry,2023-12-01,39.42
+Puducherry,2024-01-01,40.84
+Puducherry,2024-02-01,39.87
+Puducherry,2024-03-01,43.33
+Puducherry,2024-04-01,45.85
+Puducherry,2024-05-01,44.25
+Puducherry,2024-06-01,40.04
+Puducherry,2024-07-01,39.01
+Puducherry,2024-08-01,38.28
+Puducherry,2024-09-01,35.02
+Puducherry,2024-10-01,34.35
+Puducherry,2024-11-01,33.51
+Puducherry,2024-12-01,39.82
+Puducherry,2025-01-01,42.03
+Puducherry,2025-02-01,39.92
+Puducherry,2025-03-01,43.47
+Puducherry,2025-04-01,44.04
+Puducherry,2025-05-01,44.75
+Puducherry,2025-06-01,44.47
+Puducherry,2025-07-01,40.79
+Puducherry,2025-08-01,38.19
+Puducherry,2025-09-01,36.17
+Puducherry,2025-10-01,36.15
+Puducherry,2025-11-01,35.84
+Puducherry,2025-12-01,37.82
+Lakshadweep,2020-01-01,22.35
+Lakshadweep,2020-02-01,22.24
+Lakshadweep,2020-03-01,25.01
+Lakshadweep,2020-04-01,5.0
+Lakshadweep,2020-05-01,5.0
+Lakshadweep,2020-06-01,5.0
+Lakshadweep,2020-07-01,5.0
+Lakshadweep,2020-08-01,19.7
+Lakshadweep,2020-09-01,14.34
+Lakshadweep,2020-10-01,12.72
+Lakshadweep,2020-11-01,15.92
+Lakshadweep,2020-12-01,16.04
+Lakshadweep,2021-01-01,22.69
+Lakshadweep,2021-02-01,22.69
+Lakshadweep,2021-03-01,26.29
+Lakshadweep,2021-04-01,15.78
+Lakshadweep,2021-05-01,13.39
+Lakshadweep,2021-06-01,17.86
+Lakshadweep,2021-07-01,18.99
+Lakshadweep,2021-08-01,16.46
+Lakshadweep,2021-09-01,14.65
+Lakshadweep,2021-10-01,13.13
+Lakshadweep,2021-11-01,15.44
+Lakshadweep,2021-12-01,18.86
+Lakshadweep,2022-01-01,17.91
+Lakshadweep,2022-02-01,19.59
+Lakshadweep,2022-03-01,26.34
+Lakshadweep,2022-04-01,25.1
+Lakshadweep,2022-05-01,28.86
+Lakshadweep,2022-06-01,20.39
+Lakshadweep,2022-07-01,21.79
+Lakshadweep,2022-08-01,17.4
+Lakshadweep,2022-09-01,16.08
+Lakshadweep,2022-10-01,16.27
+Lakshadweep,2022-11-01,20.76
+Lakshadweep,2022-12-01,18.3
+Lakshadweep,2023-01-01,19.9
+Lakshadweep,2023-02-01,19.39
+Lakshadweep,2023-03-01,23.25
+Lakshadweep,2023-04-01,25.5
+Lakshadweep,2023-05-01,25.5
+Lakshadweep,2023-06-01,21.67
+Lakshadweep,2023-07-01,19.46
+Lakshadweep,2023-08-01,14.1
+Lakshadweep,2023-09-01,13.84
+Lakshadweep,2023-10-01,11.68
+Lakshadweep,2023-11-01,16.65
+Lakshadweep,2023-12-01,17.05
+Lakshadweep,2024-01-01,14.7
+Lakshadweep,2024-02-01,20.3
+Lakshadweep,2024-03-01,21.74
+Lakshadweep,2024-04-01,22.65
+Lakshadweep,2024-05-01,22.74
+Lakshadweep,2024-06-01,23.8
+Lakshadweep,2024-07-01,16.74
+Lakshadweep,2024-08-01,17.4
+Lakshadweep,2024-09-01,14.08
+Lakshadweep,2024-10-01,16.13
+Lakshadweep,2024-11-01,12.82
+Lakshadweep,2024-12-01,15.15
+Lakshadweep,2025-01-01,17.28
+Lakshadweep,2025-02-01,19.51
+Lakshadweep,2025-03-01,20.29
+Lakshadweep,2025-04-01,22.03
+Lakshadweep,2025-05-01,18.82
+Lakshadweep,2025-06-01,22.31
+Lakshadweep,2025-07-01,17.34
+Lakshadweep,2025-08-01,15.57
+Lakshadweep,2025-09-01,9.29
+Lakshadweep,2025-10-01,11.05
+Lakshadweep,2025-11-01,17.61
+Lakshadweep,2025-12-01,11.27
+Andaman and Nicobar Islands,2020-01-01,31.56
+Andaman and Nicobar Islands,2020-02-01,32.48
+Andaman and Nicobar Islands,2020-03-01,30.26
+Andaman and Nicobar Islands,2020-04-01,9.67
+Andaman and Nicobar Islands,2020-05-01,9.51
+Andaman and Nicobar Islands,2020-06-01,9.66
+Andaman and Nicobar Islands,2020-07-01,5.0
+Andaman and Nicobar Islands,2020-08-01,27.58
+Andaman and Nicobar Islands,2020-09-01,27.39
+Andaman and Nicobar Islands,2020-10-01,26.42
+Andaman and Nicobar Islands,2020-11-01,27.16
+Andaman and Nicobar Islands,2020-12-01,28.09
+Andaman and Nicobar Islands,2021-01-01,29.19
+Andaman and Nicobar Islands,2021-02-01,31.46
+Andaman and Nicobar Islands,2021-03-01,33.2
+Andaman and Nicobar Islands,2021-04-01,21.87
+Andaman and Nicobar Islands,2021-05-01,23.1
+Andaman and Nicobar Islands,2021-06-01,30.07
+Andaman and Nicobar Islands,2021-07-01,32.3
+Andaman and Nicobar Islands,2021-08-01,26.26
+Andaman and Nicobar Islands,2021-09-01,24.66
+Andaman and Nicobar Islands,2021-10-01,24.4
+Andaman and Nicobar Islands,2021-11-01,25.03
+Andaman and Nicobar Islands,2021-12-01,26.67
+Andaman and Nicobar Islands,2022-01-01,29.96
+Andaman and Nicobar Islands,2022-02-01,32.47
+Andaman and Nicobar Islands,2022-03-01,34.72
+Andaman and Nicobar Islands,2022-04-01,36.7
+Andaman and Nicobar Islands,2022-05-01,36.71
+Andaman and Nicobar Islands,2022-06-01,31.47
+Andaman and Nicobar Islands,2022-07-01,28.45
+Andaman and Nicobar Islands,2022-08-01,26.31
+Andaman and Nicobar Islands,2022-09-01,26.68
+Andaman and Nicobar Islands,2022-10-01,22.99
+Andaman and Nicobar Islands,2022-11-01,26.29
+Andaman and Nicobar Islands,2022-12-01,25.14
+Andaman and Nicobar Islands,2023-01-01,32.46
+Andaman and Nicobar Islands,2023-02-01,37.25
+Andaman and Nicobar Islands,2023-03-01,36.83
+Andaman and Nicobar Islands,2023-04-01,37.14
+Andaman and Nicobar Islands,2023-05-01,37.29
+Andaman and Nicobar Islands,2023-06-01,31.92
+Andaman and Nicobar Islands,2023-07-01,25.5
+Andaman and Nicobar Islands,2023-08-01,29.69
+Andaman and Nicobar Islands,2023-09-01,25.61
+Andaman and Nicobar Islands,2023-10-01,24.31
+Andaman and Nicobar Islands,2023-11-01,24.88
+Andaman and Nicobar Islands,2023-12-01,30.36
+Andaman and Nicobar Islands,2024-01-01,28.4
+Andaman and Nicobar Islands,2024-02-01,35.19
+Andaman and Nicobar Islands,2024-03-01,35.56
+Andaman and Nicobar Islands,2024-04-01,33.2
+Andaman and Nicobar Islands,2024-05-01,32.22
+Andaman and Nicobar Islands,2024-06-01,31.37
+Andaman and Nicobar Islands,2024-07-01,30.53
+Andaman and Nicobar Islands,2024-08-01,26.24
+Andaman and Nicobar Islands,2024-09-01,25.81
+Andaman and Nicobar Islands,2024-10-01,22.2
+Andaman and Nicobar Islands,2024-11-01,24.96
+Andaman and Nicobar Islands,2024-12-01,30.1
+Andaman and Nicobar Islands,2025-01-01,27.27
+Andaman and Nicobar Islands,2025-02-01,34.14
+Andaman and Nicobar Islands,2025-03-01,34.49
+Andaman and Nicobar Islands,2025-04-01,33.4
+Andaman and Nicobar Islands,2025-05-01,31.06
+Andaman and Nicobar Islands,2025-06-01,33.0
+Andaman and Nicobar Islands,2025-07-01,28.43
+Andaman and Nicobar Islands,2025-08-01,27.59
+Andaman and Nicobar Islands,2025-09-01,26.88
+Andaman and Nicobar Islands,2025-10-01,26.12
+Andaman and Nicobar Islands,2025-11-01,26.66
+Andaman and Nicobar Islands,2025-12-01,26.02
+West Bengal,2020-01-01,51.11
+West Bengal,2020-02-01,57.08
+West Bengal,2020-03-01,61.04
+West Bengal,2020-04-01,30.67
+West Bengal,2020-05-01,33.9
+West Bengal,2020-06-01,33.35
+West Bengal,2020-07-01,27.53
+West Bengal,2020-08-01,51.28
+West Bengal,2020-09-01,50.11
+West Bengal,2020-10-01,45.12
+West Bengal,2020-11-01,49.95
+West Bengal,2020-12-01,51.52
+West Bengal,2021-01-01,50.41
+West Bengal,2021-02-01,54.28
+West Bengal,2021-03-01,55.03
+West Bengal,2021-04-01,48.7
+West Bengal,2021-05-01,47.25
+West Bengal,2021-06-01,57.91
+West Bengal,2021-07-01,52.49
+West Bengal,2021-08-01,55.62
+West Bengal,2021-09-01,49.73
+West Bengal,2021-10-01,49.54
+West Bengal,2021-11-01,48.39
+West Bengal,2021-12-01,51.64
+West Bengal,2022-01-01,55.32
+West Bengal,2022-02-01,55.4
+West Bengal,2022-03-01,56.98
+West Bengal,2022-04-01,61.03
+West Bengal,2022-05-01,59.86
+West Bengal,2022-06-01,57.26
+West Bengal,2022-07-01,54.01
+West Bengal,2022-08-01,52.01
+West Bengal,2022-09-01,49.35
+West Bengal,2022-10-01,46.32
+West Bengal,2022-11-01,50.75
+West Bengal,2022-12-01,52.22
+West Bengal,2023-01-01,52.65
+West Bengal,2023-02-01,55.43
+West Bengal,2023-03-01,54.27
+West Bengal,2023-04-01,60.18
+West Bengal,2023-05-01,57.79
+West Bengal,2023-06-01,52.52
+West Bengal,2023-07-01,53.45
+West Bengal,2023-08-01,51.72
+West Bengal,2023-09-01,48.42
+West Bengal,2023-10-01,47.22
+West Bengal,2023-11-01,49.33
+West Bengal,2023-12-01,48.3
+West Bengal,2024-01-01,51.86
+West Bengal,2024-02-01,55.38
+West Bengal,2024-03-01,55.58
+West Bengal,2024-04-01,60.82
+West Bengal,2024-05-01,57.89
+West Bengal,2024-06-01,57.73
+West Bengal,2024-07-01,56.88
+West Bengal,2024-08-01,50.55
+West Bengal,2024-09-01,50.75
+West Bengal,2024-10-01,48.26
+West Bengal,2024-11-01,48.4
+West Bengal,2024-12-01,53.42
+West Bengal,2025-01-01,53.24
+West Bengal,2025-02-01,55.32
+West Bengal,2025-03-01,56.62
+West Bengal,2025-04-01,57.71
+West Bengal,2025-05-01,55.59
+West Bengal,2025-06-01,56.83
+West Bengal,2025-07-01,54.7
+West Bengal,2025-08-01,51.63
+West Bengal,2025-09-01,49.37
+West Bengal,2025-10-01,47.05
+West Bengal,2025-11-01,47.45
+West Bengal,2025-12-01,49.28
+Bihar,2020-01-01,51.4
+Bihar,2020-02-01,53.13
+Bihar,2020-03-01,55.8
+Bihar,2020-04-01,29.94
+Bihar,2020-05-01,32.25
+Bihar,2020-06-01,27.66
+Bihar,2020-07-01,25.43
+Bihar,2020-08-01,51.54
+Bihar,2020-09-01,48.52
+Bihar,2020-10-01,45.39
+Bihar,2020-11-01,49.55
+Bihar,2020-12-01,53.97
+Bihar,2021-01-01,50.88
+Bihar,2021-02-01,56.93
+Bihar,2021-03-01,57.22
+Bihar,2021-04-01,46.66
+Bihar,2021-05-01,45.3
+Bihar,2021-06-01,56.49
+Bihar,2021-07-01,56.07
+Bihar,2021-08-01,49.26
+Bihar,2021-09-01,48.52
+Bihar,2021-10-01,47.57
+Bihar,2021-11-01,45.72
+Bihar,2021-12-01,54.46
+Bihar,2022-01-01,54.46
+Bihar,2022-02-01,54.06
+Bihar,2022-03-01,56.04
+Bihar,2022-04-01,57.73
+Bihar,2022-05-01,58.11
+Bihar,2022-06-01,54.2
+Bihar,2022-07-01,52.39
+Bihar,2022-08-01,49.74
+Bihar,2022-09-01,51.98
+Bihar,2022-10-01,46.74
+Bihar,2022-11-01,46.01
+Bihar,2022-12-01,49.14
+Bihar,2023-01-01,51.7
+Bihar,2023-02-01,52.91
+Bihar,2023-03-01,55.93
+Bihar,2023-04-01,55.03
+Bihar,2023-05-01,58.05
+Bihar,2023-06-01,55.83
+Bihar,2023-07-01,51.21
+Bihar,2023-08-01,48.15
+Bihar,2023-09-01,48.61
+Bihar,2023-10-01,48.2
+Bihar,2023-11-01,48.62
+Bihar,2023-12-01,52.75
+Bihar,2024-01-01,54.33
+Bihar,2024-02-01,53.12
+Bihar,2024-03-01,56.12
+Bihar,2024-04-01,55.52
+Bihar,2024-05-01,60.21
+Bihar,2024-06-01,56.73
+Bihar,2024-07-01,51.33
+Bihar,2024-08-01,54.68
+Bihar,2024-09-01,49.08
+Bihar,2024-10-01,49.56
+Bihar,2024-11-01,48.5
+Bihar,2024-12-01,51.38
+Bihar,2025-01-01,52.85
+Bihar,2025-02-01,56.82
+Bihar,2025-03-01,58.28
+Bihar,2025-04-01,59.25
+Bihar,2025-05-01,56.6
+Bihar,2025-06-01,56.26
+Bihar,2025-07-01,50.07
+Bihar,2025-08-01,51.8
+Bihar,2025-09-01,46.45
+Bihar,2025-10-01,49.44
+Bihar,2025-11-01,50.57
+Bihar,2025-12-01,49.52
+Jharkhand,2020-01-01,46.89
+Jharkhand,2020-02-01,50.8
+Jharkhand,2020-03-01,50.19
+Jharkhand,2020-04-01,27.87
+Jharkhand,2020-05-01,28.96
+Jharkhand,2020-06-01,22.74
+Jharkhand,2020-07-01,21.05
+Jharkhand,2020-08-01,44.38
+Jharkhand,2020-09-01,43.64
+Jharkhand,2020-10-01,40.6
+Jharkhand,2020-11-01,43.55
+Jharkhand,2020-12-01,45.04
+Jharkhand,2021-01-01,48.17
+Jharkhand,2021-02-01,48.9
+Jharkhand,2021-03-01,50.2
+Jharkhand,2021-04-01,39.45
+Jharkhand,2021-05-01,38.72
+Jharkhand,2021-06-01,45.06
+Jharkhand,2021-07-01,45.77
+Jharkhand,2021-08-01,41.84
+Jharkhand,2021-09-01,42.65
+Jharkhand,2021-10-01,42.5
+Jharkhand,2021-11-01,38.95
+Jharkhand,2021-12-01,42.9
+Jharkhand,2022-01-01,45.64
+Jharkhand,2022-02-01,46.48
+Jharkhand,2022-03-01,55.12
+Jharkhand,2022-04-01,52.37
+Jharkhand,2022-05-01,50.96
+Jharkhand,2022-06-01,45.29
+Jharkhand,2022-07-01,44.09
+Jharkhand,2022-08-01,40.12
+Jharkhand,2022-09-01,37.11
+Jharkhand,2022-10-01,42.73
+Jharkhand,2022-11-01,37.46
+Jharkhand,2022-12-01,47.35
+Jharkhand,2023-01-01,43.28
+Jharkhand,2023-02-01,47.86
+Jharkhand,2023-03-01,49.99
+Jharkhand,2023-04-01,51.34
+Jharkhand,2023-05-01,51.19
+Jharkhand,2023-06-01,47.71
+Jharkhand,2023-07-01,45.13
+Jharkhand,2023-08-01,39.58
+Jharkhand,2023-09-01,43.4
+Jharkhand,2023-10-01,38.2
+Jharkhand,2023-11-01,40.87
+Jharkhand,2023-12-01,42.73
+Jharkhand,2024-01-01,46.31
+Jharkhand,2024-02-01,48.62
+Jharkhand,2024-03-01,50.1
+Jharkhand,2024-04-01,50.31
+Jharkhand,2024-05-01,49.12
+Jharkhand,2024-06-01,45.92
+Jharkhand,2024-07-01,43.72
+Jharkhand,2024-08-01,42.96
+Jharkhand,2024-09-01,42.65
+Jharkhand,2024-10-01,37.9
+Jharkhand,2024-11-01,38.95
+Jharkhand,2024-12-01,41.1
+Jharkhand,2025-01-01,41.87
+Jharkhand,2025-02-01,46.37
+Jharkhand,2025-03-01,48.43
+Jharkhand,2025-04-01,48.96
+Jharkhand,2025-05-01,47.23
+Jharkhand,2025-06-01,46.85
+Jharkhand,2025-07-01,44.67
+Jharkhand,2025-08-01,40.04
+Jharkhand,2025-09-01,40.21
+Jharkhand,2025-10-01,41.43
+Jharkhand,2025-11-01,37.64
+Jharkhand,2025-12-01,41.57
+Odisha,2020-01-01,52.45
+Odisha,2020-02-01,53.84
+Odisha,2020-03-01,53.13
+Odisha,2020-04-01,28.2
+Odisha,2020-05-01,23.72
+Odisha,2020-06-01,29.48
+Odisha,2020-07-01,23.18
+Odisha,2020-08-01,44.22
+Odisha,2020-09-01,43.56
+Odisha,2020-10-01,45.35
+Odisha,2020-11-01,42.34
+Odisha,2020-12-01,47.21
+Odisha,2021-01-01,48.56
+Odisha,2021-02-01,52.85
+Odisha,2021-03-01,51.94
+Odisha,2021-04-01,38.51
+Odisha,2021-05-01,40.02
+Odisha,2021-06-01,53.85
+Odisha,2021-07-01,49.34
+Odisha,2021-08-01,44.85
+Odisha,2021-09-01,44.97
+Odisha,2021-10-01,42.52
+Odisha,2021-11-01,42.74
+Odisha,2021-12-01,47.89
+Odisha,2022-01-01,47.13
+Odisha,2022-02-01,49.59
+Odisha,2022-03-01,50.84
+Odisha,2022-04-01,52.23
+Odisha,2022-05-01,47.24
+Odisha,2022-06-01,51.86
+Odisha,2022-07-01,47.73
+Odisha,2022-08-01,43.61
+Odisha,2022-09-01,40.85
+Odisha,2022-10-01,45.43
+Odisha,2022-11-01,44.5
+Odisha,2022-12-01,43.88
+Odisha,2023-01-01,49.12
+Odisha,2023-02-01,50.7
+Odisha,2023-03-01,48.79
+Odisha,2023-04-01,53.06
+Odisha,2023-05-01,51.71
+Odisha,2023-06-01,50.08
+Odisha,2023-07-01,44.86
+Odisha,2023-08-01,43.06
+Odisha,2023-09-01,42.25
+Odisha,2023-10-01,43.66
+Odisha,2023-11-01,44.23
+Odisha,2023-12-01,44.13
+Odisha,2024-01-01,46.14
+Odisha,2024-02-01,48.81
+Odisha,2024-03-01,53.47
+Odisha,2024-04-01,51.98
+Odisha,2024-05-01,52.93
+Odisha,2024-06-01,50.86
+Odisha,2024-07-01,46.46
+Odisha,2024-08-01,47.39
+Odisha,2024-09-01,44.8
+Odisha,2024-10-01,42.68
+Odisha,2024-11-01,40.15
+Odisha,2024-12-01,43.73
+Odisha,2025-01-01,49.86
+Odisha,2025-02-01,49.13
+Odisha,2025-03-01,47.77
+Odisha,2025-04-01,54.4
+Odisha,2025-05-01,49.32
+Odisha,2025-06-01,47.16
+Odisha,2025-07-01,48.76
+Odisha,2025-08-01,43.74
+Odisha,2025-09-01,44.65
+Odisha,2025-10-01,41.23
+Odisha,2025-11-01,38.98
+Odisha,2025-12-01,43.9
+Assam,2020-01-01,61.0
+Assam,2020-02-01,60.84
+Assam,2020-03-01,61.52
+Assam,2020-04-01,38.89
+Assam,2020-05-01,38.41
+Assam,2020-06-01,36.38
+Assam,2020-07-01,33.16
+Assam,2020-08-01,54.13
+Assam,2020-09-01,51.47
+Assam,2020-10-01,56.93
+Assam,2020-11-01,54.39
+Assam,2020-12-01,56.13
+Assam,2021-01-01,62.82
+Assam,2021-02-01,61.53
+Assam,2021-03-01,65.4
+Assam,2021-04-01,51.13
+Assam,2021-05-01,49.68
+Assam,2021-06-01,62.67
+Assam,2021-07-01,58.72
+Assam,2021-08-01,55.25
+Assam,2021-09-01,55.84
+Assam,2021-10-01,52.63
+Assam,2021-11-01,58.96
+Assam,2021-12-01,60.05
+Assam,2022-01-01,59.15
+Assam,2022-02-01,62.09
+Assam,2022-03-01,63.5
+Assam,2022-04-01,63.73
+Assam,2022-05-01,62.41
+Assam,2022-06-01,60.08
+Assam,2022-07-01,58.17
+Assam,2022-08-01,61.32
+Assam,2022-09-01,56.49
+Assam,2022-10-01,56.29
+Assam,2022-11-01,54.93
+Assam,2022-12-01,54.08
+Assam,2023-01-01,63.55
+Assam,2023-02-01,65.34
+Assam,2023-03-01,63.02
+Assam,2023-04-01,65.83
+Assam,2023-05-01,62.27
+Assam,2023-06-01,60.65
+Assam,2023-07-01,58.04
+Assam,2023-08-01,58.78
+Assam,2023-09-01,55.9
+Assam,2023-10-01,54.86
+Assam,2023-11-01,57.02
+Assam,2023-12-01,61.72
+Assam,2024-01-01,60.08
+Assam,2024-02-01,66.92
+Assam,2024-03-01,63.49
+Assam,2024-04-01,65.29
+Assam,2024-05-01,65.01
+Assam,2024-06-01,61.06
+Assam,2024-07-01,64.15
+Assam,2024-08-01,57.52
+Assam,2024-09-01,51.83
+Assam,2024-10-01,55.6
+Assam,2024-11-01,56.42
+Assam,2024-12-01,61.16
+Assam,2025-01-01,60.04
+Assam,2025-02-01,62.07
+Assam,2025-03-01,64.11
+Assam,2025-04-01,66.32
+Assam,2025-05-01,65.86
+Assam,2025-06-01,67.6
+Assam,2025-07-01,60.34
+Assam,2025-08-01,60.96
+Assam,2025-09-01,57.91
+Assam,2025-10-01,56.74
+Assam,2025-11-01,58.43
+Assam,2025-12-01,59.19
+Sikkim,2020-01-01,29.01
+Sikkim,2020-02-01,31.06
+Sikkim,2020-03-01,33.38
+Sikkim,2020-04-01,9.08
+Sikkim,2020-05-01,8.5
+Sikkim,2020-06-01,6.41
+Sikkim,2020-07-01,5.0
+Sikkim,2020-08-01,26.06
+Sikkim,2020-09-01,22.21
+Sikkim,2020-10-01,23.57
+Sikkim,2020-11-01,19.99
+Sikkim,2020-12-01,21.66
+Sikkim,2021-01-01,29.86
+Sikkim,2021-02-01,29.2
+Sikkim,2021-03-01,33.23
+Sikkim,2021-04-01,20.99
+Sikkim,2021-05-01,19.62
+Sikkim,2021-06-01,28.34
+Sikkim,2021-07-01,29.39
+Sikkim,2021-08-01,26.17
+Sikkim,2021-09-01,22.63
+Sikkim,2021-10-01,23.43
+Sikkim,2021-11-01,25.16
+Sikkim,2021-12-01,29.2
+Sikkim,2022-01-01,26.46
+Sikkim,2022-02-01,30.29
+Sikkim,2022-03-01,33.4
+Sikkim,2022-04-01,31.15
+Sikkim,2022-05-01,35.9
+Sikkim,2022-06-01,28.22
+Sikkim,2022-07-01,27.73
+Sikkim,2022-08-01,24.03
+Sikkim,2022-09-01,21.26
+Sikkim,2022-10-01,23.01
+Sikkim,2022-11-01,19.86
+Sikkim,2022-12-01,25.63
+Sikkim,2023-01-01,22.88
+Sikkim,2023-02-01,28.68
+Sikkim,2023-03-01,30.57
+Sikkim,2023-04-01,31.3
+Sikkim,2023-05-01,31.23
+Sikkim,2023-06-01,31.11
+Sikkim,2023-07-01,27.27
+Sikkim,2023-08-01,25.15
+Sikkim,2023-09-01,21.8
+Sikkim,2023-10-01,21.53
+Sikkim,2023-11-01,21.46
+Sikkim,2023-12-01,27.82
+Sikkim,2024-01-01,29.83
+Sikkim,2024-02-01,24.0
+Sikkim,2024-03-01,29.72
+Sikkim,2024-04-01,29.13
+Sikkim,2024-05-01,31.82
+Sikkim,2024-06-01,29.63
+Sikkim,2024-07-01,25.05
+Sikkim,2024-08-01,23.34
+Sikkim,2024-09-01,19.3
+Sikkim,2024-10-01,18.69
+Sikkim,2024-11-01,22.34
+Sikkim,2024-12-01,23.34
+Sikkim,2025-01-01,24.64
+Sikkim,2025-02-01,30.21
+Sikkim,2025-03-01,28.75
+Sikkim,2025-04-01,31.74
+Sikkim,2025-05-01,27.14
+Sikkim,2025-06-01,27.31
+Sikkim,2025-07-01,27.35
+Sikkim,2025-08-01,22.32
+Sikkim,2025-09-01,24.16
+Sikkim,2025-10-01,18.28
+Sikkim,2025-11-01,19.52
+Sikkim,2025-12-01,23.73
+Arunachal Pradesh,2020-01-01,36.5
+Arunachal Pradesh,2020-02-01,38.89
+Arunachal Pradesh,2020-03-01,39.87
+Arunachal Pradesh,2020-04-01,14.6
+Arunachal Pradesh,2020-05-01,15.52
+Arunachal Pradesh,2020-06-01,12.42
+Arunachal Pradesh,2020-07-01,9.19
+Arunachal Pradesh,2020-08-01,33.5
+Arunachal Pradesh,2020-09-01,35.94
+Arunachal Pradesh,2020-10-01,32.74
+Arunachal Pradesh,2020-11-01,32.17
+Arunachal Pradesh,2020-12-01,36.78
+Arunachal Pradesh,2021-01-01,38.06
+Arunachal Pradesh,2021-02-01,37.71
+Arunachal Pradesh,2021-03-01,42.92
+Arunachal Pradesh,2021-04-01,30.78
+Arunachal Pradesh,2021-05-01,28.48
+Arunachal Pradesh,2021-06-01,40.17
+Arunachal Pradesh,2021-07-01,38.51
+Arunachal Pradesh,2021-08-01,35.08
+Arunachal Pradesh,2021-09-01,33.55
+Arunachal Pradesh,2021-10-01,32.6
+Arunachal Pradesh,2021-11-01,34.89
+Arunachal Pradesh,2021-12-01,35.7
+Arunachal Pradesh,2022-01-01,38.5
+Arunachal Pradesh,2022-02-01,38.87
+Arunachal Pradesh,2022-03-01,41.01
+Arunachal Pradesh,2022-04-01,42.99
+Arunachal Pradesh,2022-05-01,45.37
+Arunachal Pradesh,2022-06-01,40.92
+Arunachal Pradesh,2022-07-01,37.13
+Arunachal Pradesh,2022-08-01,34.76
+Arunachal Pradesh,2022-09-01,34.98
+Arunachal Pradesh,2022-10-01,29.8
+Arunachal Pradesh,2022-11-01,34.13
+Arunachal Pradesh,2022-12-01,36.03
+Arunachal Pradesh,2023-01-01,38.56
+Arunachal Pradesh,2023-02-01,41.38
+Arunachal Pradesh,2023-03-01,41.5
+Arunachal Pradesh,2023-04-01,43.67
+Arunachal Pradesh,2023-05-01,43.51
+Arunachal Pradesh,2023-06-01,41.63
+Arunachal Pradesh,2023-07-01,36.78
+Arunachal Pradesh,2023-08-01,35.69
+Arunachal Pradesh,2023-09-01,35.9
+Arunachal Pradesh,2023-10-01,32.55
+Arunachal Pradesh,2023-11-01,37.09
+Arunachal Pradesh,2023-12-01,35.24
+Arunachal Pradesh,2024-01-01,40.12
+Arunachal Pradesh,2024-02-01,42.86
+Arunachal Pradesh,2024-03-01,45.83
+Arunachal Pradesh,2024-04-01,43.1
+Arunachal Pradesh,2024-05-01,42.95
+Arunachal Pradesh,2024-06-01,40.53
+Arunachal Pradesh,2024-07-01,40.54
+Arunachal Pradesh,2024-08-01,42.15
+Arunachal Pradesh,2024-09-01,34.87
+Arunachal Pradesh,2024-10-01,34.65
+Arunachal Pradesh,2024-11-01,38.82
+Arunachal Pradesh,2024-12-01,36.38
+Arunachal Pradesh,2025-01-01,37.79
+Arunachal Pradesh,2025-02-01,40.33
+Arunachal Pradesh,2025-03-01,44.11
+Arunachal Pradesh,2025-04-01,43.38
+Arunachal Pradesh,2025-05-01,43.91
+Arunachal Pradesh,2025-06-01,45.19
+Arunachal Pradesh,2025-07-01,38.84
+Arunachal Pradesh,2025-08-01,35.82
+Arunachal Pradesh,2025-09-01,36.53
+Arunachal Pradesh,2025-10-01,33.4
+Arunachal Pradesh,2025-11-01,36.45
+Arunachal Pradesh,2025-12-01,38.03
+Nagaland,2020-01-01,27.74
+Nagaland,2020-02-01,33.62
+Nagaland,2020-03-01,31.25
+Nagaland,2020-04-01,7.54
+Nagaland,2020-05-01,6.56
+Nagaland,2020-06-01,5.0
+Nagaland,2020-07-01,5.65
+Nagaland,2020-08-01,30.76
+Nagaland,2020-09-01,26.87
+Nagaland,2020-10-01,24.98
+Nagaland,2020-11-01,22.85
+Nagaland,2020-12-01,23.77
+Nagaland,2021-01-01,26.89
+Nagaland,2021-02-01,31.25
+Nagaland,2021-03-01,37.22
+Nagaland,2021-04-01,22.9
+Nagaland,2021-05-01,22.28
+Nagaland,2021-06-01,33.22
+Nagaland,2021-07-01,27.67
+Nagaland,2021-08-01,30.84
+Nagaland,2021-09-01,25.68
+Nagaland,2021-10-01,25.59
+Nagaland,2021-11-01,24.75
+Nagaland,2021-12-01,28.94
+Nagaland,2022-01-01,29.45
+Nagaland,2022-02-01,31.35
+Nagaland,2022-03-01,33.54
+Nagaland,2022-04-01,34.98
+Nagaland,2022-05-01,35.01
+Nagaland,2022-06-01,30.94
+Nagaland,2022-07-01,30.89
+Nagaland,2022-08-01,26.42
+Nagaland,2022-09-01,25.12
+Nagaland,2022-10-01,25.08
+Nagaland,2022-11-01,24.31
+Nagaland,2022-12-01,24.21
+Nagaland,2023-01-01,29.2
+Nagaland,2023-02-01,32.89
+Nagaland,2023-03-01,31.97
+Nagaland,2023-04-01,31.97
+Nagaland,2023-05-01,31.81
+Nagaland,2023-06-01,30.03
+Nagaland,2023-07-01,27.08
+Nagaland,2023-08-01,23.15
+Nagaland,2023-09-01,23.55
+Nagaland,2023-10-01,24.86
+Nagaland,2023-11-01,23.47
+Nagaland,2023-12-01,24.46
+Nagaland,2024-01-01,25.92
+Nagaland,2024-02-01,32.08
+Nagaland,2024-03-01,33.2
+Nagaland,2024-04-01,29.11
+Nagaland,2024-05-01,29.37
+Nagaland,2024-06-01,28.08
+Nagaland,2024-07-01,29.11
+Nagaland,2024-08-01,24.84
+Nagaland,2024-09-01,21.95
+Nagaland,2024-10-01,25.28
+Nagaland,2024-11-01,27.38
+Nagaland,2024-12-01,23.5
+Nagaland,2025-01-01,27.8
+Nagaland,2025-02-01,32.38
+Nagaland,2025-03-01,29.28
+Nagaland,2025-04-01,32.16
+Nagaland,2025-05-01,32.42
+Nagaland,2025-06-01,29.5
+Nagaland,2025-07-01,30.25
+Nagaland,2025-08-01,24.08
+Nagaland,2025-09-01,21.88
+Nagaland,2025-10-01,21.78
+Nagaland,2025-11-01,23.84
+Nagaland,2025-12-01,22.21
+Manipur,2020-01-01,39.22
+Manipur,2020-02-01,42.71
+Manipur,2020-03-01,46.91
+Manipur,2020-04-01,20.78
+Manipur,2020-05-01,18.09
+Manipur,2020-06-01,17.92
+Manipur,2020-07-01,15.03
+Manipur,2020-08-01,35.66
+Manipur,2020-09-01,37.42
+Manipur,2020-10-01,35.8
+Manipur,2020-11-01,32.26
+Manipur,2020-12-01,31.22
+Manipur,2021-01-01,42.3
+Manipur,2021-02-01,44.6
+Manipur,2021-03-01,48.15
+Manipur,2021-04-01,36.14
+Manipur,2021-05-01,36.05
+Manipur,2021-06-01,40.84
+Manipur,2021-07-01,40.31
+Manipur,2021-08-01,39.43
+Manipur,2021-09-01,40.41
+Manipur,2021-10-01,36.75
+Manipur,2021-11-01,38.35
+Manipur,2021-12-01,39.53
+Manipur,2022-01-01,39.59
+Manipur,2022-02-01,47.19
+Manipur,2022-03-01,47.3
+Manipur,2022-04-01,48.13
+Manipur,2022-05-01,45.1
+Manipur,2022-06-01,47.57
+Manipur,2022-07-01,40.89
+Manipur,2022-08-01,35.1
+Manipur,2022-09-01,36.58
+Manipur,2022-10-01,39.9
+Manipur,2022-11-01,36.97
+Manipur,2022-12-01,40.88
+Manipur,2023-01-01,40.96
+Manipur,2023-02-01,43.21
+Manipur,2023-03-01,46.59
+Manipur,2023-04-01,45.0
+Manipur,2023-05-01,47.9
+Manipur,2023-06-01,44.62
+Manipur,2023-07-01,41.77
+Manipur,2023-08-01,40.59
+Manipur,2023-09-01,38.82
+Manipur,2023-10-01,39.15
+Manipur,2023-11-01,35.42
+Manipur,2023-12-01,39.52
+Manipur,2024-01-01,40.92
+Manipur,2024-02-01,42.8
+Manipur,2024-03-01,48.43
+Manipur,2024-04-01,49.6
+Manipur,2024-05-01,45.93
+Manipur,2024-06-01,46.17
+Manipur,2024-07-01,40.27
+Manipur,2024-08-01,37.66
+Manipur,2024-09-01,35.19
+Manipur,2024-10-01,39.59
+Manipur,2024-11-01,33.87
+Manipur,2024-12-01,43.47
+Manipur,2025-01-01,37.38
+Manipur,2025-02-01,43.38
+Manipur,2025-03-01,47.32
+Manipur,2025-04-01,47.17
+Manipur,2025-05-01,49.1
+Manipur,2025-06-01,49.41
+Manipur,2025-07-01,39.9
+Manipur,2025-08-01,39.79
+Manipur,2025-09-01,39.65
+Manipur,2025-10-01,35.85
+Manipur,2025-11-01,37.02
+Manipur,2025-12-01,40.87
+Mizoram,2020-01-01,31.02
+Mizoram,2020-02-01,35.11
+Mizoram,2020-03-01,36.4
+Mizoram,2020-04-01,12.68
+Mizoram,2020-05-01,6.35
+Mizoram,2020-06-01,11.52
+Mizoram,2020-07-01,5.0
+Mizoram,2020-08-01,30.73
+Mizoram,2020-09-01,29.92
+Mizoram,2020-10-01,26.11
+Mizoram,2020-11-01,25.91
+Mizoram,2020-12-01,30.73
+Mizoram,2021-01-01,33.42
+Mizoram,2021-02-01,34.82
+Mizoram,2021-03-01,38.98
+Mizoram,2021-04-01,25.6
+Mizoram,2021-05-01,23.2
+Mizoram,2021-06-01,35.41
+Mizoram,2021-07-01,30.03
+Mizoram,2021-08-01,32.82
+Mizoram,2021-09-01,30.47
+Mizoram,2021-10-01,25.64
+Mizoram,2021-11-01,30.21
+Mizoram,2021-12-01,29.39
+Mizoram,2022-01-01,32.86
+Mizoram,2022-02-01,38.23
+Mizoram,2022-03-01,36.24
+Mizoram,2022-04-01,37.91
+Mizoram,2022-05-01,39.03
+Mizoram,2022-06-01,38.88
+Mizoram,2022-07-01,33.98
+Mizoram,2022-08-01,37.1
+Mizoram,2022-09-01,28.94
+Mizoram,2022-10-01,26.89
+Mizoram,2022-11-01,29.63
+Mizoram,2022-12-01,30.89
+Mizoram,2023-01-01,32.1
+Mizoram,2023-02-01,39.71
+Mizoram,2023-03-01,38.97
+Mizoram,2023-04-01,43.42
+Mizoram,2023-05-01,39.0
+Mizoram,2023-06-01,37.25
+Mizoram,2023-07-01,36.44
+Mizoram,2023-08-01,33.77
+Mizoram,2023-09-01,31.21
+Mizoram,2023-10-01,30.11
+Mizoram,2023-11-01,34.83
+Mizoram,2023-12-01,36.99
+Mizoram,2024-01-01,35.6
+Mizoram,2024-02-01,38.38
+Mizoram,2024-03-01,38.86
+Mizoram,2024-04-01,38.77
+Mizoram,2024-05-01,41.37
+Mizoram,2024-06-01,34.68
+Mizoram,2024-07-01,39.13
+Mizoram,2024-08-01,33.68
+Mizoram,2024-09-01,32.97
+Mizoram,2024-10-01,30.72
+Mizoram,2024-11-01,31.99
+Mizoram,2024-12-01,34.11
+Mizoram,2025-01-01,36.94
+Mizoram,2025-02-01,37.23
+Mizoram,2025-03-01,42.55
+Mizoram,2025-04-01,37.68
+Mizoram,2025-05-01,39.71
+Mizoram,2025-06-01,38.41
+Mizoram,2025-07-01,35.03
+Mizoram,2025-08-01,34.29
+Mizoram,2025-09-01,32.56
+Mizoram,2025-10-01,31.04
+Mizoram,2025-11-01,30.94
+Mizoram,2025-12-01,35.4
+Tripura,2020-01-01,44.81
+Tripura,2020-02-01,43.4
+Tripura,2020-03-01,47.39
+Tripura,2020-04-01,22.52
+Tripura,2020-05-01,23.25
+Tripura,2020-06-01,21.51
+Tripura,2020-07-01,18.49
+Tripura,2020-08-01,40.93
+Tripura,2020-09-01,35.92
+Tripura,2020-10-01,39.54
+Tripura,2020-11-01,37.24
+Tripura,2020-12-01,38.75
+Tripura,2021-01-01,45.88
+Tripura,2021-02-01,43.3
+Tripura,2021-03-01,46.99
+Tripura,2021-04-01,36.54
+Tripura,2021-05-01,34.72
+Tripura,2021-06-01,43.71
+Tripura,2021-07-01,42.56
+Tripura,2021-08-01,37.72
+Tripura,2021-09-01,38.86
+Tripura,2021-10-01,41.54
+Tripura,2021-11-01,37.0
+Tripura,2021-12-01,42.21
+Tripura,2022-01-01,41.65
+Tripura,2022-02-01,46.25
+Tripura,2022-03-01,44.37
+Tripura,2022-04-01,47.95
+Tripura,2022-05-01,45.62
+Tripura,2022-06-01,43.53
+Tripura,2022-07-01,41.07
+Tripura,2022-08-01,37.68
+Tripura,2022-09-01,39.25
+Tripura,2022-10-01,36.35
+Tripura,2022-11-01,35.75
+Tripura,2022-12-01,42.63
+Tripura,2023-01-01,38.54
+Tripura,2023-02-01,42.68
+Tripura,2023-03-01,46.47
+Tripura,2023-04-01,45.63
+Tripura,2023-05-01,44.37
+Tripura,2023-06-01,43.98
+Tripura,2023-07-01,41.12
+Tripura,2023-08-01,43.69
+Tripura,2023-09-01,36.76
+Tripura,2023-10-01,32.1
+Tripura,2023-11-01,37.19
+Tripura,2023-12-01,39.52
+Tripura,2024-01-01,42.37
+Tripura,2024-02-01,41.78
+Tripura,2024-03-01,43.48
+Tripura,2024-04-01,50.04
+Tripura,2024-05-01,45.09
+Tripura,2024-06-01,41.53
+Tripura,2024-07-01,40.3
+Tripura,2024-08-01,38.06
+Tripura,2024-09-01,40.29
+Tripura,2024-10-01,35.32
+Tripura,2024-11-01,35.28
+Tripura,2024-12-01,37.05
+Tripura,2025-01-01,44.03
+Tripura,2025-02-01,43.82
+Tripura,2025-03-01,43.72
+Tripura,2025-04-01,47.68
+Tripura,2025-05-01,46.9
+Tripura,2025-06-01,43.17
+Tripura,2025-07-01,39.72
+Tripura,2025-08-01,34.15
+Tripura,2025-09-01,37.04
+Tripura,2025-10-01,33.77
+Tripura,2025-11-01,38.24
+Tripura,2025-12-01,35.75
+Meghalaya,2020-01-01,34.6
+Meghalaya,2020-02-01,36.33
+Meghalaya,2020-03-01,39.0
+Meghalaya,2020-04-01,13.14
+Meghalaya,2020-05-01,15.45
+Meghalaya,2020-06-01,10.86
+Meghalaya,2020-07-01,8.63
+Meghalaya,2020-08-01,34.74
+Meghalaya,2020-09-01,31.72
+Meghalaya,2020-10-01,28.59
+Meghalaya,2020-11-01,32.75
+Meghalaya,2020-12-01,37.17
+Meghalaya,2021-01-01,34.08
+Meghalaya,2021-02-01,40.13
+Meghalaya,2021-03-01,40.42
+Meghalaya,2021-04-01,29.86
+Meghalaya,2021-05-01,28.5
+Meghalaya,2021-06-01,39.69
+Meghalaya,2021-07-01,39.27
+Meghalaya,2021-08-01,32.46
+Meghalaya,2021-09-01,31.72
+Meghalaya,2021-10-01,30.77
+Meghalaya,2021-11-01,28.92
+Meghalaya,2021-12-01,37.66
+Meghalaya,2022-01-01,37.66
+Meghalaya,2022-02-01,37.26
+Meghalaya,2022-03-01,39.24
+Meghalaya,2022-04-01,40.93
+Meghalaya,2022-05-01,41.31
+Meghalaya,2022-06-01,37.4
+Meghalaya,2022-07-01,35.59
+Meghalaya,2022-08-01,32.94
+Meghalaya,2022-09-01,35.18
+Meghalaya,2022-10-01,29.94
+Meghalaya,2022-11-01,29.21
+Meghalaya,2022-12-01,32.34
+Meghalaya,2023-01-01,34.9
+Meghalaya,2023-02-01,36.11
+Meghalaya,2023-03-01,39.13
+Meghalaya,2023-04-01,38.23
+Meghalaya,2023-05-01,41.25
+Meghalaya,2023-06-01,39.03
+Meghalaya,2023-07-01,34.41
+Meghalaya,2023-08-01,31.35
+Meghalaya,2023-09-01,31.81
+Meghalaya,2023-10-01,31.4
+Meghalaya,2023-11-01,31.82
+Meghalaya,2023-12-01,35.95
+Meghalaya,2024-01-01,37.53
+Meghalaya,2024-02-01,36.32
+Meghalaya,2024-03-01,39.32
+Meghalaya,2024-04-01,38.72
+Meghalaya,2024-05-01,43.41
+Meghalaya,2024-06-01,39.93
+Meghalaya,2024-07-01,34.53
+Meghalaya,2024-08-01,37.88
+Meghalaya,2024-09-01,32.28
+Meghalaya,2024-10-01,32.76
+Meghalaya,2024-11-01,31.7
+Meghalaya,2024-12-01,34.58
+Meghalaya,2025-01-01,36.05
+Meghalaya,2025-02-01,40.02
+Meghalaya,2025-03-01,41.48
+Meghalaya,2025-04-01,42.45
+Meghalaya,2025-05-01,39.8
+Meghalaya,2025-06-01,39.46
+Meghalaya,2025-07-01,33.27
+Meghalaya,2025-08-01,35.0
+Meghalaya,2025-09-01,29.65
+Meghalaya,2025-10-01,32.64
+Meghalaya,2025-11-01,33.77
+Meghalaya,2025-12-01,32.72

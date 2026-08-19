@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import sys
 import pickle
@@ -13,13 +14,14 @@ from pydantic import BaseModel
 
 # Add current path to python path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data"))
 import database as db
 
 # Initialize database on startup
 db.init_db()
 
 app = FastAPI(
-    title="Abhaya Women Safety API Backend",
+    title="Suraksha Women Safety API Backend",
     description="REST backend running deep learning safety inference and SQLite database endpoints",
     version="1.0"
 )
@@ -110,10 +112,11 @@ class RouteRequest(BaseModel):
     start_lon: float
     dest_lat: float
     dest_lon: float
-    lights: float
-    patrol: float
-    pop_density: float
-    base_crime: float
+    lights: float = 0.7
+    patrol: float = 0.6
+    pop_density: float = 0.5
+    base_crime: float = 0.3
+    mode: Optional[str] = "driving"
 
 class HazardSubmitRequest(BaseModel):
     username: str
@@ -248,134 +251,31 @@ def trigger_retraining(background_tasks: BackgroundTasks):
     background_tasks.add_task(run_training_background)
     return {"status": "Training started in background. Check evaluation diagnostics in ~30 seconds."}
 
+# Import routing service
+try:
+    import routing
+except ImportError:
+    from backend import routing
+
 # --- ROUTING ENDPOINT ---
 @app.post("/route/optimize")
 def optimize_route(req: RouteRequest):
-    # Base straight-line distance
-    base_dist = haversine_distance(req.start_lat, req.start_lon, req.dest_lat, req.dest_lon)
-    
-    # --- 1. SHORTEST PATH (Purple) ---
-    shortest_path = []
-    shortest_scores = []
-    for i in range(11):
-        t = i / 10.0
-        lat_pt = req.start_lat + t * (req.dest_lat - req.start_lat)
-        lon_pt = req.start_lon + t * (req.dest_lon - req.start_lon)
-        shortest_path.append([lat_pt, lon_pt])
-        
-        score = 100.0 - (req.base_crime * 45.0) + (req.lights * 25.0) + (req.patrol * 20.0) - (req.pop_density * 10.0)
-        shortest_scores.append(score)
-        
-    shortest_safety = 0.3 * np.min(shortest_scores) + 0.7 * np.mean(shortest_scores)
-    # Apply standard routing scale factor of 1.25 for real-world road deviations
-    shortest_dist = base_dist * 1.25
-    shortest_time = shortest_dist * 2.8
-    
-    # --- 2. SAFEST PATH (Green) ---
-    safest_path = [[req.start_lat, req.start_lon]]
-    safest_scores = [shortest_scores[0]]
-    safest_dist = 0.0
-    
-    for i in range(1, 10):
-        t = i / 10.0
-        lat_pt = req.start_lat + t * (req.dest_lat - req.start_lat)
-        lon_pt = req.start_lon + t * (req.dest_lon - req.start_lon)
-        
-        best_lat, best_lon = lat_pt, lon_pt
-        best_score = 100.0 - (req.base_crime * 45.0) + (req.lights * 25.0) + (req.patrol * 20.0) - (req.pop_density * 10.0)
-        
-        # Use a realistic 120-meter (0.0011 deg) offset to represent a localized detour rather than giant state-level zigzags
-        offsets = [0.0011, -0.0011]
-        for off_lat in offsets:
-            for off_lon in offsets:
-                cand_lat = lat_pt + off_lat
-                cand_lon = lon_pt + off_lon
-                cand_score = 100.0 - (req.base_crime * 45.0) + (req.lights * 25.0) + (req.patrol * 20.0) - (req.pop_density * 10.0)
-                coord_mod = float(int(hashlib.md5(f"{cand_lat},{cand_lon}".encode('utf-8')).hexdigest(), 16) % 30)
-                cand_score += coord_mod - 15.0
-                
-                if cand_score > best_score:
-                    best_score = cand_score
-                    best_lat, best_lon = cand_lat, cand_lon
-                    
-        safest_path.append([best_lat, best_lon])
-        safest_scores.append(best_score)
-        
-    safest_path.append([req.dest_lat, req.dest_lon])
-    safest_scores.append(shortest_scores[-1])
-    
-    # Calculate exact distance along the path segments and apply routing factor
-    for j in range(1, len(safest_path)):
-        safest_dist += haversine_distance(safest_path[j-1][0], safest_path[j-1][1], safest_path[j][0], safest_path[j][1])
-    safest_dist = safest_dist * 1.25
-    
-    safest_safety = 0.3 * np.min(safest_scores) + 0.7 * np.mean(safest_scores)
-    safest_time = safest_dist * 3.2
-    
-    # --- 3. FASTEST PATH (Blue) ---
-    fastest_path = []
-    fastest_scores = []
-    for i in range(11):
-        t = i / 10.0
-        lat_pt = req.start_lat + t * (req.dest_lat - req.start_lat)
-        lon_pt = req.start_lon + t * (req.dest_lon - req.start_lon)
-        # Minimize detour offset for fastest path
-        h_offset = 0.00025 * np.sin(t * np.pi)
-        fastest_path.append([lat_pt + h_offset, lon_pt])
-        
-        score = 100.0 - (req.base_crime * 45.0) + (req.lights * 25.0) + (req.patrol * 20.0) - (req.pop_density * 10.0) - 3.0
-        fastest_scores.append(score)
-        
-    fastest_dist = shortest_dist * 1.03
-    fastest_safety = 0.3 * np.min(fastest_scores) + 0.7 * np.mean(fastest_scores)
-    fastest_time = fastest_dist * 2.0
-    
-    # --- 4. BALANCED PATH (Yellow) ---
-    balanced_path = [[req.start_lat, req.start_lon]]
-    balanced_scores = [shortest_scores[0]]
-    balanced_dist = 0.0
-    
-    for i in range(1, 10):
-        safe_node = safest_path[i]
-        short_node = shortest_path[i]
-        bal_lat = 0.6 * safe_node[0] + 0.4 * short_node[0]
-        bal_lon = 0.6 * safe_node[1] + 0.4 * short_node[1]
-        balanced_path.append([bal_lat, bal_lon])
-        
-        score = 100.0 - (req.base_crime * 45.0) + (req.lights * 25.0) + (req.patrol * 20.0) - (req.pop_density * 10.0)
-        balanced_scores.append(score + 3.0)
-        
-    balanced_path.append([req.dest_lat, req.dest_lon])
-    balanced_scores.append(shortest_scores[-1])
-    
-    for j in range(1, len(balanced_path)):
-        balanced_dist += haversine_distance(balanced_path[j-1][0], balanced_path[j-1][1], balanced_path[j][0], balanced_path[j][1])
-    balanced_dist = balanced_dist * 1.25
-    
-    balanced_safety = 0.3 * np.min(balanced_scores) + 0.7 * np.mean(balanced_scores)
-    balanced_time = balanced_dist * 2.5
-    
-    return {
-        "shortest_path": shortest_path,
-        "shortest_safety": float(shortest_safety),
-        "shortest_dist": float(shortest_dist),
-        "shortest_time": float(shortest_time),
-        
-        "safest_path": safest_path,
-        "safest_safety": float(safest_safety),
-        "safest_dist": float(safest_dist),
-        "safest_time": float(safest_time),
-        
-        "fastest_path": fastest_path,
-        "fastest_safety": float(fastest_safety),
-        "fastest_dist": float(fastest_dist),
-        "fastest_time": float(fastest_time),
-        
-        "balanced_path": balanced_path,
-        "balanced_safety": float(balanced_safety),
-        "balanced_dist": float(balanced_dist),
-        "balanced_time": float(balanced_time)
-    }
+    """
+    Computes accurate real-road routing, exact distances (km/meters), ETAs,
+    turn-by-turn navigation steps, and multi-profile safety evaluations.
+    """
+    res = routing.calculate_optimized_routes(
+        start_lat=req.start_lat,
+        start_lon=req.start_lon,
+        dest_lat=req.dest_lat,
+        dest_lon=req.dest_lon,
+        mode=req.mode or "driving",
+        lights=req.lights,
+        patrol=req.patrol,
+        pop_density=req.pop_density,
+        base_crime=req.base_crime
+    )
+    return res
 
 # --- EXPLAINABLE AI (XAI) PERTURBATION ENDPOINT ---
 @app.post("/predict/explain")
@@ -390,19 +290,19 @@ def explain_safety(req: PredictRequest):
     if req.lights >= 0.7:
         improving.append({"factor": "💡 Strong verified local streetlight coverage", "impact": float(req.lights * 14.5)})
     elif req.lights <= 0.35:
-        worsening.append({"factor": "💡 High risk: Poor streetlight coverage verified", "impact": float((1.0 - req.lights) * -16.0)})
+        worsening.append({"factor": "⚠️ High risk: Poor streetlight coverage verified", "impact": float((1.0 - req.lights) * -16.0)})
         
     # Analyze Patrol contributions
     if req.patrol >= 0.6:
-        improving.append({"factor": "🚔 Active verified police patrols (GAST)", "impact": float(req.patrol * 12.0)})
+        improving.append({"factor": "🚓 Active verified police patrols (GAST)", "impact": float(req.patrol * 12.0)})
     elif req.patrol <= 0.3:
-        worsening.append({"factor": "🚔 High risk: Limited police patrolling recorded", "impact": float((1.0 - req.patrol) * -14.0)})
+        worsening.append({"factor": "⚠️ High risk: Limited police patrolling recorded", "impact": float((1.0 - req.patrol) * -14.0)})
         
     # Analyze Crime indices
     if req.base_crime <= 0.35:
-        improving.append({"factor": "🚨 Safe zone: Low historical crime frequency density", "impact": float((1.0 - req.base_crime) * 15.0)})
+        improving.append({"factor": "🛡️ Safe zone: Low historical crime frequency density", "impact": float((1.0 - req.base_crime) * 15.0)})
     else:
-        worsening.append({"factor": "🚨 High risk: Dense crime historical index", "impact": float(req.base_crime * -24.0)})
+        worsening.append({"factor": "⚠️ High risk: Dense crime historical index", "impact": float(req.base_crime * -24.0)})
         
     # Analyze Temporal components
     is_night = (req.hour >= 22) or (req.hour <= 5)
@@ -413,7 +313,7 @@ def explain_safety(req: PredictRequest):
         
     # Analyze Population density
     if req.pop_density < 0.3:
-        worsening.append({"factor": "🚷 Desolation: Low activity population density index", "impact": -8.0})
+        worsening.append({"factor": "⚠️ Desolation: Low activity population density index", "impact": -8.0})
     elif req.pop_density > 0.8:
         improving.append({"factor": "👥 Active: Dense pedestrian public presence", "impact": 4.0})
         
@@ -506,3 +406,119 @@ def resolve_hazard(req: ResolveRequest):
     if not success:
         raise HTTPException(status_code=500, detail="Failed to update report status.")
     return {"message": f"Hazard report status updated to {req.status}."}
+
+
+# -----------------------------------------------------------------
+# FUTURE CRIME PREDICTION ENDPOINTS
+# -----------------------------------------------------------------
+
+from crime_forecaster import (
+    forecast_ensemble,
+    forecast_linear,
+    forecast_arima,
+    forecast_lstm,
+    forecast_national,
+    forecast_crime_categories,
+    forecast_risk_hotspots,
+)
+
+
+@app.get("/predict/future/state")
+def future_state_forecast(state: str, horizon_months: int = 36, method: str = "ensemble"):
+    """
+    Forecast crime rates for a specific state.
+    method: 'ensemble' | 'linear' | 'arima' | 'lstm'
+    horizon_months: number of months to forecast (default 36 = 3 years)
+    """
+    try:
+        if method == "linear":
+            result = forecast_linear(state, horizon_months)
+        elif method == "arima":
+            result = forecast_arima(state, horizon_months)
+        elif method == "lstm":
+            result = forecast_lstm(state, horizon_months)
+        else:
+            result = forecast_ensemble(state, horizon_months)
+
+        if "error" in result:
+            raise HTTPException(status_code=404, detail=result["error"])
+        return result
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Forecast error: {str(e)}")
+
+
+@app.get("/predict/future/national")
+def future_national_forecast(horizon_years: int = 5):
+    """
+    Forecast national total crimes against women for the next N years.
+    Uses polynomial regression on NCRB 2001-2023 annual totals.
+    """
+    try:
+        return forecast_national(horizon_years)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/predict/future/categories")
+def future_categories_forecast(target_year: int = 2026):
+    """
+    Project the crime-type breakdown (rape, kidnapping, cybercrime, etc.)
+    for a future year based on 2023 NCRB proportions and known trend directions.
+    """
+    try:
+        return forecast_crime_categories(target_year)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/predict/future/hotspots")
+def future_risk_hotspots(horizon_years: int = 3):
+    """
+    Returns all states ranked by projected crime rate horizon_years from now,
+    with acceleration/deceleration trend flag.
+    """
+    try:
+        return forecast_risk_hotspots(horizon_years)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/predict/future/compare")
+def compare_state_forecasts(states: str, horizon_months: int = 36):
+    """
+    Compare forecasts for multiple states (comma-separated).
+    e.g. ?states=Delhi,Rajasthan,Karnataka
+    Returns ensemble forecasts for each state in one call.
+    """
+    try:
+        state_list = [s.strip() for s in states.split(",") if s.strip()]
+        if len(state_list) > 8:
+            raise HTTPException(status_code=400, detail="Maximum 8 states per comparison.")
+        results = {}
+        for s in state_list:
+            results[s] = forecast_ensemble(s, horizon_months)
+        return results
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.get("/")
+def root():
+    return {"status": "online", "service": "Suraksha AI Backend", "version": "1.0"}
+
+@app.get("/health")
+def health():
+    return {"status": "healthy", "database": "connected"}
+
+@app.get("/api/police_stations")
+def get_police_stations(lat: float, lon: float, radius_km: float = 8.0):
+    """
+    Returns genuine verified OpenStreetMap police stations around (lat, lon).
+    Never fabricates fake stations.
+    """
+    from routing import fetch_real_police_stations
+    return {"police_stations": fetch_real_police_stations(lat, lon, radius_km=radius_km)}

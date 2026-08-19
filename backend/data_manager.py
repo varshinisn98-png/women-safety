@@ -1,4 +1,6 @@
+# -*- coding: utf-8 -*-
 import os
+import sys
 import numpy as np
 import pandas as pd
 from datetime import datetime, timedelta
@@ -6,6 +8,11 @@ from datetime import datetime, timedelta
 # Create data and models directories if they don't exist
 os.makedirs("data", exist_ok=True)
 os.makedirs("models", exist_ok=True)
+
+# Allow import of real_datasets from data/ directory
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_ROOT = os.path.dirname(_HERE)
+sys.path.insert(0, os.path.join(_ROOT, "data"))
 
 # Complete mapping of 28 States and 8 Union Territories in India with their Capitals and Capital Coordinates
 STATES_AND_UT = {
@@ -350,9 +357,9 @@ def generate_national_datasets(samples_per_taluk=15):
     generate_national_timeseries()
 
 def generate_national_timeseries():
-    """Generates monthly aggregated crime index rates (Jan 2020 - Dec 2025) for each State/UT."""
-    print("Generating State-level Time-Series Aggregates (2020-2025)...")
-    months = pd.date_range(start="2020-01-01", end="2025-12-01", freq="MS")
+    """Generates monthly aggregated crime index rates (Jan 2020 - Aug 2026) for each State/UT."""
+    print("Generating State-level Time-Series Aggregates (2020-2026)...")
+    months = pd.date_range(start="2020-01-01", end="2026-08-01", freq="MS")
     records = []
     
     for state_name, state_info in STATES_AND_UT.items():
@@ -397,10 +404,108 @@ def generate_national_timeseries():
             
     df_ts = pd.DataFrame(records)
     df_ts.to_csv("data/monthly_crimes.csv", index=False)
-    print(f"Generated {len(df_ts)} monthly aggregated time-series records.")
+    print(f"Generated {len(df_ts)} synthetic monthly time-series records.")
+
+    # -- Merge in REAL NCRB data (2001-2023) ------------------------------
+    merge_real_ncrb_data()
+
+
+def merge_real_ncrb_data():
+    """
+    Loads real NCRB state-wise crime-rate history (2001-2023) from
+    data/real_datasets.py, converts it to the monthly_crimes.csv format,
+    and blends it with any existing synthetic records using a weighted merge.
+
+    Real data takes precedence where it overlaps (2001-2023).
+    Synthetic data fills in states not covered by real data.
+    The merged file then extends to 2026 with synthetic continuation.
+    """
+    csv_path = "data/monthly_crimes.csv"
+    try:
+        from real_datasets import build_ncrb_timeseries_df, STATE_RATE_HISTORY
+        REAL_DATA_AVAILABLE = True
+    except ImportError:
+        print("  [data_manager] real_datasets.py not found - skipping NCRB merge.")
+        return
+
+    # Load existing synthetic CSV
+    if os.path.exists(csv_path):
+        df_synth = pd.read_csv(csv_path)
+        df_synth["date"] = pd.to_datetime(df_synth["date"])
+    else:
+        df_synth = pd.DataFrame(columns=["city", "date", "crime_index"])
+
+    # Build real monthly data
+    df_real = build_ncrb_timeseries_df()
+    # Rename to match existing schema
+    df_real = df_real.rename(columns={"city": "city"})
+    df_real["source"] = "NCRB_REAL"
+
+    real_states = set(df_real["city"].unique())
+
+    # Drop synthetic rows for states that now have real data (2001-2023 window)
+    if "source" not in df_synth.columns:
+        df_synth["source"] = "SYNTHETIC"
+
+    df_synth_keep = df_synth[
+        ~(
+            df_synth["city"].isin(real_states) &
+            (df_synth["date"] >= pd.Timestamp("2001-01-01")) &
+            (df_synth["date"] <= pd.Timestamp("2023-12-31"))
+        )
+    ].copy()
+
+    # Extend real data 2024-2026 with synthetic continuation
+    extension_records = []
+    for state_name, state_info in STATES_AND_UT.items():
+        if state_name not in real_states:
+            continue
+        # Last known real value for this state
+        state_real = df_real[df_real["city"] == state_name].sort_values("date")
+        if len(state_real) == 0:
+            continue
+        last_val = float(state_real["crime_index"].iloc[-1])
+        last_date = state_real["date"].iloc[-1]
+
+        np.random.seed(int(abs(hash(state_name))) % (2**31))
+        trend = np.random.uniform(-0.04, 0.06)
+
+        ext_months = pd.date_range(
+            start=last_date + pd.offsets.MonthBegin(1),
+            end=pd.Timestamp("2026-12-01"),
+            freq="MS"
+        )
+        for idx, month in enumerate(ext_months):
+            crime_index = last_val + idx * trend
+            seasonality = np.sin(2 * np.pi * (month.month - 1) / 12.0) * 5.0
+            noise = np.random.normal(0, 1.5)
+            crime_index = max(5.0, min(160.0, crime_index + seasonality + noise))
+            extension_records.append({
+                "city": state_name,
+                "date": month,
+                "crime_index": round(crime_index, 2),
+                "source": "SYNTHETIC_EXT"
+            })
+
+    df_ext = pd.DataFrame(extension_records)
+
+    # Merge all three: real (2001-2023) + synthetic remainder + extension (2024-2026)
+    df_merged = pd.concat([df_synth_keep, df_real, df_ext], ignore_index=True)
+    df_merged = df_merged.drop_duplicates(subset=["city", "date"]).sort_values(["city", "date"])
+
+    # Keep only columns the LSTM expects
+    df_out = df_merged[["city", "date", "crime_index"]].copy()
+    df_out["date"] = df_out["date"].dt.strftime("%Y-%m-%d")
+
+    df_out.to_csv(csv_path, index=False)
+    real_count = len(df_real)
+    total_count = len(df_out)
+    print(f"  Merged {real_count} real NCRB records + synthetic into {total_count} total monthly records (2001-2026).")
+    print(f"  States with real data: {len(real_states)}")
+
 
 if __name__ == "__main__":
     # Generate large scale dataset
     # We use 20 samples per taluk across ~750 taluks, generating ~15,000 taluk checkpoints,
     # or let's use 50 samples per taluk to hit 36 States * 8 districts * 3 taluks * 50 = ~43,200 records (very large dataset!)
-    generate_national_sets = generate_national_datasets(samples_per_taluk=50)
+    generate_national_datasets(samples_per_taluk=50)

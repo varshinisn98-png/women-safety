@@ -71,6 +71,14 @@ Delhi,2025-09-01,56.19
 Delhi,2025-10-01,55.4
 Delhi,2025-11-01,49.78
 Delhi,2025-12-01,56.17
+Delhi,2026-01-01,61.3
+Delhi,2026-02-01,61.05
+Delhi,2026-03-01,63.19
+Delhi,2026-04-01,61.82
+Delhi,2026-05-01,64.56
+Delhi,2026-06-01,59.69
+Delhi,2026-07-01,55.77
+Delhi,2026-08-01,58.76
 Uttar Pradesh,2020-01-01,56.59
 Uttar Pradesh,2020-02-01,55.79
 Uttar Pradesh,2020-03-01,58.24
@@ -143,6 +151,14 @@ Uttar Pradesh,2025-09-01,48.87
 Uttar Pradesh,2025-10-01,47.93
 Uttar Pradesh,2025-11-01,50.59
 Uttar Pradesh,2025-12-01,51.81
+Uttar Pradesh,2026-01-01,53.18
+Uttar Pradesh,2026-02-01,53.51
+Uttar Pradesh,2026-03-01,55.7
+Uttar Pradesh,2026-04-01,59.54
+Uttar Pradesh,2026-05-01,59.56
+Uttar Pradesh,2026-06-01,53.18
+Uttar Pradesh,2026-07-01,51.21
+Uttar Pradesh,2026-08-01,49.64
 Punjab,2020-01-01,38.01
 Punjab,2020-02-01,41.05
 Punjab,2020-03-01,46.38
@@ -215,6 +231,14 @@ Punjab,2025-09-01,34.29
 Punjab,2025-10-01,38.51
 Punjab,2025-11-01,39.85
 Punjab,2025-12-01,39.38
+Punjab,2026-01-01,44.0
+Punjab,2026-02-01,43.16
+Punjab,2026-03-01,45.33
+Punjab,2026-04-01,43.51
+Punjab,2026-05-01,39.23
+Punjab,2026-06-01,41.9
+Punjab,2026-07-01,44.76
+Punjab,2026-08-01,37.75
 Haryana,2020-01-01,47.81
 Haryana,2020-02-01,50.85
 Haryana,2020-03-01,56.18
@@ -287,6 +311,14 @@ Haryana,2025-09-01,44.09
 Haryana,2025-10-01,48.31
 Haryana,2025-11-01,49.65
 Haryana,2025-12-01,49.18
+Haryana,2026-01-01,53.8
+Haryana,2026-02-01,52.96
+Haryana,2026-03-01,55.13
+Haryana,2026-04-01,53.31
+Haryana,2026-05-01,49.03
+Haryana,2026-06-01,51.7
+Haryana,2026-07-01,54.56
+Haryana,2026-08-01,47.55
 Himachal Pradesh,2020-01-01,37.89
 Himachal Pradesh,2020-02-01,36.26
 Himachal Pradesh,2020-03-01,36.21
@@ -359,6 +391,14 @@ Himachal Pradesh,2025-09-01,29.53
 Himachal Pradesh,2025-10-01,28.83
 Himachal Pradesh,2025-11-01,31.32
 Himachal Pradesh,2025-12-01,33.78
+Himachal Pradesh,2026-01-01,31.3
+Himachal Pradesh,2026-02-01,37.86
+Himachal Pradesh,2026-03-01,43.19
+Himachal Pradesh,2026-04-01,40.26
+Himachal Pradesh,2026-05-01,38.57
+Himachal Pradesh,2026-06-01,37.88
+Himachal Pradesh,2026-07-01,38.99
+Himachal Pradesh,2026-08-01,32.29
 Uttarakhand,2020-01-01,40.31
 Uttarakhand,2020-02-01,38.56
 Uttarakhand,2020-03-01,44.84
@@ -431,6 +471,14 @@ Uttarakhand,2025-09-01,37.22
 Uttarakhand,2025-10-01,35.92
 Uttarakhand,2025-11-01,37.27
 Uttarakhand,2025-12-01,40.94
+Uttarakhand,2026-01-01,42.73
+Uttarakhand,2026-02-01,43.51
+Uttarakhand,2026-03-01,48.29
+Uttarakhand,2026-04-01,51.5
+Uttarakhand,2026-05-01,41.25
+Uttarakhand,2026-06-01,45.42
+Uttarakhand,2026-07-01,43.27
+Uttarakhand,2026-08-01,42.81
 Jammu and Kashmir,2020-01-01,46.59
 Jammu and Kashmir,2020-02-01,49.91
 Jammu and Kashmir,2020-03-01,50.62
@@ -503,6 +551,14 @@ Jammu and Kashmir,2025-09-01,38.57
 Jammu and Kashmir,2025-10-01,38.28
 Jammu and Kashmir,2025-11-01,44.72
 Jammu and Kashmir,2025-12-01,42.21
+Jammu and Kashmir,2026-01-01,43.95
+Jammu and Kashmir,2026-02-01,48.41
+Jammu and Kashmir,2026-03-01,49.55
+Jammu and Kashmir,2026-04-01,50.03
+Jammu and Kashmir,2026-05-01,49.17
+Jammu and Kashmir,2026-06-01,49.88
+Jammu and Kashmir,2026-07-01,43.45
+Jammu and Kashmir,2026-08-01,37.57
 Ladakh,2020-01-01,25.84
 Ladakh,2020-02-01,28.6
 Ladakh,2020-03-01,29.48
@@ -575,6 +631,14 @@ Ladakh,2025-09-01,20.19
 Ladakh,2025-10-01,16.23
 Ladakh,2025-11-01,18.92
 Ladakh,2025-12-01,22.31
+Ladakh,2026-01-01,20.22
+Ladakh,2026-02-01,28.45
+Ladakh,2026-03-01,28.7
+Ladakh,2026-04-01,33.02
+Ladakh,2026-05-01,25.2
+Ladakh,2026-06-01,23.85
+Ladakh,2026-07-01,23.15
+Ladakh,2026-08-01,19.84
 Chandigarh,2020-01-01,33.81
 Chandigarh,2020-02-01,36.85
 Chandigarh,2020-03-01,42.18
@@ -647,6 +711,14 @@ Chandigarh,2025-09-01,30.09
 Chandigarh,2025-10-01,34.31
 Chandigarh,2025-11-01,35.65
 Chandigarh,2025-12-01,35.18
+Chandigarh,2026-01-01,39.8
+Chandigarh,2026-02-01,38.96
+Chandigarh,2026-03-01,41.13
+Chandigarh,2026-04-01,39.31
+Chandigarh,2026-05-01,35.03
+Chandigarh,2026-06-01,37.7
+Chandigarh,2026-07-01,40.56
+Chandigarh,2026-08-01,33.55
 Maharashtra,2020-01-01,50.16
 Maharashtra,2020-02-01,52.17
 Maharashtra,2020-03-01,53.19
@@ -719,6 +791,14 @@ Maharashtra,2025-09-01,50.32
 Maharashtra,2025-10-01,46.51
 Maharashtra,2025-11-01,46.97
 Maharashtra,2025-12-01,48.79
+Maharashtra,2026-01-01,48.32
+Maharashtra,2026-02-01,52.34
+Maharashtra,2026-03-01,58.08
+Maharashtra,2026-04-01,54.47
+Maharashtra,2026-05-01,54.37
+Maharashtra,2026-06-01,52.72
+Maharashtra,2026-07-01,47.85
+Maharashtra,2026-08-01,48.46
 Gujarat,2020-01-01,36.94
 Gujarat,2020-02-01,40.48
 Gujarat,2020-03-01,40.45
@@ -791,6 +871,14 @@ Gujarat,2025-09-01,35.51
 Gujarat,2025-10-01,33.91
 Gujarat,2025-11-01,34.21
 Gujarat,2025-12-01,36.63
+Gujarat,2026-01-01,34.81
+Gujarat,2026-02-01,41.98
+Gujarat,2026-03-01,39.61
+Gujarat,2026-04-01,43.64
+Gujarat,2026-05-01,43.86
+Gujarat,2026-06-01,41.06
+Gujarat,2026-07-01,36.0
+Gujarat,2026-08-01,33.12
 Rajasthan,2020-01-01,56.91
 Rajasthan,2020-02-01,57.26
 Rajasthan,2020-03-01,63.31
@@ -863,6 +951,14 @@ Rajasthan,2025-09-01,50.16
 Rajasthan,2025-10-01,49.76
 Rajasthan,2025-11-01,52.58
 Rajasthan,2025-12-01,55.54
+Rajasthan,2026-01-01,53.4
+Rajasthan,2026-02-01,52.44
+Rajasthan,2026-03-01,62.06
+Rajasthan,2026-04-01,59.46
+Rajasthan,2026-05-01,59.37
+Rajasthan,2026-06-01,55.58
+Rajasthan,2026-07-01,55.6
+Rajasthan,2026-08-01,56.15
 Madhya Pradesh,2020-01-01,51.64
 Madhya Pradesh,2020-02-01,55.18
 Madhya Pradesh,2020-03-01,55.15
@@ -935,6 +1031,14 @@ Madhya Pradesh,2025-09-01,50.21
 Madhya Pradesh,2025-10-01,48.61
 Madhya Pradesh,2025-11-01,48.91
 Madhya Pradesh,2025-12-01,51.33
+Madhya Pradesh,2026-01-01,49.51
+Madhya Pradesh,2026-02-01,56.68
+Madhya Pradesh,2026-03-01,54.31
+Madhya Pradesh,2026-04-01,58.34
+Madhya Pradesh,2026-05-01,58.56
+Madhya Pradesh,2026-06-01,55.76
+Madhya Pradesh,2026-07-01,50.7
+Madhya Pradesh,2026-08-01,47.82
 Chhattisgarh,2020-01-01,44.24
 Chhattisgarh,2020-02-01,47.42
 Chhattisgarh,2020-03-01,47.5
@@ -1007,6 +1111,14 @@ Chhattisgarh,2025-09-01,40.31
 Chhattisgarh,2025-10-01,39.47
 Chhattisgarh,2025-11-01,38.81
 Chhattisgarh,2025-12-01,43.76
+Chhattisgarh,2026-01-01,41.46
+Chhattisgarh,2026-02-01,49.15
+Chhattisgarh,2026-03-01,46.45
+Chhattisgarh,2026-04-01,49.71
+Chhattisgarh,2026-05-01,50.39
+Chhattisgarh,2026-06-01,44.42
+Chhattisgarh,2026-07-01,44.31
+Chhattisgarh,2026-08-01,41.75
 Goa,2020-01-01,37.51
 Goa,2020-02-01,39.16
 Goa,2020-03-01,40.03
@@ -1079,6 +1191,14 @@ Goa,2025-09-01,28.65
 Goa,2025-10-01,30.5
 Goa,2025-11-01,31.06
 Goa,2025-12-01,32.45
+Goa,2026-01-01,35.48
+Goa,2026-02-01,40.62
+Goa,2026-03-01,39.91
+Goa,2026-04-01,35.1
+Goa,2026-05-01,37.57
+Goa,2026-06-01,38.09
+Goa,2026-07-01,36.67
+Goa,2026-08-01,32.01
 Dadra and Nagar Haveli and Daman and Diu,2020-01-01,31.37
 Dadra and Nagar Haveli and Daman and Diu,2020-02-01,31.67
 Dadra and Nagar Haveli and Daman and Diu,2020-03-01,36.89
@@ -1151,6 +1271,14 @@ Dadra and Nagar Haveli and Daman and Diu,2025-09-01,30.57
 Dadra and Nagar Haveli and Daman and Diu,2025-10-01,27.97
 Dadra and Nagar Haveli and Daman and Diu,2025-11-01,34.68
 Dadra and Nagar Haveli and Daman and Diu,2025-12-01,34.36
+Dadra and Nagar Haveli and Daman and Diu,2026-01-01,34.07
+Dadra and Nagar Haveli and Daman and Diu,2026-02-01,37.26
+Dadra and Nagar Haveli and Daman and Diu,2026-03-01,40.27
+Dadra and Nagar Haveli and Daman and Diu,2026-04-01,39.38
+Dadra and Nagar Haveli and Daman and Diu,2026-05-01,43.26
+Dadra and Nagar Haveli and Daman and Diu,2026-06-01,38.23
+Dadra and Nagar Haveli and Daman and Diu,2026-07-01,37.33
+Dadra and Nagar Haveli and Daman and Diu,2026-08-01,33.58
 Karnataka,2020-01-01,41.56
 Karnataka,2020-02-01,39.73
 Karnataka,2020-03-01,46.57
@@ -1223,6 +1351,14 @@ Karnataka,2025-09-01,37.9
 Karnataka,2025-10-01,38.73
 Karnataka,2025-11-01,37.97
 Karnataka,2025-12-01,37.01
+Karnataka,2026-01-01,40.04
+Karnataka,2026-02-01,44.51
+Karnataka,2026-03-01,49.25
+Karnataka,2026-04-01,47.62
+Karnataka,2026-05-01,45.27
+Karnataka,2026-06-01,45.34
+Karnataka,2026-07-01,43.04
+Karnataka,2026-08-01,37.69
 Telangana,2020-01-01,48.99
 Telangana,2020-02-01,54.75
 Telangana,2020-03-01,56.45
@@ -1295,6 +1431,14 @@ Telangana,2025-09-01,40.42
 Telangana,2025-10-01,41.05
 Telangana,2025-11-01,40.27
 Telangana,2025-12-01,42.06
+Telangana,2026-01-01,46.99
+Telangana,2026-02-01,48.22
+Telangana,2026-03-01,53.44
+Telangana,2026-04-01,50.56
+Telangana,2026-05-01,50.11
+Telangana,2026-06-01,47.47
+Telangana,2026-07-01,43.35
+Telangana,2026-08-01,43.62
 Andhra Pradesh,2020-01-01,48.74
 Andhra Pradesh,2020-02-01,50.19
 Andhra Pradesh,2020-03-01,50.67
@@ -1367,6 +1511,14 @@ Andhra Pradesh,2025-09-01,45.16
 Andhra Pradesh,2025-10-01,47.24
 Andhra Pradesh,2025-11-01,50.09
 Andhra Pradesh,2025-12-01,45.78
+Andhra Pradesh,2026-01-01,53.67
+Andhra Pradesh,2026-02-01,55.96
+Andhra Pradesh,2026-03-01,57.15
+Andhra Pradesh,2026-04-01,61.22
+Andhra Pradesh,2026-05-01,51.45
+Andhra Pradesh,2026-06-01,56.68
+Andhra Pradesh,2026-07-01,50.8
+Andhra Pradesh,2026-08-01,48.55
 Tamil Nadu,2020-01-01,38.48
 Tamil Nadu,2020-02-01,36.15
 Tamil Nadu,2020-03-01,41.61
@@ -1439,6 +1591,14 @@ Tamil Nadu,2025-09-01,29.03
 Tamil Nadu,2025-10-01,27.21
 Tamil Nadu,2025-11-01,33.15
 Tamil Nadu,2025-12-01,35.2
+Tamil Nadu,2026-01-01,33.52
+Tamil Nadu,2026-02-01,36.87
+Tamil Nadu,2026-03-01,38.23
+Tamil Nadu,2026-04-01,40.74
+Tamil Nadu,2026-05-01,38.93
+Tamil Nadu,2026-06-01,38.85
+Tamil Nadu,2026-07-01,36.1
+Tamil Nadu,2026-08-01,31.7
 Kerala,2020-01-01,35.0
 Kerala,2020-02-01,41.5
 Kerala,2020-03-01,40.62
@@ -1511,6 +1671,14 @@ Kerala,2025-09-01,36.72
 Kerala,2025-10-01,35.82
 Kerala,2025-11-01,35.85
 Kerala,2025-12-01,36.17
+Kerala,2026-01-01,40.67
+Kerala,2026-02-01,43.45
+Kerala,2026-03-01,47.64
+Kerala,2026-04-01,45.49
+Kerala,2026-05-01,46.06
+Kerala,2026-06-01,43.04
+Kerala,2026-07-01,39.68
+Kerala,2026-08-01,37.55
 Puducherry,2020-01-01,33.1
 Puducherry,2020-02-01,38.54
 Puducherry,2020-03-01,41.83
@@ -1583,6 +1751,14 @@ Puducherry,2025-09-01,36.17
 Puducherry,2025-10-01,36.15
 Puducherry,2025-11-01,35.84
 Puducherry,2025-12-01,37.82
+Puducherry,2026-01-01,36.43
+Puducherry,2026-02-01,39.03
+Puducherry,2026-03-01,42.74
+Puducherry,2026-04-01,46.16
+Puducherry,2026-05-01,45.16
+Puducherry,2026-06-01,41.78
+Puducherry,2026-07-01,39.33
+Puducherry,2026-08-01,35.01
 Lakshadweep,2020-01-01,22.35
 Lakshadweep,2020-02-01,22.24
 Lakshadweep,2020-03-01,25.01
@@ -1655,6 +1831,14 @@ Lakshadweep,2025-09-01,9.29
 Lakshadweep,2025-10-01,11.05
 Lakshadweep,2025-11-01,17.61
 Lakshadweep,2025-12-01,11.27
+Lakshadweep,2026-01-01,18.36
+Lakshadweep,2026-02-01,19.5
+Lakshadweep,2026-03-01,17.61
+Lakshadweep,2026-04-01,21.58
+Lakshadweep,2026-05-01,21.91
+Lakshadweep,2026-06-01,24.16
+Lakshadweep,2026-07-01,17.81
+Lakshadweep,2026-08-01,10.49
 Andaman and Nicobar Islands,2020-01-01,31.56
 Andaman and Nicobar Islands,2020-02-01,32.48
 Andaman and Nicobar Islands,2020-03-01,30.26
@@ -1727,6 +1911,14 @@ Andaman and Nicobar Islands,2025-09-01,26.88
 Andaman and Nicobar Islands,2025-10-01,26.12
 Andaman and Nicobar Islands,2025-11-01,26.66
 Andaman and Nicobar Islands,2025-12-01,26.02
+Andaman and Nicobar Islands,2026-01-01,32.5
+Andaman and Nicobar Islands,2026-02-01,33.97
+Andaman and Nicobar Islands,2026-03-01,31.3
+Andaman and Nicobar Islands,2026-04-01,36.01
+Andaman and Nicobar Islands,2026-05-01,35.29
+Andaman and Nicobar Islands,2026-06-01,31.82
+Andaman and Nicobar Islands,2026-07-01,31.04
+Andaman and Nicobar Islands,2026-08-01,27.79
 West Bengal,2020-01-01,51.11
 West Bengal,2020-02-01,57.08
 West Bengal,2020-03-01,61.04
@@ -1799,6 +1991,14 @@ West Bengal,2025-09-01,49.37
 West Bengal,2025-10-01,47.05
 West Bengal,2025-11-01,47.45
 West Bengal,2025-12-01,49.28
+West Bengal,2026-01-01,53.7
+West Bengal,2026-02-01,54.48
+West Bengal,2026-03-01,57.83
+West Bengal,2026-04-01,59.58
+West Bengal,2026-05-01,58.29
+West Bengal,2026-06-01,49.51
+West Bengal,2026-07-01,51.93
+West Bengal,2026-08-01,49.11
 Bihar,2020-01-01,51.4
 Bihar,2020-02-01,53.13
 Bihar,2020-03-01,55.8
@@ -1871,6 +2071,14 @@ Bihar,2025-09-01,46.45
 Bihar,2025-10-01,49.44
 Bihar,2025-11-01,50.57
 Bihar,2025-12-01,49.52
+Bihar,2026-01-01,51.62
+Bihar,2026-02-01,57.09
+Bihar,2026-03-01,57.61
+Bihar,2026-04-01,58.64
+Bihar,2026-05-01,56.1
+Bihar,2026-06-01,58.01
+Bihar,2026-07-01,53.54
+Bihar,2026-08-01,49.13
 Jharkhand,2020-01-01,46.89
 Jharkhand,2020-02-01,50.8
 Jharkhand,2020-03-01,50.19
@@ -1943,6 +2151,14 @@ Jharkhand,2025-09-01,40.21
 Jharkhand,2025-10-01,41.43
 Jharkhand,2025-11-01,37.64
 Jharkhand,2025-12-01,41.57
+Jharkhand,2026-01-01,39.36
+Jharkhand,2026-02-01,46.29
+Jharkhand,2026-03-01,49.07
+Jharkhand,2026-04-01,47.98
+Jharkhand,2026-05-01,47.47
+Jharkhand,2026-06-01,45.53
+Jharkhand,2026-07-01,44.01
+Jharkhand,2026-08-01,38.9
 Odisha,2020-01-01,52.45
 Odisha,2020-02-01,53.84
 Odisha,2020-03-01,53.13
@@ -2015,6 +2231,14 @@ Odisha,2025-09-01,44.65
 Odisha,2025-10-01,41.23
 Odisha,2025-11-01,38.98
 Odisha,2025-12-01,43.9
+Odisha,2026-01-01,46.8
+Odisha,2026-02-01,49.49
+Odisha,2026-03-01,51.03
+Odisha,2026-04-01,53.51
+Odisha,2026-05-01,52.36
+Odisha,2026-06-01,44.11
+Odisha,2026-07-01,45.88
+Odisha,2026-08-01,50.49
 Assam,2020-01-01,61.0
 Assam,2020-02-01,60.84
 Assam,2020-03-01,61.52
@@ -2087,6 +2311,14 @@ Assam,2025-09-01,57.91
 Assam,2025-10-01,56.74
 Assam,2025-11-01,58.43
 Assam,2025-12-01,59.19
+Assam,2026-01-01,61.96
+Assam,2026-02-01,66.51
+Assam,2026-03-01,65.36
+Assam,2026-04-01,67.78
+Assam,2026-05-01,69.07
+Assam,2026-06-01,65.67
+Assam,2026-07-01,60.94
+Assam,2026-08-01,61.56
 Sikkim,2020-01-01,29.01
 Sikkim,2020-02-01,31.06
 Sikkim,2020-03-01,33.38
@@ -2159,6 +2391,14 @@ Sikkim,2025-09-01,24.16
 Sikkim,2025-10-01,18.28
 Sikkim,2025-11-01,19.52
 Sikkim,2025-12-01,23.73
+Sikkim,2026-01-01,28.41
+Sikkim,2026-02-01,26.38
+Sikkim,2026-03-01,32.01
+Sikkim,2026-04-01,28.15
+Sikkim,2026-05-01,26.74
+Sikkim,2026-06-01,29.22
+Sikkim,2026-07-01,25.06
+Sikkim,2026-08-01,24.71
 Arunachal Pradesh,2020-01-01,36.5
 Arunachal Pradesh,2020-02-01,38.89
 Arunachal Pradesh,2020-03-01,39.87
@@ -2231,6 +2471,14 @@ Arunachal Pradesh,2025-09-01,36.53
 Arunachal Pradesh,2025-10-01,33.4
 Arunachal Pradesh,2025-11-01,36.45
 Arunachal Pradesh,2025-12-01,38.03
+Arunachal Pradesh,2026-01-01,39.09
+Arunachal Pradesh,2026-02-01,45.81
+Arunachal Pradesh,2026-03-01,42.63
+Arunachal Pradesh,2026-04-01,48.38
+Arunachal Pradesh,2026-05-01,42.32
+Arunachal Pradesh,2026-06-01,45.64
+Arunachal Pradesh,2026-07-01,40.29
+Arunachal Pradesh,2026-08-01,36.28
 Nagaland,2020-01-01,27.74
 Nagaland,2020-02-01,33.62
 Nagaland,2020-03-01,31.25
@@ -2303,6 +2551,14 @@ Nagaland,2025-09-01,21.88
 Nagaland,2025-10-01,21.78
 Nagaland,2025-11-01,23.84
 Nagaland,2025-12-01,22.21
+Nagaland,2026-01-01,28.19
+Nagaland,2026-02-01,30.12
+Nagaland,2026-03-01,32.98
+Nagaland,2026-04-01,33.33
+Nagaland,2026-05-01,28.57
+Nagaland,2026-06-01,26.66
+Nagaland,2026-07-01,27.41
+Nagaland,2026-08-01,24.3
 Manipur,2020-01-01,39.22
 Manipur,2020-02-01,42.71
 Manipur,2020-03-01,46.91
@@ -2375,6 +2631,14 @@ Manipur,2025-09-01,39.65
 Manipur,2025-10-01,35.85
 Manipur,2025-11-01,37.02
 Manipur,2025-12-01,40.87
+Manipur,2026-01-01,42.0
+Manipur,2026-02-01,45.22
+Manipur,2026-03-01,46.56
+Manipur,2026-04-01,47.04
+Manipur,2026-05-01,45.9
+Manipur,2026-06-01,47.45
+Manipur,2026-07-01,43.87
+Manipur,2026-08-01,37.84
 Mizoram,2020-01-01,31.02
 Mizoram,2020-02-01,35.11
 Mizoram,2020-03-01,36.4
@@ -2447,6 +2711,14 @@ Mizoram,2025-09-01,32.56
 Mizoram,2025-10-01,31.04
 Mizoram,2025-11-01,30.94
 Mizoram,2025-12-01,35.4
+Mizoram,2026-01-01,34.91
+Mizoram,2026-02-01,44.16
+Mizoram,2026-03-01,41.9
+Mizoram,2026-04-01,41.25
+Mizoram,2026-05-01,45.31
+Mizoram,2026-06-01,41.47
+Mizoram,2026-07-01,40.91
+Mizoram,2026-08-01,35.27
 Tripura,2020-01-01,44.81
 Tripura,2020-02-01,43.4
 Tripura,2020-03-01,47.39
@@ -2519,6 +2791,14 @@ Tripura,2025-09-01,37.04
 Tripura,2025-10-01,33.77
 Tripura,2025-11-01,38.24
 Tripura,2025-12-01,35.75
+Tripura,2026-01-01,39.08
+Tripura,2026-02-01,44.03
+Tripura,2026-03-01,40.47
+Tripura,2026-04-01,42.59
+Tripura,2026-05-01,43.12
+Tripura,2026-06-01,42.99
+Tripura,2026-07-01,36.61
+Tripura,2026-08-01,36.67
 Meghalaya,2020-01-01,34.6
 Meghalaya,2020-02-01,36.33
 Meghalaya,2020-03-01,39.0
@@ -2591,3 +2871,11 @@ Meghalaya,2025-09-01,29.65
 Meghalaya,2025-10-01,32.64
 Meghalaya,2025-11-01,33.77
 Meghalaya,2025-12-01,32.72
+Meghalaya,2026-01-01,34.82
+Meghalaya,2026-02-01,40.29
+Meghalaya,2026-03-01,40.81
+Meghalaya,2026-04-01,41.84
+Meghalaya,2026-05-01,39.3
+Meghalaya,2026-06-01,41.21
+Meghalaya,2026-07-01,36.74
+Meghalaya,2026-08-01,32.33

@@ -1,4 +1,4 @@
-# Women Safety Intelligence System (WSIS) - Indian Cities
+﻿# Women Safety Intelligence System (WSIS) - Indian Cities
 
 An advanced analytics and forecasting system designed to evaluate and predict women's safety levels in Indian cities. The system utilizes machine learning (Artificial Neural Networks and Long Short-Term Memory networks), geospatial mapping, and crowd-sourced reporting to identify crime-prone locations and recommend policy improvements.
 

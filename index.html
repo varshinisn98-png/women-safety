@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SURAKSHA AI — Navigate Safer. Live Smarter.</title>
+  <meta name="description" content="AI-powered safety intelligence that helps women understand their surroundings, choose safer routes, explore crime-rate analytics, and get instant SOS assistance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- PARTICLE CANVAS BACKGROUND -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <!-- STICKY MODERN NAVBAR -->
+  <header class="navbar-wrapper" id="mainNavbar">
+    <nav class="navbar container">
+      <a href="#hero" class="nav-brand" aria-label="Suraksha AI Home">
+        <div class="brand-shield-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="shield-svg">
+            <path d="M12 2L3 6V11.5C3 16.5 6.8 21.1 12 22C17.2 21.1 21 16.5 21 11.5V6L12 2Z" fill="url(#shieldGrad)" stroke="#a78bfa" stroke-width="1.5"/>
+            <path d="M9 11.5L11 13.5L15 9.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="shieldGrad" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#8b5cf6"/>
+                <stop offset="1" stop-color="#ec4899"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="brand-text">SURAKSHA <span class="ai-pill">AI</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#safe-routes" class="nav-link">Safe Routes</a></li>
+        <li class="nav-item"><a href="#crime-rates" class="nav-link">Crime Rates</a></li>
+        <li class="nav-item"><a href="#safety-score" class="nav-link">Safety Score</a></li>
+        <li class="nav-item"><a href="#police-stations" class="nav-link">Police Stations</a></li>
+      </ul>
+
+      <!-- Navbar Actions -->
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle theme">
+          <span class="theme-icon moon-icon">🌙</span>
+          <span class="theme-icon sun-icon">☀️</span>
+        </button>
+        <button class="btn btn-secondary nav-login-btn" id="loginBtn">Login</button>
+        <button class="btn btn-sos nav-sos-btn" id="headerSosBtn" aria-label="Emergency SOS">
+          <span class="sos-pulse-dot"></span>
+          <span>SOS</span>
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <span class="brand-text">SURAKSHA <span class="ai-pill">AI</span></span>
+        <button class="drawer-close-btn" id="drawerCloseBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#safe-routes" class="mobile-nav-link">Safe Routes</a></li>
+        <li><a href="#crime-rates" class="mobile-nav-link">Crime Rates</a></li>
+        <li><a href="#safety-score" class="mobile-nav-link">Safety Score</a></li>
+        <li><a href="#police-stations" class="mobile-nav-link">Police Stations</a></li>
+      </ul>
+      <div class="mobile-drawer-actions">
+        <button class="btn btn-secondary full-width" id="mobileLoginBtn">Login</button>
+        <button class="btn btn-sos full-width" id="mobileSosActionBtn">🚨 Emergency SOS</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="badge-sparkle">✦</span>
+            <span>AI-POWERED PERSONAL SAFETY</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span>Your Journey.</span><br>
+            <span class="gradient-text">Your Safety.</span><br>
+            <span>Your Choice.</span>
+          </h1>
+
+          <p class="hero-subtext">
+            Suraksha AI analyzes routes, crime patterns, nearby emergency services, and location-based safety data to help you make smarter travel decisions.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#search-section" class="btn btn-primary btn-large">
+              <span>🗺 Find a Safe Route</span>
+            </a>
+            <a href="#safety-score" class="btn btn-glass btn-large">
+              <span>Explore Safety Score →</span>
+            </a>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-badge-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </div>
+            <span class="trust-text">Real-time safety intelligence at your fingertips.</span>
+          </div>
+        </div>
+
+        <!-- Right Hero Interactive Map Visual -->
+        <div class="hero-map-wrapper">
+          <div class="map-container-card">
+            <!-- Top Map Bar -->
+            <div class="map-top-bar">
+              <div class="map-location-chip">
+                <span class="pulse-beacon"></span>
+                <span class="location-label">📍 Current Location: <strong>Connaught Place, New Delhi</strong></span>
+              </div>
+              <div class="map-status-live">
+                <span class="live-dot"></span> LIVE
+              </div>
+            </div>
+
+            <!-- Stylized Vector AI Map Visual -->
+            <div class="interactive-map-visual" id="heroMapCanvas">
+              <svg viewBox="0 0 600 420" class="svg-map-render" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="mapBgGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#0b112c"/>
+                    <stop offset="100%" stop-color="#050817"/>
+                  </linearGradient>
+                  <linearGradient id="safeRouteGlow" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#10b981"/>
+                    <stop offset="100%" stop-color="#06b6d4"/>
+                  </linearGradient>
+                  <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="3.5" result="glow"/>
+                    <feComposite in="SourceGraphic" in2="glow" operator="over"/>
+                  </filter>
+                  <filter id="redZoneGlow" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="6" result="blur"/>
+                  </filter>
+                </defs>
+
+                <!-- Map Background Base -->
+                <rect width="600" height="420" rx="16" fill="url(#mapBgGrad)"/>
+
+                <!-- Grid Mesh -->
+                <g stroke="rgba(255,255,255,0.035)" stroke-width="1">
+                  <line x1="60" y1="0" x2="60" y2="420"/><line x1="120" y1="0" x2="120" y2="420"/>
+                  <line x1="180" y1="0" x2="180" y2="420"/><line x1="240" y1="0" x2="240" y2="420"/>
+                  <line x1="300" y1="0" x2="300" y2="420"/><line x1="360" y1="0" x2="360" y2="420"/>
+                  <line x1="420" y1="0" x2="420" y2="420"/><line x1="480" y1="0" x2="480" y2="420"/>
+                  <line x1="540" y1="0" x2="540" y2="420"/>
+                  <line x1="0" y1="60" x2="600" y2="60"/><line x1="0" y1="120" x2="600" y2="120"/>
+                  <line x1="0" y1="180" x2="600" y2="180"/><line x1="0" y1="240" x2="600" y2="240"/>
+                  <line x1="0" y1="300" x2="600" y2="300"/><line x1="0" y1="360" x2="600" y2="360"/>
+                </g>
+
+                <!-- City Blocks & Building Footprints -->
+                <g fill="rgba(255,255,255,0.045)" stroke="rgba(139,92,246,0.15)" stroke-width="1">
+                  <rect x="70" y="40" width="70" height="55" rx="6"/>
+                  <rect x="160" y="30" width="100" height="70" rx="6"/>
+                  <rect x="380" y="45" width="85" height="60" rx="6"/>
+                  <rect x="485" y="35" width="75" height="90" rx="6"/>
+                  
+                  <rect x="40" y="160" width="80" height="65" rx="6"/>
+                  <rect x="230" y="140" width="90" height="80" rx="6"/>
+                  <rect x="360" y="160" width="70" height="60" rx="6"/>
+                  <rect x="470" y="170" width="90" height="65" rx="6"/>
+                  
+                  <rect x="50" y="270" width="90" height="75" rx="6"/>
+                  <rect x="170" y="290" width="95" height="60" rx="6"/>
+                  <rect x="400" y="280" width="75" height="70" rx="6"/>
+                  <rect x="495" y="270" width="70" height="90" rx="6"/>
+                </g>
+
+                <!-- High-Risk Area (Subtle Red Danger Heatmap Zone) -->
+                <circle cx="340" cy="270" r="48" fill="rgba(239, 68, 68, 0.22)" filter="url(#redZoneGlow)"/>
+                <circle cx="340" cy="270" r="30" fill="rgba(239, 68, 68, 0.15)"/>
+                <text x="340" y="274" fill="#f87171" font-size="10" font-family="Space Grotesk" font-weight="700" text-anchor="middle">⚠️ High Risk Zone</text>
+                <text x="340" y="286" fill="#fca5a5" font-size="8" font-family="Inter" text-anchor="middle">Low Streetlighting</text>
+
+                <!-- Secondary City Roadways -->
+                <g stroke="rgba(255,255,255,0.12)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M 0 120 Q 200 130 300 120 T 600 130"/>
+                  <path d="M 0 250 Q 250 240 400 260 T 600 240"/>
+                  <path d="M 150 0 Q 140 200 150 420"/>
+                  <path d="M 450 0 Q 460 210 450 420"/>
+                  <path d="M 330 0 L 330 420"/>
+                </g>
+
+                <!-- Alternative Route (Yellow) -->
+                <path d="M 90 230 L 150 230 Q 280 230 330 250 L 330 340 L 450 340 L 510 320" 
+                      fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6,4" opacity="0.85"/>
+                <rect x="230" y="215" width="80" height="18" rx="4" fill="rgba(245,158,11,0.2)" stroke="#f59e0b" stroke-width="0.8"/>
+                <text x="270" y="228" fill="#fbbf24" font-size="9" font-family="Outfit" font-weight="600" text-anchor="middle">Route B · 78/100</text>
+
+                <!-- Recommended Safe Route (Green with Neon Glow) -->
+                <path id="safeRoutePath" d="M 90 230 L 150 120 L 300 120 Q 420 120 450 160 L 450 250 L 510 320" 
+                      fill="none" stroke="url(#safeRouteGlow)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#neonGlow)"/>
+                <path d="M 90 230 L 150 120 L 300 120 Q 420 120 450 160 L 450 250 L 510 320" 
+                      fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8,8" class="moving-dash"/>
+
+                <!-- Police Station Markers -->
+                <g transform="translate(290, 95)">
+                  <circle cx="12" cy="12" r="14" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5"/>
+                  <text x="12" y="16" font-size="12" text-anchor="middle">🚓</text>
+                  <rect x="-16" y="28" width="56" height="15" rx="3" fill="rgba(15,23,42,0.85)" stroke="rgba(96,165,250,0.4)" stroke-width="0.7"/>
+                  <text x="12" y="38" fill="#93c5fd" font-size="8" font-family="Inter" font-weight="600" text-anchor="middle">Central PS</text>
+                </g>
+
+                <g transform="translate(435, 185)">
+                  <circle cx="12" cy="12" r="14" fill="#1e3a8a" stroke="#60a5fa" stroke-width="1.5"/>
+                  <text x="12" y="16" font-size="12" text-anchor="middle">🚓</text>
+                  <rect x="-24" y="28" width="72" height="15" rx="3" fill="rgba(15,23,42,0.85)" stroke="rgba(96,165,250,0.4)" stroke-width="0.7"/>
+                  <text x="12" y="38" fill="#93c5fd" font-size="8" font-family="Inter" font-weight="600" text-anchor="middle">Women Outpost</text>
+                </g>
+
+                <!-- Current Location Marker (Origin) -->
+                <g transform="translate(75, 215)">
+                  <circle cx="15" cy="15" r="16" fill="rgba(139,92,246,0.25)" class="pulse-ring-svg"/>
+                  <circle cx="15" cy="15" r="9" fill="#8b5cf6" stroke="#ffffff" stroke-width="2"/>
+                  <rect x="-20" y="-18" width="70" height="17" rx="4" fill="#0f172a" stroke="#8b5cf6" stroke-width="1"/>
+                  <text x="15" y="-6" fill="#e2e8f0" font-size="9" font-family="Outfit" font-weight="700" text-anchor="middle">📍 Origin (A)</text>
+                </g>
+
+                <!-- Destination Marker -->
+                <g transform="translate(495, 305)">
+                  <circle cx="15" cy="15" r="16" fill="rgba(16,185,129,0.25)" class="pulse-ring-svg"/>
+                  <circle cx="15" cy="15" r="9" fill="#10b981" stroke="#ffffff" stroke-width="2"/>
+                  <rect x="-25" y="-18" width="80" height="17" rx="4" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+                  <text x="15" y="-6" fill="#6ee7b7" font-size="9" font-family="Outfit" font-weight="700" text-anchor="middle">🏁 Destination (B)</text>
+                </g>
+
+                <!-- Safety Score Pin along Safe Route -->
+                <g transform="translate(260, 110)">
+                  <rect x="-35" y="-22" width="70" height="18" rx="9" fill="#10b981" filter="url(#neonGlow)"/>
+                  <text x="0" y="-10" fill="#050817" font-size="9.5" font-family="Outfit" font-weight="800" text-anchor="middle">🛡️ Score 92</text>
+                </g>
+              </svg>
+            </div>
+
+            <!-- Floating Bottom Card on Map -->
+            <div class="map-floating-card">
+              <div class="floating-card-left">
+                <div class="route-rec-tag">
+                  <span class="shield-badge">🛡️</span>
+                  <span>Recommended Safe Route</span>
+                </div>
+                <div class="route-main-metrics">
+                  <span class="route-time">12 min</span>
+                  <span class="route-bullet">·</span>
+                  <span class="route-dist">3.2 km</span>
+                </div>
+                <div class="route-safety-badges">
+                  <span class="safety-score-pill">Safety Score: <strong>92/100</strong></span>
+                  <span class="risk-low-pill">Low Crime Risk</span>
+                </div>
+              </div>
+              <button class="btn btn-primary btn-sm floating-start-btn" id="startRouteBtn">
+                <span>Start Route →</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SAFETY SEARCH BAR SECTION -->
+    <section class="search-section" id="search-section">
+      <div class="container">
+        <div class="search-bar-card">
+          <div class="search-bar-grid">
+            <div class="search-input-group">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="destinationInput" class="search-input" placeholder="Where are you going? (e.g. Lajpat Nagar, Select Citywalk, AIIMS)" autocomplete="off">
+            </div>
+            <button class="btn btn-secondary btn-gps" id="useGpsBtn">
+              <span>📍 Use Current Location</span>
+            </button>
+            <button class="btn btn-primary btn-search-action" id="findSafeRouteBtn">
+              <span>Find Safe Route</span>
+            </button>
+          </div>
+          
+          <!-- Quick Suggestion Chips -->
+          <div class="quick-chips">
+            <span class="chips-label">Quick Suggestions:</span>
+            <button class="chip-item" data-dest="Central Metro Station">🚇 Central Metro</button>
+            <button class="chip-item" data-dest="Women Police Outpost, Saket">👮 Women Police Station</button>
+            <button class="chip-item" data-dest="AIIMS Safe Haven">🏥 AIIMS Safe Haven</button>
+            <button class="chip-item" data-dest="Delhi University North Campus">🎓 University Campus</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK SAFETY DASHBOARD -->
+    <section class="dashboard-preview-section" id="dashboard-preview">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-badge">ESSENTIAL CAPABILITIES</p>
+          <h2 class="section-title">Know Before You Go.</h2>
+          <p class="section-subtitle">Real-time intelligence pillars designed to keep you informed, aware, and prepared on every trip.</p>
+        </div>
+
+        <div class="grid-4-cards">
+          <!-- Card 1: Safe Routes -->
+          <div class="dashboard-card" data-accent="purple">
+            <div class="card-icon-wrap icon-purple">
+              <span class="card-emoji">🛣</span>
+            </div>
+            <h3 class="card-title">Safe Routes</h3>
+            <p class="card-desc">Find routes optimized for safety, not just distance.</p>
+            <a href="#safe-routes" class="card-action-link link-purple">Find Route →</a>
+          </div>
+
+          <!-- Card 2: Crime Rates -->
+          <div class="dashboard-card" data-accent="blue">
+            <div class="card-icon-wrap icon-blue">
+              <span class="card-emoji">📊</span>
+            </div>
+            <h3 class="card-title">Crime Rates</h3>
+            <p class="card-desc">Understand crime patterns around your destination.</p>
+            <a href="#crime-rates" class="card-action-link link-blue">View Crime Data →</a>
+          </div>
+
+          <!-- Card 3: Safety Score -->
+          <div class="dashboard-card" data-accent="green">
+            <div class="card-icon-wrap icon-green">
+              <span class="card-emoji">🛡</span>
+            </div>
+            <h3 class="card-title">Safety Score</h3>
+            <p class="card-desc">Check how safe an area is before you travel.</p>
+            <div class="score-pill-display">
+              <span class="score-val">92 / 100</span>
+              <span class="score-status-tag">Very Safe</span>
+            </div>
+          </div>
+
+          <!-- Card 4: Nearby Police Stations -->
+          <div class="dashboard-card" data-accent="cyan">
+            <div class="card-icon-wrap icon-cyan">
+              <span class="card-emoji">🚔</span>
+            </div>
+            <h3 class="card-title">Nearby Police Stations</h3>
+            <p class="card-desc">Find nearby police stations and emergency support.</p>
+            <a href="#police-stations" class="card-action-link link-cyan">Find Nearby →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFETY SCORE FEATURE SECTION -->
+    <section class="safety-score-section" id="safety-score">
+      <div class="container">
+        <div class="safety-score-card">
+          <div class="score-grid">
+            
+            <!-- Left Info -->
+            <div class="score-info-col">
+              <p class="section-badge">SAFETY INTELLIGENCE</p>
+              <h2 class="section-title">How Safe Is Your Destination?</h2>
+              <p class="section-subtitle">
+                Get an easy-to-understand safety score based on available crime and location data, helping you evaluate an area before you travel.
+              </p>
+
+              <!-- Breakdown Factors List -->
+              <div class="factors-grid">
+                <div class="factor-row">
+                  <span class="factor-icon icon-green">✓</span>
+                  <span class="factor-name">Crime Risk</span>
+                  <span class="factor-badge badge-green">Low</span>
+                </div>
+                <div class="factor-row">
+                  <span class="factor-icon icon-green">✓</span>
+                  <span class="factor-name">Area Activity</span>
+                  <span class="factor-badge badge-green">High</span>
+                </div>
+                <div class="factor-row">
+                  <span class="factor-icon icon-green">✓</span>
+                  <span class="factor-name">Emergency Access</span>
+                  <span class="factor-badge badge-green">Excellent</span>
+                </div>
+                <div class="factor-row">
+                  <span class="factor-icon icon-blue">📍</span>
+                  <span class="factor-name">Police Proximity</span>
+                  <span class="factor-badge badge-blue">1.2 km</span>
+                </div>
+              </div>
+
+              <div class="score-action-wrap">
+                <button class="btn btn-primary" id="checkAreaScoreBtn">Check Your Area →</button>
+              </div>
+            </div>
+
+            <!-- Right Circular Safety Gauge -->
+            <div class="score-gauge-col">
+              <div class="circular-gauge-wrapper">
+                <svg class="gauge-svg" viewBox="0 0 200 200">
+                  <circle class="gauge-bg" cx="100" cy="100" r="82"/>
+                  <circle class="gauge-progress" cx="100" cy="100" r="82" id="gaugeProgressCircle"/>
+                </svg>
+                <div class="gauge-inner-content">
+                  <span class="gauge-num" id="gaugeScoreText">92</span>
+                  <span class="gauge-total">/100</span>
+                  <span class="gauge-status-label">VERY SAFE</span>
+                </div>
+              </div>
+              <p class="gauge-caption">Live Neural Safety Evaluation · Updated 2 mins ago</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CRIME RATE SECTION -->
+    <section class="crime-rate-section" id="crime-rates">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-badge">ANALYTICS & TRENDS</p>
+          <h2 class="section-title">Understand the Area Before You Arrive.</h2>
+          <p class="section-subtitle">Explore crime-rate information and safety trends around your location or destination.</p>
+        </div>
+
+        <div class="crime-panel-card">
+          <!-- Control Bar -->
+          <div class="crime-controls-bar">
+            <div class="control-group">
+              <label for="timeRangeSelect" class="control-label">Timeframe:</label>
+              <select id="timeRangeSelect" class="custom-select">
+                <option value="30">Last 30 Days</option>
+                <option value="90">Last 90 Days</option>
+                <option value="365">Last 12 Months</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="areaSelect" class="control-label">Selected Area:</label>
+              <select id="areaSelect" class="custom-select">
+                <option value="south-delhi">Connaught Place & South Delhi</option>
+                <option value="bengaluru">Bengaluru Central & Indiranagar</option>
+                <option value="mumbai">Mumbai Bandra-BKC Corridor</option>
+                <option value="kolkata">Kolkata Salt Lake & Park Street</option>
+              </select>
+            </div>
+
+            <div class="crime-summary-stat">
+              <span class="stat-lbl">Area Risk Status:</span>
+              <span class="stat-badge-low">🟢 Low Incident Frequency</span>
+            </div>
+          </div>
+
+          <!-- Data Grid -->
+          <div class="crime-data-grid">
+            
+            <!-- Risk Zones Breakdown -->
+            <div class="crime-data-block">
+              <h4 class="block-title">Geospatial Risk Distribution</h4>
+              <div class="risk-meter-bars">
+                <div class="risk-bar-row">
+                  <div class="risk-bar-label">
+                    <span>Low-Risk Zones</span>
+                    <strong>78%</strong>
+                  </div>
+                  <div class="bar-track"><div class="bar-fill fill-green" style="width: 78%;"></div></div>
+                </div>
+
+                <div class="risk-bar-row">
+                  <div class="risk-bar-label">
+                    <span>Moderate-Risk Zones</span>
+                    <strong>18%</strong>
+                  </div>
+                  <div class="bar-track"><div class="bar-fill fill-yellow" style="width: 18%;"></div></div>
+                </div>
+
+                <div class="risk-bar-row">
+                  <div class="risk-bar-label">
+                    <span>High-Risk Zones</span>
+                    <strong>4%</strong>
+                  </div>
+                  <div class="bar-track"><div class="bar-fill fill-red" style="width: 4%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Incident Categories -->
+            <div class="crime-data-block">
+              <h4 class="block-title">Reported Category Breakdown</h4>
+              <div class="category-chips-grid">
+                <div class="cat-card">
+                  <span class="cat-name">Theft</span>
+                  <span class="cat-pct">24%</span>
+                  <span class="cat-trend trend-down">↓ 12%</span>
+                </div>
+                <div class="cat-card">
+                  <span class="cat-name">Harassment</span>
+                  <span class="cat-pct">7%</span>
+                  <span class="cat-trend trend-down">↓ 18%</span>
+                </div>
+                <div class="cat-card">
+                  <span class="cat-name">Assault</span>
+                  <span class="cat-pct">4%</span>
+                  <span class="cat-trend trend-down">↓ 6%</span>
+                </div>
+                <div class="cat-card">
+                  <span class="cat-name">Other Incidents</span>
+                  <span class="cat-pct">12%</span>
+                  <span class="cat-trend trend-neutral">→ 0%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 30-Day Trend Chart -->
+            <div class="crime-data-block">
+              <h4 class="block-title">Monthly Safety Trend Curve</h4>
+              <div class="svg-chart-container">
+                <svg viewBox="0 0 320 120" class="trend-chart-svg">
+                  <defs>
+                    <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+                      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.0"/>
+                    </linearGradient>
+                  </defs>
+                  <path d="M 0 95 Q 60 85 100 70 T 200 45 T 320 25 L 320 120 L 0 120 Z" fill="url(#chartGrad)"/>
+                  <path d="M 0 95 Q 60 85 100 70 T 200 45 T 320 25" fill="none" stroke="#8b5cf6" stroke-width="2.5"/>
+                  <!-- Data points -->
+                  <circle cx="100" cy="70" r="3.5" fill="#a78bfa" stroke="#ffffff" stroke-width="1.5"/>
+                  <circle cx="200" cy="45" r="3.5" fill="#a78bfa" stroke="#ffffff" stroke-width="1.5"/>
+                  <circle cx="320" cy="25" r="4.5" fill="#10b981" stroke="#ffffff" stroke-width="2"/>
+                </svg>
+                <div class="chart-footer-metrics">
+                  <span>Day 1: <strong>Moderate</strong></span>
+                  <span class="trend-highlight">Safety Index +14.2%</span>
+                  <span>Day 30: <strong>High Safety</strong></span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Section Notice -->
+          <div class="crime-panel-note">
+            <span class="info-icon">ℹ️</span>
+            <span>Safety information is provided for awareness and decision-making.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAFE ROUTES SECTION -->
+    <section class="safe-routes-section" id="safe-routes">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-badge">INTELLIGENT NAVIGATION</p>
+          <h2 class="section-title">The Safest Route Isn't Always the Shortest.</h2>
+          <p class="section-subtitle">Suraksha AI helps you compare routes using safety-related information so you can choose a journey that better fits your comfort level.</p>
+        </div>
+
+        <!-- 3 Route Comparison Cards -->
+        <div class="route-cards-grid">
+          
+          <!-- Route A (Safest) -->
+          <div class="route-card recommended-card" id="routeCardA">
+            <div class="rec-top-badge">⭐ Recommended for Safety</div>
+            <div class="route-card-header">
+              <div>
+                <span class="route-letter">Route A</span>
+                <span class="route-tag tag-safest">Safest</span>
+              </div>
+              <div class="score-badge-circle score-green">
+                <span class="badge-num">92</span>
+                <span class="badge-sub">/100</span>
+              </div>
+            </div>
+
+            <div class="route-stats">
+              <div class="stat-item">
+                <span class="stat-val">12 min</span>
+                <span class="stat-key">Duration</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val">3.2 km</span>
+                <span class="stat-key">Distance</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val text-green">98%</span>
+                <span class="stat-key">Streetlit</span>
+              </div>
+            </div>
+
+            <ul class="route-perks-list">
+              <li>🟢 Primary arterial boulevard with continuous lighting</li>
+              <li>🟢 Verified active PCR mobile police patrols</li>
+              <li>🟢 Continuous pedestrian footfall and transit stops</li>
+            </ul>
+
+            <button class="btn btn-primary full-width" onclick="selectRoute('A')">Select Route A (Safest)</button>
+          </div>
+
+          <!-- Route B (Balanced) -->
+          <div class="route-card" id="routeCardB">
+            <div class="route-card-header">
+              <div>
+                <span class="route-letter">Route B</span>
+                <span class="route-tag tag-balanced">Balanced</span>
+              </div>
+              <div class="score-badge-circle score-yellow">
+                <span class="badge-num">78</span>
+                <span class="badge-sub">/100</span>
+              </div>
+            </div>
+
+            <div class="route-stats">
+              <div class="stat-item">
+                <span class="stat-val">10 min</span>
+                <span class="stat-key">Duration</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val">2.8 km</span>
+                <span class="stat-key">Distance</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val text-yellow">75%</span>
+                <span class="stat-key">Streetlit</span>
+              </div>
+            </div>
+
+            <ul class="route-perks-list">
+              <li>🟡 Commercial avenue with mixed transit access</li>
+              <li>🟢 Periodic security checkpoints</li>
+              <li>🟡 Minor side-street detour required</li>
+            </ul>
+
+            <button class="btn btn-secondary full-width" onclick="selectRoute('B')">Select Route B (Balanced)</button>
+          </div>
+
+          <!-- Route C (Fastest) -->
+          <div class="route-card" id="routeCardC">
+            <div class="route-card-header">
+              <div>
+                <span class="route-letter">Route C</span>
+                <span class="route-tag tag-fastest">Fastest</span>
+              </div>
+              <div class="score-badge-circle score-orange">
+                <span class="badge-num">61</span>
+                <span class="badge-sub">/100</span>
+              </div>
+            </div>
+
+            <div class="route-stats">
+              <div class="stat-item">
+                <span class="stat-val">8 min</span>
+                <span class="stat-key">Duration</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val">2.1 km</span>
+                <span class="stat-key">Distance</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-val text-orange">42%</span>
+                <span class="stat-key">Streetlit</span>
+              </div>
+            </div>
+
+            <ul class="route-perks-list">
+              <li>🟠 Unlit alleyways and narrow shortcut bypass</li>
+              <li>🟠 Low evening footfall and desolate spots</li>
+              <li>🟢 Shortest travel time</li>
+            </ul>
+
+            <button class="btn btn-secondary full-width" onclick="selectRoute('C')">Select Route C (Fastest)</button>
+          </div>
+
+        </div>
+
+        <div class="route-section-cta text-center">
+          <a href="#search-section" class="btn btn-glass btn-large">
+            <span>View Safe Routes →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEARBY POLICE STATIONS SECTION -->
+    <section class="police-stations-section" id="police-stations">
+      <div class="container">
+        <div class="section-header text-center">
+          <p class="section-badge">EMERGENCY ASSISTANCE</p>
+          <h2 class="section-title">Help Is Closer Than You Think.</h2>
+          <p class="section-subtitle">Quickly find police stations near your current location or destination.</p>
+        </div>
+
+        <div class="police-grid">
+          <!-- Station Card 1 -->
+          <div class="station-card">
+            <div class="station-top">
+              <div class="station-icon-badge">🚓</div>
+              <div>
+                <h3 class="station-name">City Police Station</h3>
+                <span class="station-dist">1.2 km away</span>
+              </div>
+            </div>
+            <div class="station-status-row">
+              <span class="status-open">🟢 Open (24/7)</span>
+              <span class="phone-link">📞 Dial 112</span>
+            </div>
+            <p class="station-address">Barakhamba Rd, Connaught Place, New Delhi</p>
+            <button class="btn btn-secondary btn-sm full-width" onclick="getDirections('City Police Station')">Get Directions</button>
+          </div>
+
+          <!-- Station Card 2 -->
+          <div class="station-card">
+            <div class="station-top">
+              <div class="station-icon-badge">🚓</div>
+              <div>
+                <h3 class="station-name">Central Police Station</h3>
+                <span class="station-dist">2.4 km away</span>
+              </div>
+            </div>
+            <div class="station-status-row">
+              <span class="status-open">🟢 Open (24/7)</span>
+              <span class="phone-link">📞 Dial 100</span>
+            </div>
+            <p class="station-address">Parliament Street Sub-division, New Delhi</p>
+            <button class="btn btn-secondary btn-sm full-width" onclick="getDirections('Central Police Station')">Get Directions</button>
+          </div>
+
+          <!-- Station Card 3 -->
+          <div class="station-card station-highlight">
+            <div class="station-top">
+              <div class="station-icon-badge badge-women">🛡️</div>
+              <div>
+                <h3 class="station-name">Women's Police Station</h3>
+                <span class="station-dist">3.1 km away</span>
+              </div>
+            </div>
+            <div class="station-status-row">
+              <span class="status-open">🟢 Open (Special Wing)</span>
+              <span class="phone-link text-magenta">📞 Dial 1091</span>
+            </div>
+            <p class="station-address">Special Police Unit for Women & Children, Nanakpura</p>
+            <button class="btn btn-primary btn-sm full-width" onclick="getDirections('Women Police Station')">Get Directions</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOS EMERGENCY SECTION -->
+    <section class="sos-section" id="sos-section">
+      <div class="container">
+        <div class="sos-emergency-card">
+          <div class="sos-card-grid">
+            
+            <!-- Left Info -->
+            <div class="sos-info-side">
+              <span class="sos-emergency-badge">🚨 EMERGENCY ASSISTANCE</span>
+              <h2 class="sos-title">When You Need Help. Act Fast.</h2>
+              <p class="sos-subtitle">Send an SOS alert and quickly access emergency assistance when you feel unsafe.</p>
+
+              <div class="sos-perks">
+                <div class="sos-perk-item">
+                  <span class="perk-icon">📱</span>
+                  <span>Alert Trusted Contacts</span>
+                </div>
+                <div class="sos-perk-item">
+                  <span class="perk-icon">📍</span>
+                  <span>Share Live Location</span>
+                </div>
+                <div class="sos-perk-item">
+                  <span class="perk-icon">⚡</span>
+                  <span>Get Emergency Assistance</span>
+                </div>
+              </div>
+
+              <div class="sos-disclaimer">
+                <span class="warning-icon">⚠️</span>
+                <span>Use SOS only in a genuine emergency.</span>
+              </div>
+            </div>
+
+            <!-- Right Interactive Big SOS Button -->
+            <div class="sos-button-side">
+              <div class="sos-interactive-container">
+                <div class="sos-ripple-ring r1"></div>
+                <div class="sos-ripple-ring r2"></div>
+                <div class="sos-ripple-ring r3"></div>
+                <button class="big-sos-btn" id="bigSosTriggerBtn" aria-label="Trigger Emergency SOS">
+                  <span class="sos-main-txt">SOS</span>
+                  <span class="sos-action-hint">Press &amp; Hold</span>
+                </button>
+              </div>
+              <p class="sos-button-caption">Instant audio beacon &amp; GPS dispatch simulator</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SMART TRAVEL TIP SECTION -->
+    <section class="travel-tip-section" id="safety-tip">
+      <div class="container">
+        <div class="tip-card-wrapper">
+          <div class="tip-icon-badge">💡</div>
+          <div class="tip-content">
+            <span class="tip-label">Smart Travel Tip</span>
+            <p class="tip-quote" id="tipText">
+              “Before starting your journey, check the safety score and crime activity around your destination.”
+            </p>
+          </div>
+          <button class="btn btn-glass btn-sm tip-next-btn" id="nextTipBtn">Next Tip →</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="final-cta-section" id="final-cta">
+      <div class="container">
+        <div class="cta-banner-card">
+          <div class="cta-inner-content">
+            <h2 class="cta-heading">Move Freely. Stay Aware. Stay Safe.</h2>
+            <p class="cta-subheading">Let Suraksha AI help you make smarter decisions before and during your journey.</p>
+            
+            <div class="cta-buttons-group">
+              <a href="#search-section" class="btn btn-primary btn-large">
+                <span>Find a Safe Route →</span>
+              </a>
+              <a href="#safety-score" class="btn btn-glass btn-large">
+                <span>Check Safety Score</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CLEAN MODERN FOOTER -->
+  <footer class="main-footer">
+    <div class="container footer-grid">
+      
+      <!-- Brand column -->
+      <div class="footer-brand-col">
+        <div class="nav-brand">
+          <div class="brand-shield-icon">
+            <svg viewBox="0 0 24 24" fill="none" class="shield-svg">
+              <path d="M12 2L3 6V11.5C3 16.5 6.8 21.1 12 22C17.2 21.1 21 16.5 21 11.5V6L12 2Z" fill="url(#shieldGradFooter)" stroke="#a78bfa" stroke-width="1.5"/>
+              <path d="M9 11.5L11 13.5L15 9.5" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <defs>
+                <linearGradient id="shieldGradFooter" x1="3" y1="2" x2="21" y2="22" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <span class="brand-text">SURAKSHA <span class="ai-pill">AI</span></span>
+        </div>
+        <p class="footer-tagline">Navigate Safer. Live Smarter.</p>
+        <p class="footer-mission">Empowering safe mobility across Indian cities through predictive AI &amp; verified real-time data.</p>
+      </div>
+
+      <!-- Column 1: Explore -->
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#safe-routes">Safe Routes</a></li>
+          <li><a href="#crime-rates">Crime Rates</a></li>
+          <li><a href="#safety-score">Safety Score</a></li>
+          <li><a href="#police-stations">Police Stations</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Account -->
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Account</h4>
+        <ul class="footer-links">
+          <li><a href="#login" id="footerLoginLink">Login</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#settings">Settings</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Safety -->
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Safety</h4>
+        <ul class="footer-links">
+          <li><a href="#sos-section" class="text-red-accent">SOS Emergency</a></li>
+          <li><a href="#police-stations">Emergency Support</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#terms">Terms</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© 2026 Suraksha AI. All Rights Reserved.</p>
+      <p class="footer-badge-clean">Built with ❤️ for Women's Safety</p>
+    </div>
+  </footer>
+
+  <!-- MOBILE FLOATING SOS BUTTON -->
+  <button class="mobile-floating-sos" id="floatingSosBtn" aria-label="Quick SOS Action">
+    <span class="floating-sos-ring"></span>
+    <span class="floating-sos-text">🚨 SOS</span>
+  </button>
+
+  <!-- SOS MODAL POPUP -->
+  <div class="modal-overlay" id="sosModal" aria-hidden="true">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title text-red">🚨 SOS EMERGENCY BEACON</h3>
+        <button class="modal-close-btn" id="closeSosModalBtn">&times;</button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="siren-pulse-icon">🚨</div>
+        <p class="sos-active-msg">Emergency broadcast active. GPS location transmitted to nearby police control rooms and your emergency contacts.</p>
+        
+        <div class="emergency-helpline-chips">
+          <a href="tel:112" class="help-chip"><strong>112</strong> All Emergency</a>
+          <a href="tel:1091" class="help-chip"><strong>1091</strong> Women Helpline</a>
+          <a href="tel:181" class="help-chip"><strong>181</strong> Women Support</a>
+          <a href="tel:100" class="help-chip"><strong>100</strong> Police Direct</a>
+        </div>
+
+        <div class="cancel-pin-box">
+          <label for="cancelPinInput">Enter Cancellation PIN (1234):</label>
+          <div class="pin-row">
+            <input type="password" id="cancelPinInput" class="pin-input" maxlength="4" placeholder="••••">
+            <button class="btn btn-secondary" id="deactivateSosBtn">Deactivate</button>
+          </div>
+          <span id="pinErrorMsg" class="pin-error-text"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -117,6 +117,8 @@ class RouteRequest(BaseModel):
     pop_density: float = 0.5
     base_crime: float = 0.3
     mode: Optional[str] = "driving"
+    start_address: Optional[str] = ""
+    dest_address: Optional[str] = ""
 
 class HazardSubmitRequest(BaseModel):
     username: str
@@ -273,7 +275,9 @@ def optimize_route(req: RouteRequest):
         lights=req.lights,
         patrol=req.patrol,
         pop_density=req.pop_density,
-        base_crime=req.base_crime
+        base_crime=req.base_crime,
+        start_address=req.start_address or "",
+        dest_address=req.dest_address or ""
     )
     return res
 
@@ -515,10 +519,10 @@ def health():
     return {"status": "healthy", "database": "connected"}
 
 @app.get("/api/police_stations")
-def get_police_stations(lat: float, lon: float, radius_km: float = 8.0):
+def get_police_stations(lat: float, lon: float, radius_km: float = 50.0, display_name: str = ""):
     """
     Returns genuine verified OpenStreetMap police stations around (lat, lon).
     Never fabricates fake stations.
     """
     from routing import fetch_real_police_stations
-    return {"police_stations": fetch_real_police_stations(lat, lon, radius_km=radius_km)}
+    return {"police_stations": fetch_real_police_stations(lat, lon, radius_km=radius_km, display_name=display_name)}

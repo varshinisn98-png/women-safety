@@ -379,6 +379,10 @@ html, body,
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  height: 235px !important;
+  min-height: 235px !important;
+  max-height: 235px !important;
+  box-sizing: border-box;
 }
 
 .feature-card::before {
@@ -460,7 +464,14 @@ html, body,
   color: #fff !important;
   border: 1px solid rgba(139,92,246,0.4) !important;
   border-radius: 12px !important;
-  padding: 12px 28px !important;
+  padding: 6px 12px !important;
+  min-height: 52px !important;
+  height: 52px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
   font-family: 'Outfit', sans-serif !important;
   font-weight: 600 !important;
   font-size: 0.9rem !important;
@@ -1167,12 +1178,26 @@ input[type="text"]::placeholder {
   color: #0f172a !important;
 }
 
+/* -- Leaflet Dark Map inversion -- */
+.leaflet-tile {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%) !important;
+}
+.leaflet-container {
+  background: #05010f !important;
+}
+
 </style>
 """
 
 # Light mode supplement CSS
 LIGHT_THEME_CSS = """
 <style>
+.leaflet-tile {
+  filter: none !important;
+}
+.leaflet-container {
+  background: #ffffff !important;
+}
 html, body, [data-testid="stAppViewContainer"], [data-testid="stApp"] {
   background: linear-gradient(135deg, #f0f4ff 0%, #faf0ff 50%, #f0fffa 100%) !important;
   color: #0f172a !important;

@@ -99,6 +99,7 @@ def init_db():
 
 def add_user(username, password, email, role="Citizen"):
     """Registers a new user in the database."""
+    username = username.lower().strip()
     conn = get_db_connection()
     cursor = conn.cursor()
     hashed_pwd, salt = hash_password(password)
@@ -117,6 +118,7 @@ def add_user(username, password, email, role="Citizen"):
 
 def verify_user(username, password):
     """Verifies user credentials. Returns user details if valid, else None."""
+    username = username.lower().strip()
     conn = get_db_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM users WHERE username = ?", (username,))

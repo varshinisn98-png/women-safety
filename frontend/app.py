@@ -273,84 +273,89 @@ def search_india_places(query: str, limit: int = 5):
     clean_q = query.strip()
     headers = {"User-Agent": "SurakshaSafetyApp/3.0 (support@suraksha.ai; India Women Safety Initiative)"}
 
-    # 1. Primary Engine: OpenStreetMap Nominatim
-    try:
-        url_nom = "https://nominatim.openstreetmap.org/search"
-        params = {
-            "q": clean_q if "india" in clean_q.lower() else f"{clean_q}, India",
-            "countrycodes": "in",
-            "format": "json",
-            "addressdetails": 1,
-            "limit": limit
-        }
-        r = requests.get(url_nom, params=params, headers=headers, timeout=3.5)
-        if r.status_code == 200:
-            raw_list = r.json()
-            if raw_list:
+    # 1. Primary Engine: OpenStreetMap Nominatim with India suffix
+    for query_variant in [
+        clean_q if "india" in clean_q.lower() else f"{clean_q}, India",
+        clean_q
+    ]:
+        try:
+            url_nom = "https://nominatim.openstreetmap.org/search"
+            params = {
+                "q": query_variant,
+                "countrycodes": "in",
+                "format": "json",
+                "addressdetails": 1,
+                "limit": limit
+            }
+            r = requests.get(url_nom, params=params, headers=headers, timeout=3.5)
+            if r.status_code == 200:
+                raw_list = r.json()
+                if raw_list:
+                    results = []
+                    for item in raw_list:
+                        lat = float(item.get("lat", 0.0))
+                        lon = float(item.get("lon", 0.0))
+                        if lat == 0.0 and lon == 0.0:
+                            continue
+                        d_name = item.get("display_name", "")
+                        addr = item.get("address", {})
+                        state = addr.get("state") or addr.get("state_district") or ""
+                        city = addr.get("city") or addr.get("town") or addr.get("suburb") or addr.get("village") or ""
+                        district = addr.get("county") or addr.get("state_district") or city
+                        results.append({
+                            "display_name": d_name,
+                            "short_name": f"{clean_q.title()} ({city}, {state})" if city and state else d_name[:70],
+                            "lat": lat,
+                            "lon": lon,
+                            "state": state,
+                            "district": district,
+                            "city": city,
+                            "postcode": addr.get("postcode", ""),
+                            "type": item.get("type", "location")
+                        })
+                    if results:
+                        return results
+        except Exception:
+            pass
+
+    # 2. Secondary Failover Engine: Photon OSM Geocoding
+    for ph_variant in [f"{clean_q} India", clean_q]:
+        try:
+            url_ph = f"https://photon.komoot.io/api/?q={urllib.parse.quote_plus(ph_variant)}&limit={limit}"
+            r_ph = requests.get(url_ph, headers=headers, timeout=3.0)
+            if r_ph.status_code == 200:
+                features = r_ph.json().get("features", [])
                 results = []
-                for item in raw_list:
-                    lat = float(item.get("lat", 0.0))
-                    lon = float(item.get("lon", 0.0))
-                    if lat == 0.0 and lon == 0.0:
-                        continue
-                    d_name = item.get("display_name", "")
-                    addr = item.get("address", {})
-                    state = addr.get("state") or addr.get("state_district") or ""
-                    city = addr.get("city") or addr.get("town") or addr.get("suburb") or addr.get("village") or ""
-                    district = addr.get("county") or addr.get("state_district") or city
-                    results.append({
-                        "display_name": d_name,
-                        "short_name": f"{clean_q.title()} ({city}, {state})" if city and state else d_name[:70],
-                        "lat": lat,
-                        "lon": lon,
-                        "state": state,
-                        "district": district,
-                        "city": city,
-                        "postcode": addr.get("postcode", ""),
-                        "type": item.get("type", "location")
-                    })
+                for f in features:
+                    coords = f.get("geometry", {}).get("coordinates", [])
+                    if len(coords) == 2:
+                        lon, lat = coords[0], coords[1]
+                        props = f.get("properties", {})
+                        country = props.get("country", "")
+                        if country and "india" not in country.lower():
+                            continue
+                        name = props.get("name", clean_q)
+                        city = props.get("city") or props.get("town") or props.get("district") or ""
+                        state = props.get("state", "")
+                        street = props.get("street", "")
+                        district = props.get("district") or city
+                        addr_parts = [name, street, city, state, "India"]
+                        d_name = ", ".join(filter(None, addr_parts))
+                        results.append({
+                            "display_name": d_name,
+                            "short_name": f"{name} ({city}, {state})" if city and state else d_name[:70],
+                            "lat": lat,
+                            "lon": lon,
+                            "state": state,
+                            "district": district,
+                            "city": city,
+                            "postcode": props.get("postcode", ""),
+                            "type": props.get("type", "location")
+                        })
                 if results:
                     return results
-    except Exception as e:
-        pass
-
-    # 2. Secondary High-Speed Failover Engine: Photon OSM Geocoding
-    try:
-        url_ph = f"https://photon.komoot.io/api/?q={requests.utils.quote(clean_q + ' India')}&limit={limit}"
-        r_ph = requests.get(url_ph, headers=headers, timeout=3.0)
-        if r_ph.status_code == 200:
-            features = r_ph.json().get("features", [])
-            results = []
-            for f in features:
-                coords = f.get("geometry", {}).get("coordinates", [])
-                if len(coords) == 2:
-                    lon, lat = coords[0], coords[1]
-                    props = f.get("properties", {})
-                    country = props.get("country", "")
-                    if country and "india" not in country.lower():
-                        continue
-                    name = props.get("name", clean_q)
-                    city = props.get("city") or props.get("town") or props.get("district") or ""
-                    state = props.get("state", "")
-                    street = props.get("street", "")
-                    district = props.get("district") or city
-                    addr_parts = [name, street, city, state, "India"]
-                    d_name = ", ".join(filter(None, addr_parts))
-                    results.append({
-                        "display_name": d_name,
-                        "short_name": f"{name} ({city}, {state})" if city and state else d_name[:70],
-                        "lat": lat,
-                        "lon": lon,
-                        "state": state,
-                        "district": district,
-                        "city": city,
-                        "postcode": props.get("postcode", ""),
-                        "type": props.get("type", "location")
-                    })
-            if results:
-                return results
-    except Exception as e:
-        pass
+        except Exception:
+            pass
 
     return []
 

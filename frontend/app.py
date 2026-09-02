@@ -3,7 +3,7 @@
 Suraksha AI
 Beautiful, fully-animated Streamlit frontend
 """
-import os, sys, json, hashlib, base64, textwrap, urllib.parse
+import os, sys, json, hashlib, base64, textwrap, urllib.parse, re
 import numpy as np
 import pandas as pd
 from datetime import datetime
@@ -419,9 +419,51 @@ def fetch_real_nearby_police(lat: float, lon: float, radius_km: float = 50.0, di
     except Exception:
         pass
 
-    # 2. Local Multi-Engine Search with Progressive Radius Expansion
-    radii_km = [15.0, 30.0, 60.0, 120.0]
-    final_stations = []
+    # 2. Local Multi-Engine Search with Closest-First Progressive Spatial Radii
+    discovered = []
+
+    def _fe_query_photon(max_dist_km=60.0):
+        res = []
+        try:
+            url_ph = f"https://photon.komoot.io/api/?q=police+station&lat={lat}&lon={lon}&limit=25"
+            r_ph = requests.get(url_ph, headers=headers, timeout=3.5)
+            if r_ph.status_code == 200:
+                for f in r_ph.json().get("features", []):
+                    props = f.get("properties", {})
+                    osm_val = props.get("osm_value", "")
+                    raw_name = props.get("name") or "Police Station"
+                    if is_valid_police_station(raw_name) and (osm_val in ["police", "amenity", "office", "government"] or any(k in raw_name.lower() for k in ["police", "thana", "chowki", "outpost", "station"])):
+                        coords = f.get("geometry", {}).get("coordinates", [])
+                        if len(coords) == 2:
+                            p_lon, p_lat = coords[0], coords[1]
+                            dist = haversine(lat, lon, p_lat, p_lon)
+                            if dist <= max_dist_km:
+                                city = props.get("city") or props.get("town") or props.get("district") or ""
+                                state = props.get("state") or ""
+                                street = props.get("street") or ""
+                                district = props.get("district") or city
+                                addr_parts = [street, city, district, state]
+                                full_addr = ", ".join(filter(None, addr_parts)) or f"{raw_name}, India"
+                                clean_name = clean_station_name(raw_name, city, state)
+                                drive_mins = max(2, int((dist / 35.0) * 60))
+                                res.append({
+                                    "name": clean_name,
+                                    "address": full_addr,
+                                    "lat": round(p_lat, 6),
+                                    "lon": round(p_lon, 6),
+                                    "distance_km": round(dist, 2),
+                                    "est_drive_mins": drive_mins,
+                                    "city": city,
+                                    "district": district,
+                                    "state": state,
+                                    "phone": "112",
+                                    "ph": "112",
+                                    "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
+                                    "source": "OpenStreetMap Verified"
+                                })
+        except Exception:
+            pass
+        return res
 
     def _fe_query_nominatim_viewbox(r_km):
         res = []
@@ -429,7 +471,7 @@ def fetch_real_nearby_police(lat: float, lon: float, radius_km: float = 50.0, di
         viewbox = f"{lon - d_deg:.4f},{lat + d_deg:.4f},{lon + d_deg:.4f},{lat - d_deg:.4f}"
         try:
             url = f"https://nominatim.openstreetmap.org/search?amenity=police&viewbox={viewbox}&bounded=1&format=json&limit=25&addressdetails=1"
-            r = requests.get(url, headers=headers, timeout=4.5)
+            r = requests.get(url, headers=headers, timeout=3.5)
             if r.status_code == 200:
                 for item in r.json():
                     p_lat = float(item.get("lat", 0))
@@ -463,86 +505,6 @@ def fetch_real_nearby_police(lat: float, lon: float, radius_km: float = 50.0, di
                                 })
         except Exception:
             pass
-
-        if len(res) < 2:
-            try:
-                url_q = f"https://nominatim.openstreetmap.org/search?q=police+station&viewbox={viewbox}&bounded=1&format=json&limit=25&addressdetails=1"
-                r_q = requests.get(url_q, headers=headers, timeout=4.5)
-                if r_q.status_code == 200:
-                    for item in r_q.json():
-                        p_lat = float(item.get("lat", 0))
-                        p_lon = float(item.get("lon", 0))
-                        if p_lat and p_lon:
-                            dist = haversine(lat, lon, p_lat, p_lon)
-                            if dist <= r_km * 1.25:
-                                addr = item.get("address", {})
-                                d_name = item.get("display_name", "")
-                                raw_name = item.get("name") or d_name.split(",")[0]
-                                if is_valid_police_station(raw_name):
-                                    city = addr.get("city") or addr.get("town") or addr.get("village") or addr.get("suburb") or ""
-                                    district = addr.get("state_district") or addr.get("county") or ""
-                                    state = addr.get("state", "")
-                                    clean_name = clean_station_name(raw_name, city, state)
-                                    drive_mins = max(2, int((dist / 35.0) * 60))
-                                    res.append({
-                                        "name": clean_name,
-                                        "address": d_name[:110],
-                                        "lat": round(p_lat, 6),
-                                        "lon": round(p_lon, 6),
-                                        "distance_km": round(dist, 2),
-                                        "est_drive_mins": drive_mins,
-                                        "city": city,
-                                        "district": district,
-                                        "state": state,
-                                        "phone": "112",
-                                        "ph": "112",
-                                        "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
-                                        "source": "OpenStreetMap Verified"
-                                    })
-            except Exception:
-                pass
-        return res
-
-    def _fe_query_photon(r_km):
-        res = []
-        try:
-            url_ph = f"https://photon.komoot.io/api/?q=police&lat={lat}&lon={lon}&limit=25"
-            r_ph = requests.get(url_ph, headers=headers, timeout=3.5)
-            if r_ph.status_code == 200:
-                for f in r_ph.json().get("features", []):
-                    props = f.get("properties", {})
-                    raw_name = props.get("name") or "Police Station"
-                    if is_valid_police_station(raw_name):
-                        coords = f.get("geometry", {}).get("coordinates", [])
-                        if len(coords) == 2:
-                            p_lon, p_lat = coords[0], coords[1]
-                            dist = haversine(lat, lon, p_lat, p_lon)
-                            if dist <= r_km * 1.25:
-                                city = props.get("city") or props.get("town") or props.get("district") or ""
-                                state = props.get("state") or ""
-                                street = props.get("street") or ""
-                                district = props.get("district") or city
-                                addr_parts = [street, city, district, state]
-                                full_addr = ", ".join(filter(None, addr_parts)) or f"{raw_name}, India"
-                                clean_name = clean_station_name(raw_name, city, state)
-                                drive_mins = max(2, int((dist / 35.0) * 60))
-                                res.append({
-                                    "name": clean_name,
-                                    "address": full_addr,
-                                    "lat": round(p_lat, 6),
-                                    "lon": round(p_lon, 6),
-                                    "distance_km": round(dist, 2),
-                                    "est_drive_mins": drive_mins,
-                                    "city": city,
-                                    "district": district,
-                                    "state": state,
-                                    "phone": "112",
-                                    "ph": "112",
-                                    "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
-                                    "source": "OpenStreetMap Verified"
-                                })
-        except Exception:
-            pass
         return res
 
     def _fe_query_nominatim_regional():
@@ -555,7 +517,7 @@ def fetch_real_nearby_police(lat: float, lon: float, radius_km: float = 50.0, di
             try:
                 q_enc = urllib.parse.quote_plus(f"police station {token}")
                 url = f"https://nominatim.openstreetmap.org/search?q={q_enc}&countrycodes=in&format=json&limit=10&addressdetails=1"
-                r = requests.get(url, headers=headers, timeout=4.5)
+                r = requests.get(url, headers=headers, timeout=4.0)
                 if r.status_code == 200:
                     for item in r.json():
                         p_lat = float(item.get("lat", 0))
@@ -587,41 +549,41 @@ def fetch_real_nearby_police(lat: float, lon: float, radius_km: float = 50.0, di
                                         "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
                                         "source": "OpenStreetMap Verified"
                                     })
-                if len(res) >= 2:
-                    break
+                    if len(res) >= 2:
+                        break
             except Exception:
                 pass
         return res
 
+    # 1. Hyper-local live OSM Photon query (coordinate distance-ranked)
+    ph = _fe_query_photon(60.0)
+    if ph:
+        discovered.extend(ph)
+
+    # 2. Progressive Tight Nominatim Bounding Box (2.5km -> 6.0km -> 15.0km -> 35.0km -> 80.0km)
+    radii_km = [2.5, 6.0, 15.0, 35.0, 80.0]
     for r_km in radii_km:
-        stations = []
         nom = _fe_query_nominatim_viewbox(r_km)
         if nom:
-            stations.extend(nom)
-        if len(stations) < 2:
-            ph = _fe_query_photon(r_km)
-            if ph:
-                stations.extend(ph)
-
-        # Deduplicate stations strictly by proximity (< 150m)
-        seen_coords = set()
-        unique_stations = []
-        for s in sorted(stations, key=lambda x: x["distance_km"]):
-            coord_key = (round(s["lat"], 3), round(s["lon"], 3))
-            if coord_key not in seen_coords:
-                seen_coords.add(coord_key)
-                unique_stations.append(s)
-                
-        if len(unique_stations) >= 2 or (r_km == 120.0 and len(unique_stations) >= 1):
-            final_stations = unique_stations
+            discovered.extend(nom)
+        close_count = sum(1 for s in discovered if s["distance_km"] <= r_km)
+        if close_count >= 3:
             break
-        elif unique_stations:
-            final_stations = unique_stations
 
-    if not final_stations and display_name:
+    # 3. Regional Named Thana Fallback (for remote desert/Himalayan taluks)
+    if len(discovered) < 2 and display_name:
         reg = _fe_query_nominatim_regional()
         if reg:
-            final_stations = sorted(reg, key=lambda x: x["distance_km"])
+            discovered.extend(reg)
+
+    # Deduplicate stations strictly by physical coordinates (< 150m) and sort strictly by distance
+    seen_coords = set()
+    final_stations = []
+    for s in sorted(discovered, key=lambda x: x["distance_km"]):
+        coord_key = (round(s["lat"], 3), round(s["lon"], 3))
+        if coord_key not in seen_coords:
+            seen_coords.add(coord_key)
+            final_stations.append(s)
 
     return final_stations
 

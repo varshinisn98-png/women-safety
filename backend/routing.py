@@ -13,6 +13,7 @@ Provides real-world road network routing (OSRM / OpenStreetMap) with:
 
 import math
 import hashlib
+import re
 import requests
 import urllib.parse
 import numpy as np
@@ -167,21 +168,22 @@ def _query_nominatim_viewbox(lat: float, lon: float, radius_km: float, headers: 
 
     return stations
 
-def _query_photon(lat: float, lon: float, radius_km: float, headers: Dict[str, str]) -> List[Dict[str, Any]]:
+def _query_photon(lat: float, lon: float, max_dist_km: float, headers: Dict[str, str]) -> List[Dict[str, Any]]:
     stations = []
     try:
-        url = f"https://photon.komoot.io/api/?q=police&lat={lat}&lon={lon}&limit=25"
+        url = f"https://photon.komoot.io/api/?q=police+station&lat={lat}&lon={lon}&limit=25"
         r = requests.get(url, headers=headers, timeout=3.5)
         if r.status_code == 200:
             for f in r.json().get("features", []):
                 props = f.get("properties", {})
+                osm_val = props.get("osm_value", "")
                 raw_name = props.get("name") or "Police Station"
-                if is_valid_police_station(raw_name):
+                if is_valid_police_station(raw_name) and (osm_val in ["police", "amenity", "office", "government"] or any(k in raw_name.lower() for k in ["police", "thana", "chowki", "outpost", "station"])):
                     coords = f.get("geometry", {}).get("coordinates", [])
                     if len(coords) == 2:
                         p_lon, p_lat = coords[0], coords[1]
                         dist = haversine_distance(lat, lon, p_lat, p_lon)
-                        if dist <= radius_km * 1.25:
+                        if dist <= max_dist_km:
                             city = props.get("city") or props.get("town") or props.get("district") or ""
                             state = props.get("state") or ""
                             street = props.get("street") or ""
@@ -219,7 +221,7 @@ def _query_nominatim_regional(lat: float, lon: float, display_name: str, headers
         try:
             q_enc = urllib.parse.quote_plus(f"police station {token}")
             url = f"https://nominatim.openstreetmap.org/search?q={q_enc}&countrycodes=in&format=json&limit=10&addressdetails=1"
-            r = requests.get(url, headers=headers, timeout=4.5)
+            r = requests.get(url, headers=headers, timeout=4.0)
             if r.status_code == 200:
                 for item in r.json():
                     p_lat = float(item.get("lat", 0))
@@ -251,17 +253,16 @@ def _query_nominatim_regional(lat: float, lon: float, display_name: str, headers
                                     "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
                                     "source": "OpenStreetMap Verified"
                                 })
-            if len(stations) >= 2:
-                break
+                if len(stations) >= 2:
+                    break
         except Exception:
             pass
     return stations
 
 def fetch_real_police_stations(lat: float, lon: float, radius_km: float = 50.0, display_name: str = "") -> List[Dict[str, Any]]:
     """
-    Fetches genuine, real verified police stations from OpenStreetMap around (lat, lon) across India.
-    Implements a robust multi-tier spatial POI query with progressive radius expansion (15km -> 30km -> 60km -> 120km).
-    Never generates synthetic or fake stations.
+    Fetches genuine, closest verified police stations around (lat, lon) across India.
+    Prioritizes immediate local neighborhood stations (within 500m - 5km) before expanding.
     """
     cache_key = f"{round(lat, 3)},{round(lon, 3)}"
     if cache_key in _POLICE_CACHE:
@@ -269,53 +270,44 @@ def fetch_real_police_stations(lat: float, lon: float, radius_km: float = 50.0, 
         if cached:
             return cached
 
-    radii_km = [15.0, 30.0, 60.0, 120.0]
     headers = {"User-Agent": "SurakshaSafetyApp/3.0 (support@suraksha.ai; India Women Safety Initiative)"}
+    discovered = []
     
-    final_stations = []
-    applied_radius = 15.0
-    
+    # 1. Hyper-local live OSM Photon query (coordinate distance-ranked)
+    ph_stns = _query_photon(lat, lon, 60.0, headers)
+    if ph_stns:
+        discovered.extend(ph_stns)
+
+    # 2. Progressive Tight Nominatim Bounding Box (2.5km -> 6.0km -> 15.0km -> 35.0km -> 80.0km)
+    radii_km = [2.5, 6.0, 15.0, 35.0, 80.0]
     for r_km in radii_km:
-        applied_radius = r_km
-        stations = []
-        
-        # 1. Nominatim Spatial Bounding Box (High precision locality matches)
         nom_stns = _query_nominatim_viewbox(lat, lon, r_km, headers)
         if nom_stns:
-            stations.extend(nom_stns)
-            
-        # 2. Photon Komoot Live OSM Spatial Query (Failover & Complementary)
-        if len(stations) < 2:
-            ph_stns = _query_photon(lat, lon, r_km, headers)
-            if ph_stns:
-                stations.extend(ph_stns)
-
-        # Deduplicate stations strictly by physical location (< 150m)
-        seen_coords = set()
-        unique_stations = []
-        for s in sorted(stations, key=lambda x: x["distance_km"]):
-            coord_key = (round(s["lat"], 3), round(s["lon"], 3))
-            if coord_key not in seen_coords:
-                seen_coords.add(coord_key)
-                unique_stations.append(s)
-                
-        if len(unique_stations) >= 2 or (r_km == 120.0 and len(unique_stations) >= 1):
-            final_stations = unique_stations
+            discovered.extend(nom_stns)
+        # If we have found close neighborhood stations, stop expanding bounding box
+        close_count = sum(1 for s in discovered if s["distance_km"] <= r_km)
+        if close_count >= 3:
             break
-        elif unique_stations:
-            final_stations = unique_stations
 
     # 3. Regional Named Thana Fallback (for remote desert/Himalayan taluks)
-    if not final_stations and display_name:
+    if len(discovered) < 2 and display_name:
         reg_stns = _query_nominatim_regional(lat, lon, display_name, headers)
         if reg_stns:
-            final_stations = sorted(reg_stns, key=lambda x: x["distance_km"])
-            applied_radius = 150.0
+            discovered.extend(reg_stns)
+
+    # Deduplicate stations strictly by physical coordinates (< 150m) and sort strictly by distance
+    seen_coords = set()
+    final_stations = []
+    for s in sorted(discovered, key=lambda x: x["distance_km"]):
+        coord_key = (round(s["lat"], 3), round(s["lon"], 3))
+        if coord_key not in seen_coords:
+            seen_coords.add(coord_key)
+            final_stations.append(s)
 
     if final_stations:
         _POLICE_CACHE[cache_key] = {
             "stations": final_stations,
-            "search_radius_km": applied_radius
+            "search_radius_km": final_stations[-1]["distance_km"] if final_stations else 15.0
         }
     return final_stations
 

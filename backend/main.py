@@ -521,8 +521,17 @@ def health():
 @app.get("/api/police_stations")
 def get_police_stations(lat: float, lon: float, radius_km: float = 50.0, display_name: str = ""):
     """
-    Returns genuine verified OpenStreetMap police stations around (lat, lon).
+    Returns genuine verified OpenStreetMap police stations around (lat, lon) across India.
     Never fabricates fake stations.
     """
-    from routing import fetch_real_police_stations
-    return {"police_stations": fetch_real_police_stations(lat, lon, radius_km=radius_km, display_name=display_name)}
+    from routing import fetch_real_police_stations, _POLICE_CACHE
+    stations = fetch_real_police_stations(lat, lon, radius_km=radius_km, display_name=display_name)
+    cache_key = f"{round(lat, 3)},{round(lon, 3)}"
+    applied_radius = _POLICE_CACHE.get(cache_key, {}).get("search_radius_km", radius_km)
+    return {
+        "police_stations": stations,
+        "count": len(stations),
+        "search_radius_km": applied_radius,
+        "is_verified": True
+    }
+

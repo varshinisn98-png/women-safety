@@ -116,6 +116,7 @@ def _query_photon(lat: float, lon: float, radius_km: float, headers: Dict[str, s
                                 "district": district,
                                 "state": state,
                                 "phone": "112",
+                                "ph": "112",
                                 "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
                                 "source": "OpenStreetMap Verified"
                             })
@@ -157,6 +158,7 @@ def _query_nominatim(lat: float, lon: float, radius_km: float, headers: Dict[str
                                 "district": district,
                                 "state": state,
                                 "phone": "112",
+                                "ph": "112",
                                 "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
                                 "source": "OpenStreetMap Verified"
                             })
@@ -208,6 +210,7 @@ def _query_overpass(lat: float, lon: float, radius_km: float, headers: Dict[str,
                                     "district": district,
                                     "state": state,
                                     "phone": phone,
+                                    "ph": phone,
                                     "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
                                     "source": "OpenStreetMap Verified"
                                 })

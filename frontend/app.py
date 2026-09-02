@@ -458,6 +458,7 @@ def fetch_real_nearby_police(lat: float, lon: float, radius_km: float = 50.0, di
                                     "district": district,
                                     "state": state,
                                     "phone": "112",
+                                    "ph": "112",
                                     "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
                                     "source": "OpenStreetMap Verified"
                                 })
@@ -499,6 +500,7 @@ def fetch_real_nearby_police(lat: float, lon: float, radius_km: float = 50.0, di
                                     "district": district,
                                     "state": state,
                                     "phone": "112",
+                                    "ph": "112",
                                     "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
                                     "source": "OpenStreetMap Verified"
                                 })
@@ -554,6 +556,7 @@ def fetch_real_nearby_police(lat: float, lon: float, radius_km: float = 50.0, di
                                         "district": district,
                                         "state": state,
                                         "phone": phone,
+                                        "ph": phone,
                                         "google_maps_url": f"https://www.google.com/maps/dir/?api=1&origin={lat:.6f},{lon:.6f}&destination={p_lat:.6f},{p_lon:.6f}",
                                         "source": "OpenStreetMap Verified"
                                     })
@@ -871,8 +874,9 @@ if st.session_state.nav_index == 0:
         
         # Real Police Station Markers
         for stn in real_stations[:4]:
-            p_pop = f"<b>🚔 {stn['name']}</b><br>{stn['address']}<br><b>Distance:</b> {stn['distance_km']} km<br><b>Helpline:</b> {stn['ph']}"
-            folium.Marker([stn["lat"], stn["lon"]], popup=p_pop, tooltip=f"🚔 {stn['name']} ({stn['distance_km']} km)", icon=folium.Icon(color="blue", icon="shield", prefix="fa")).add_to(hero_map)
+            stn_ph = stn.get('phone') or stn.get('ph') or '112'
+            p_pop = f"<b>🚔 {stn.get('name', 'Police Station')}</b><br>{stn.get('address', '')}<br><b>Distance:</b> {stn.get('distance_km', 0)} km<br><b>Helpline:</b> {stn_ph}"
+            folium.Marker([stn["lat"], stn["lon"]], popup=p_pop, tooltip=f"🚔 {stn.get('name', 'Police Station')} ({stn.get('distance_km', 0)} km)", icon=folium.Icon(color="blue", icon="shield", prefix="fa")).add_to(hero_map)
 
         st_folium(hero_map, width=None, height=290, use_container_width=True, key="hero_preview_map")
 
